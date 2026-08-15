@@ -77,32 +77,7 @@ export default function Footer() {
                   </div>
                 </div>
                 <div className="w-layout-grid footer1_menu-wrapper">
-                  <div className="footer1_link-list">
-                    <div className="margin-bottom margin-xsmall">
-                      <div className="text-weight-semibold">Resources</div>
-                    </div>
-                    <Link to="/#" className="footer1_link">
-                      Masterclasses
-                    </Link>
-                  </div>
-                  <div className="footer1_link-list">
-                    <div className="margin-bottom margin-xsmall">
-                      <div className="text-weight-semibold">Support</div>
-                    </div>
-                    <a
-                      href="https://freelance101academy.thinkific.com/collections"
-                      target="_blank"
-                      className="footer1_link"
-                    >
-                      Access Your Courses
-                    </a>
-                    <a
-                      href="mailto:contact@60daypublications.com"
-                      className="footer1_link"
-                    >
-                      Contact
-                    </a>
-                  </div>
+
                   <div className="footer1_link-list">
                     <div className="margin-bottom margin-xsmall">
                       <div className="text-weight-semibold">Follow us</div>

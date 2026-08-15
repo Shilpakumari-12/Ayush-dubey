@@ -2,6 +2,10 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import clientArmsCrossed from "../assets/client_arms_crossed.jpg";
 import clientGesturing from "../assets/client_gesturing.jpg";
+import logo1 from "../assets/logo_1.png";
+import logo2 from "../assets/logo_2.png";
+import logo3 from "../assets/logo_3.png";
+import logo4 from "../assets/logo_4.png";
 export default function HomePage() {
   const sectionRef = useRef(null);
   const [leftY, setLeftY] = useState(0);
@@ -99,6 +103,60 @@ export default function HomePage() {
         data-w-id="f17aa683-a0f6-bd5e-53fe-f8ff56662ecf"
         className="featured-in-section"
       >
+        <style>{`
+  .featured-in-section {
+    background-color: #ffffff !important;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+    overflow: hidden !important;
+  }
+  .featured-in-section .text-color-white {
+    color: #6b7280 !important;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .logo3_component {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow: hidden !important;
+  }
+  .logo3_list {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+    gap: 80px !important;
+    min-width: 100% !important;
+    padding-right: 80px !important; 
+  }
+  .logo3_logo {
+    height: 120px !important;
+    width: 250px !important;
+    object-fit: contain !important;
+    mix-blend-mode: multiply !important;
+    opacity: 1 !important; /* Make them fully visible */
+    filter: none !important; /* Remove grayscale so we can see them clearly */
+    transition: all 0.3s ease !important;
+    flex-shrink: 0 !important;
+    display: block !important;
+    transform: scale(2.5) !important; /* Zoom in to crop out huge white padding */
+  }
+  .logo3_wrapper {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+    flex: 0 0 auto !important;
+    width: 250px !important;
+    height: 150px !important;
+    overflow: hidden !important; /* Hide the overlapping white padding */
+  }
+`}</style>
         <div className="padding-section-small">
           <div className="margin-bottom margin-large">
             <div className="text-align-center">
@@ -115,7 +173,7 @@ export default function HomePage() {
               >
                 <img
                   loading="lazy"
-                  src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec919b5f8509d0743e7111_pepper%20content.png"
+                  src={logo1}
                   alt=""
                   className="logo3_logo"
                 />
@@ -126,7 +184,7 @@ export default function HomePage() {
               >
                 <img
                   loading="lazy"
-                  src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec919b5f8509d0743e7119_scoopwhoop.png"
+                  src={logo2}
                   alt=""
                   className="logo3_logo"
                 />
@@ -137,7 +195,7 @@ export default function HomePage() {
               >
                 <img
                   loading="lazy"
-                  src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec919b5f8509d0743e7113_TEDx.png"
+                  src={logo3}
                   alt=""
                   className="logo3_logo"
                 />
@@ -148,7 +206,7 @@ export default function HomePage() {
               >
                 <img
                   loading="lazy"
-                  src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec919b5f8509d0743e7115_telegraph.png"
+                  src={logo4}
                   alt=""
                   className="logo3_logo"
                 />
@@ -159,7 +217,7 @@ export default function HomePage() {
               >
                 <img
                   loading="lazy"
-                  src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec919b5f8509d0743e7117_women%27s%20web.png"
+                  src={logo1}
                   alt=""
                   className="logo3_logo"
                 />
@@ -170,7 +228,7 @@ export default function HomePage() {
               >
                 <img
                   loading="lazy"
-                  src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec919b5f8509d0743e710f_flexifunnel.png"
+                  src={logo2}
                   alt=""
                   className="logo3_logo"
                 />
@@ -181,7 +239,7 @@ export default function HomePage() {
               >
                 <img
                   loading="lazy"
-                  src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec919b5f8509d0743e7111_pepper%20content.png"
+                  src={logo1}
                   alt=""
                   className="logo3_logo"
                 />
@@ -192,7 +250,7 @@ export default function HomePage() {
               >
                 <img
                   loading="lazy"
-                  src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec919b5f8509d0743e7119_scoopwhoop.png"
+                  src={logo2}
                   alt=""
                   className="logo3_logo"
                 />
@@ -205,7 +263,7 @@ export default function HomePage() {
               >
                 <img
                   loading="lazy"
-                  src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec919b5f8509d0743e7113_TEDx.png"
+                  src={logo3}
                   alt=""
                   className="logo3_logo"
                 />
@@ -216,7 +274,7 @@ export default function HomePage() {
               >
                 <img
                   loading="lazy"
-                  src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec919b5f8509d0743e7115_telegraph.png"
+                  src={logo4}
                   alt=""
                   className="logo3_logo"
                 />
@@ -227,7 +285,7 @@ export default function HomePage() {
               >
                 <img
                   loading="lazy"
-                  src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec919b5f8509d0743e7117_women%27s%20web.png"
+                  src={logo1}
                   alt=""
                   className="logo3_logo"
                 />
@@ -238,7 +296,7 @@ export default function HomePage() {
               >
                 <img
                   loading="lazy"
-                  src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec919b5f8509d0743e710f_flexifunnel.png"
+                  src={logo2}
                   alt=""
                   className="logo3_logo"
                 />
@@ -249,7 +307,7 @@ export default function HomePage() {
               >
                 <img
                   loading="lazy"
-                  src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec919b5f8509d0743e7111_pepper%20content.png"
+                  src={logo1}
                   alt=""
                   className="logo3_logo"
                 />
@@ -260,7 +318,7 @@ export default function HomePage() {
               >
                 <img
                   loading="lazy"
-                  src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec919b5f8509d0743e7119_scoopwhoop.png"
+                  src={logo2}
                   alt=""
                   className="logo3_logo"
                 />
@@ -271,7 +329,7 @@ export default function HomePage() {
               >
                 <img
                   loading="lazy"
-                  src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec919b5f8509d0743e7113_TEDx.png"
+                  src={logo3}
                   alt=""
                   className="logo3_logo"
                 />
@@ -282,7 +340,7 @@ export default function HomePage() {
               >
                 <img
                   loading="lazy"
-                  src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec919b5f8509d0743e7115_telegraph.png"
+                  src={logo4}
                   alt=""
                   className="logo3_logo"
                 />
@@ -433,7 +491,7 @@ export default function HomePage() {
                     >
                       <div className="g-heading-rich-text w-richtext">
                         <h2>
-                          We are 60 Day Publications, your{" "}
+                          I am Ayush, your{" "}
                           <strong>Publication Partner</strong>
                         </h2>
                       </div>
@@ -680,23 +738,23 @@ export default function HomePage() {
                     </div>
                     <div className="margin-vertical margin-medium">
                       <div className="heading-style-h6">
-                        &quot;60 Day Publications&#x27; timing, expertise, and our existing
+                        &quot;Ayush&#x27; timing, expertise, and our existing
                         connection made her offer irresistible. Her proven track
                         record and social proof gave me the confidence to trust
                         her with my Instagram growth.
                         <br />‍<br />
-                        In just the first month, 60 Day Publications&#x27; strategies
+                        In just the first month, Ayush&#x27; strategies
                         delivered outstanding results. I&#x27;m now entering the
                         second month with complete satisfaction and excitement.
                         If you&#x27;re looking for someone who truly understands
-                        academic publishing and delivers exceptional results, 60 Day Publications is
+                        academic publishing and delivers exceptional results, Ayush is
                         the real deal.&quot;
                       </div>
                     </div>
                     <div className="testimonial13_client">
                       <div className="testimonial13_client-info">
-                        <p className="text-weight-semibold">Chase Dimond</p>
-                        <p>Email publication Expert</p>
+                        <p className="text-weight-semibold">Ayush Dubey</p>
+                        <p>Medical Research Expert</p>
                       </div>
                       <div className="testimonial13_divider"></div>
                       <div className="testimonial13_logo-wrapper">
@@ -710,26 +768,12 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="testimonial13_client-image-wrapper">
-                    <img
-                      sizes="(max-width: 1100px) 100vw, 1100px"
-                      srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec889dc982075b45092108_chase%20dimond-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec889dc982075b45092108_chase%20dimond-p-800.avif 800w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec889dc982075b45092108_chase%20dimond.avif 1100w"
-                      alt=""
-                      src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec889dc982075b45092108_chase%20dimond.avif"
-                      loading="lazy"
-                      className="testimonial13_client-image"
-                    />
+                    <img src={clientArmsCrossed} alt="Ayush Dubey" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                 </div>
                 <div className="w-layout-grid testimonial_card">
                   <div className="testimonial13_client-image-wrapper">
-                    <img
-                      sizes="(max-width: 1100px) 100vw, 1100px"
-                      srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec889d93852b989ab8791b_sharan-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec889d93852b989ab8791b_sharan-p-800.avif 800w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec889d93852b989ab8791b_sharan-p-1080.avif 1080w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec889d93852b989ab8791b_sharan.avif 1100w"
-                      alt=""
-                      src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68ec889d93852b989ab8791b_sharan.avif"
-                      loading="lazy"
-                      className="testimonial13_client-image"
-                    />
+                    <img src={clientGesturing} alt="Ayush Dubey" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                   <div
                     id="w-node-_90c8a307-b00d-c6ed-3db8-bca43022cd99-f4a44663"
@@ -816,7 +860,7 @@ export default function HomePage() {
                       <div className="heading-style-h5">
                         &quot;I think one of the best sources out there to, you
                         know, create an additional source of income for yourself
-                        is 60 Day Publications&#x27; research course. Now, I have
+                        is Ayush&#x27; research course. Now, I have
                         personally worked with her on improving my business, so
                         I know that when she says something, you better follow
                         it.&quot;
@@ -824,8 +868,8 @@ export default function HomePage() {
                     </div>
                     <div className="testimonial13_client">
                       <div className="testimonial13_client-info">
-                        <p className="text-weight-semibold">Sharan Hegde</p>
-                        <p>Founder &amp; CEO, The 1% Club</p>
+                        <p className="text-weight-semibold">Ayush Dubey</p>
+                        <p>Medical Scholar</p>
                       </div>
                       <div className="testimonial13_divider"></div>
                       <div className="testimonial13_logo-wrapper">

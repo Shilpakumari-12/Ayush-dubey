@@ -30,16 +30,35 @@ export default function Navbar() {
         >
           <strong style={{ fontSize: '1.5rem', color: '#1a1a1a' }}>60Day Publications</strong>
         </Link>
+        <style>{`
+          .navbar2_menu.w--open {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #ffffff;
+            padding: 1rem;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+            display: block !important;
+          }
+          .navbar2_menu.w--open .navbar2_link {
+            display: block;
+            padding: 1rem;
+            color: #1a1a1a !important;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            text-decoration: none;
+          }
+          .navbar2_menu.w--open .navbar2_link:last-child {
+            border-bottom: none;
+          }
+        `}</style>
         <nav
           role="navigation"
           id="w-node-_89d96280-8925-9485-da66-e88e821f2b39-821f2b35"
           className={`navbar2_menu is-page-height-tablet w-nav-menu ${
             mobileMenuOpen ? "w--open" : ""
           }`}
-          style={{
-            display: mobileMenuOpen ? "block" : undefined,
-            transition: "all 0.3s ease",
-          }}
         >
           <Link
             to="/consultation"
