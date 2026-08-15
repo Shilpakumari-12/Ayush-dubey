@@ -17,7 +17,7 @@ export default function ConsultationPage() {
                   >
                     <div className="g-heading-rich-text w-richtext">
                       <h1>
-                        Elevate Your Marketing Game <strong>in 30 Days</strong>
+                        Elevate Your publication Game <strong>in 30 Days</strong>
                       </h1>
                     </div>
                   </div>
@@ -33,9 +33,9 @@ export default function ConsultationPage() {
                   <div style={{ maxWidth: "45ch" }} className="g-para-wrap">
                     <div className="g-para-rich-text w-richtext">
                       <p>
-                        I help you get maximum ROI in your marketing, build a
+                        I help you get maximum ROI in your publication, build a
                         unique brand, and Outperform Your Competitors with
-                        Data-Backed Approach to Content and Marketing.
+                        Data-Backed Approach to Content and publication.
                       </p>
                     </div>
                   </div>
@@ -61,7 +61,7 @@ export default function ConsultationPage() {
                         </div>
                       </div>
                       <div>
-                        Wanna Grow Your Business On Social Media Without Any
+                        Wanna Grow Your Business On Academic Publishing Without Any
                         Ads?
                       </div>
                     </div>
@@ -432,7 +432,7 @@ export default function ConsultationPage() {
                       <div className="heading-style-h5">
                         &quot;I think one of the best sources out there to, you
                         know, create an additional source of income for yourself
-                        is 60 Day Publications&#x27; freelance course. Now, I have
+                        is 60 Day Publications&#x27; research course. Now, I have
                         personally worked with her on improving my business, so
                         I know that when she says something, you better follow
                         it.&quot;
@@ -476,7 +476,7 @@ export default function ConsultationPage() {
                     </div>
                   </div>
                   <div className="text-size-medium">
-                    Wanna Grow Your Business On Social Media Without Any Ads?
+                    Wanna Grow Your Business On Academic Publishing Without Any Ads?
                   </div>
                 </Link>
                 <div className="padding-vertical padding-large">
@@ -489,7 +489,7 @@ export default function ConsultationPage() {
                         >
                           <div className="g-heading-rich-text w-richtext">
                             <h2>
-                              Wanna Grow Your Business On Social Media Without
+                              Wanna Grow Your Business On Academic Publishing Without
                               Any Ads?
                             </h2>
                           </div>
@@ -500,7 +500,7 @@ export default function ConsultationPage() {
                         >
                           <div className="g-para-rich-text w-richtext">
                             <p>
-                              We&#x27;ll grow your audience on social media,
+                              We&#x27;ll grow your audience on academic publishing,
                               build millions of fans and get them to buy your
                               stuff.
                             </p>
@@ -817,14 +817,14 @@ export default function ConsultationPage() {
                         delivered outstanding results. I&#x27;m now entering the
                         second month with complete satisfaction and excitement.
                         If you&#x27;re looking for someone who truly understands
-                        social media and delivers exceptional results, 60 Day Publications is
+                        academic publishing and delivers exceptional results, 60 Day Publications is
                         the real deal.&quot;
                       </div>
                     </div>
                     <div className="testimonial13_client">
                       <div className="testimonial13_client-info">
                         <p className="text-weight-semibold">Chase Dimond</p>
-                        <p>Email Marketing Expert</p>
+                        <p>Email publication Expert</p>
                       </div>
                       <div className="testimonial13_divider"></div>
                       <div className="testimonial13_logo-wrapper">
@@ -883,7 +883,7 @@ export default function ConsultationPage() {
                       className="g-heading-wrap heading-style-h3 text-color-gray-900"
                     >
                       <div className="g-heading-rich-text w-richtext">
-                        <h3>Social Media Content Strategy</h3>
+                        <h3>Academic Publishing Content Strategy</h3>
                       </div>
                     </div>
                     <div style={{ maxWidth: "none" }} className="g-para-wrap">
@@ -1138,7 +1138,7 @@ export default function ConsultationPage() {
                       <div className="layout121_timeline-right">
                         <div className="layout121_text-wrapper">
                           <div className="margin-bottom margin-xsmall">
-                            <h5>Empowering Business Owners</h5>
+                            <h5>Empowering medical professionals</h5>
                           </div>
                           <p className="text-size-medium">
                             I&#x27;ve trained 2500+ service-based business

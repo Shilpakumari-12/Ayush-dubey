@@ -80,7 +80,7 @@ export default function PrivacyPolicyPage() {
                       Communicate with you, either directly or through one of
                       our partners, including for customer service, to provide
                       you with updates and other information relating to the
-                      website, and for marketing and promotional purposes
+                      website, and for publication and promotional purposes
                     </li>
                     <li>Send you emails</li>
                     <li>Find and prevent fraud</li>

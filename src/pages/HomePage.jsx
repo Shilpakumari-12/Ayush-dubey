@@ -343,20 +343,20 @@ export default function HomePage() {
                         className="g-heading-wrap heading-style-h4 text-color-brown-700"
                       >
                         <div className="g-heading-rich-text w-richtext">
-                          <h3>Business Owner</h3>
+                          <h3>Medical Professional</h3>
                         </div>
                       </div>
                       <div style={{ maxWidth: "none" }} className="g-para-wrap">
                         <div className="g-para-rich-text w-richtext">
                           <p>
-                            Through my expertise and industry insights,
-                            we&#x27;ll streamline your marketing efforts,
-                            optimize your online presence, and achieve
-                            exponential growth.
+                            Through our expertise and academic insights,
+                            we&#x27;ll streamline your manuscript writing,
+                            optimize your statistical data, and achieve
+                            high-impact journal publications.
                           </p>
                           <p>
-                            Let&#x27;s create a tailored strategy that resonates
-                            with your target audience and propels your business
+                            Let&#x27;s create a tailored publication strategy that resonates
+                            with peer reviewers and propels your academic career
                             forward.
                           </p>
                         </div>
@@ -371,10 +371,10 @@ export default function HomePage() {
                   <div className="path-card">
                     <div className="header-copy-wrap is-center">
                       <img
-                        src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68e93ebe1b1598e618d48729_path%20freelancer%20img.avif"
+                        src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68e93ebe1b1598e618d48729_path%20researchr%20img.avif"
                         loading="lazy"
                         sizes="(max-width: 798px) 100vw, 798px"
-                        srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68e93ebe1b1598e618d48729_path%20freelancer%20img-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68e93ebe1b1598e618d48729_path%20freelancer%20img.avif 798w"
+                        srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68e93ebe1b1598e618d48729_path%20researchr%20img-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68e93ebe1b1598e618d48729_path%20researchr%20img.avif 798w"
                         alt=""
                         className="path-card-img"
                       />
@@ -383,19 +383,19 @@ export default function HomePage() {
                         className="g-heading-wrap heading-style-h4 text-color-brown-700"
                       >
                         <div className="g-heading-rich-text w-richtext">
-                          <h3>Freelancer</h3>
+                          <h3>PhD Scholar</h3>
                         </div>
                       </div>
                       <div style={{ maxWidth: "none" }} className="g-para-wrap">
                         <div className="g-para-rich-text w-richtext">
                           <p>
-                            With my guidance and proven strategies, you&#x27;ll
-                            attract high-paying clients, negotiate rates
+                            With our guidance and proven strategies, you&#x27;ll
+                            navigate the peer-review process, respond to reviewers
                             confidently, and establish yourself as a
-                            sought-after freelancer.{" "}
+                            sought-after researcher.{" "}
                           </p>
                           <p>
-                            Let&#x27;s embark on this transformative journey
+                            Let&#x27;s embark on this transformative research journey
                             together.
                           </p>
                         </div>
@@ -419,50 +419,50 @@ export default function HomePage() {
             <div className="padding-section-medium">
               <div className="w-layout-grid intro_component">
                 <div className="header-copy-wrap">
-                  <div
-                    style={{ maxWidth: "35ch" }}
-                    className="g-para-wrap text-color-brown-700 text-style-allcaps"
-                  >
-                    <div className="g-para-rich-text w-richtext">
-                      <p>Hey there, ambitious boss!</p>
+                    <div
+                      style={{ maxWidth: "35ch" }}
+                      className="g-para-wrap text-color-brown-700 text-style-allcaps"
+                    >
+                      <div className="g-para-rich-text w-richtext">
+                        <p>Hey there, dedicated researcher!</p>
+                      </div>
+                    </div>
+                    <div
+                      style={{ maxWidth: "none" }}
+                      className="g-heading-wrap heading-style-h2 text-color-gray-900"
+                    >
+                      <div className="g-heading-rich-text w-richtext">
+                        <h2>
+                          We are 60 Day Publications, your{" "}
+                          <strong>Publication Partner</strong>
+                        </h2>
+                      </div>
+                    </div>
+                    <div className="margin-top margin-xxsmall">
+                      <div className="intro_image-wrapper">
+                        <img
+                          src={clientGesturing}
+                          alt="Research Publication Consultant"
+                          className="intro_image"
+                          style={{ width: '100%', borderRadius: '12px', objectFit: 'cover' }}
+                        />
+                      </div>
                     </div>
                   </div>
-                  <div
-                    style={{ maxWidth: "none" }}
-                    className="g-heading-wrap heading-style-h2 text-color-gray-900"
-                  >
-                    <div className="g-heading-rich-text w-richtext">
-                      <h2>
-                        I&#x27;m 60 Day Publications, and Your{" "}
-                        <strong>Marketing Girl</strong>
-                      </h2>
+                  <div className="header-copy-wrap gap-2rem">
+                    <div
+                      style={{ maxWidth: "none" }}
+                      className="g-para-wrap text-size-medium"
+                    >
+                      <div className="g-para-rich-text w-richtext">
+                        <p>
+                          If you&#x27;re tired of facing journal rejections and
+                          struggling with complex statistical analyses, we&#x27;ve
+                          got your back. Together, let&#x27;s harness the power of
+                          high-impact research to skyrocket your academic success.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="margin-top margin-xxsmall">
-                    <div className="intro_image-wrapper">
-                      <img
-                        src={clientGesturing}
-                        alt="Research Publication Consultant"
-                        className="intro_image"
-                        style={{ width: '100%', borderRadius: '12px', objectFit: 'cover' }}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="header-copy-wrap gap-2rem">
-                  <div
-                    style={{ maxWidth: "none" }}
-                    className="g-para-wrap text-size-medium"
-                  >
-                    <div className="g-para-rich-text w-richtext">
-                      <p>
-                        If you&#x27;re tired of struggling to attract leads and
-                        clients despite your efforts on social media, I&#x27;ve
-                        got your back. Together, let&#x27;s harness the power of
-                        social media to skyrocket your business success.
-                      </p>
-                    </div>
-                  </div>
                   <div className="list-items-wrap">
                     <div
                       id="w-node-_0c6a5ce3-44d2-fc22-5e00-33a22a536a45-f4a44663"
@@ -576,7 +576,7 @@ export default function HomePage() {
                         </strong>
                       </p>
                       <p>
-                        Let&#x27;s connect and make social media work for you.
+                        Let&#x27;s connect and make academic publishing work for you.
                       </p>
                     </div>
                   </div>
@@ -689,14 +689,14 @@ export default function HomePage() {
                         delivered outstanding results. I&#x27;m now entering the
                         second month with complete satisfaction and excitement.
                         If you&#x27;re looking for someone who truly understands
-                        social media and delivers exceptional results, 60 Day Publications is
+                        academic publishing and delivers exceptional results, 60 Day Publications is
                         the real deal.&quot;
                       </div>
                     </div>
                     <div className="testimonial13_client">
                       <div className="testimonial13_client-info">
                         <p className="text-weight-semibold">Chase Dimond</p>
-                        <p>Email Marketing Expert</p>
+                        <p>Email publication Expert</p>
                       </div>
                       <div className="testimonial13_divider"></div>
                       <div className="testimonial13_logo-wrapper">
@@ -816,7 +816,7 @@ export default function HomePage() {
                       <div className="heading-style-h5">
                         &quot;I think one of the best sources out there to, you
                         know, create an additional source of income for yourself
-                        is 60 Day Publications&#x27; freelance course. Now, I have
+                        is 60 Day Publications&#x27; research course. Now, I have
                         personally worked with her on improving my business, so
                         I know that when she says something, you better follow
                         it.&quot;
@@ -844,7 +844,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section className="section_freelance101">
+      <section className="section_research101">
         <div className="padding-global">
           <div className="container-large">
             <div className="padding-section-large">
@@ -857,7 +857,7 @@ export default function HomePage() {
                         className="g-para-wrap text-color-brown-700 text-style-allcaps"
                       >
                         <div className="g-para-rich-text w-richtext">
-                          <p>For Freelancers</p>
+                          <p>For researchrs</p>
                         </div>
                       </div>
                       <div
@@ -865,7 +865,7 @@ export default function HomePage() {
                         className="g-heading-wrap heading-style-h2 text-color-brown-700"
                       >
                         <div className="g-heading-rich-text w-richtext">
-                          <h2>Freelance 101 Academy</h2>
+                          <h2>Medical Research Academy</h2>
                         </div>
                       </div>
                       <div
@@ -907,7 +907,7 @@ export default function HomePage() {
                           <p>
                             <strong>
                               Don&#x27;t let your talent go to waste – seize the
-                              moment, enroll in Freelance 101 Academy, and
+                              moment, enroll in Medical Research Academy, and
                               embark on a thrilling adventure towards high
                               income and the life you deserve!
                             </strong>
@@ -1175,13 +1175,13 @@ export default function HomePage() {
                                 didn&#x27;t have confidence in myself and my
                                 skills. I have been doing a job but I knew that
                                 I deserved more and that&#x27;s when I came
-                                across 60 Day Publications&#x27; Freelance 101 Academy, and
+                                across 60 Day Publications&#x27; Medical Research Academy, and
                                 in no time I left my toxic job and signed up for
                                 the course. And it&#x27;s like a dream to tell
                                 now that I reached 4.5 Lakhs in revenue only by
                                 using Cold Emailing. Now, I am going to start my
-                                own Marketing agency. I&#x27;m thankful to
-                                Freelance 101 Academy, the entire team, and my
+                                own publication agency. I&#x27;m thankful to
+                                Medical Research Academy, the entire team, and my
                                 peers for the constant support and value.
                               </div>
                             </div>
@@ -1291,7 +1291,7 @@ export default function HomePage() {
                                 I am a Graphic Designer and a Brand Strategist
                                 and was making 1.5 Lakh/month but I was stuck
                                 revenue-wise. The live sessions inside the
-                                Academy are so good and in one of Freelance 101
+                                Academy are so good and in one of research 101
                                 Academy&#x27;s Live Sessions, I learned how to
                                 Implement Cold Outreach. Within 15 days of
                                 implementation of my learnings, I closed a deal
@@ -1399,7 +1399,7 @@ export default function HomePage() {
                                 </div>
                               </div>
                               <div className="text-size-small">
-                                I am a Full-Time freelancer and landed a
+                                I am a Full-Time researchr and landed a
                                 High-Ticket Client package of 70k/month just
                                 after 3 months of Freelancing. I found solutions
                                 to all of my queries in the Facebook Group
@@ -1513,14 +1513,14 @@ export default function HomePage() {
                               </div>
                               <div className="text-size-small">
                                 I reached my 1 lakh income goal within a few
-                                months of joining the Freelance 101 Academy.
+                                months of joining the Medical Research Academy.
                                 During my freelancing journey whenever I felt
                                 stuck or anxious I could share my doubts inside
-                                the Facebook Community. Inside Freelance 101
+                                the Facebook Community. Inside research 101
                                 Academy, you don’t just get modules and
-                                resources to start your freelance journey, you
+                                resources to start your research journey, you
                                 get daily support from the academy and fellow
-                                freelancers.✨
+                                researchrs.✨
                               </div>
                             </div>
                           </div>
@@ -1746,7 +1746,7 @@ export default function HomePage() {
                                 </div>
                               </div>
                               <div className="text-size-small">
-                                I am a Full-Time freelancer and landed a
+                                I am a Full-Time researchr and landed a
                                 High-Ticket Client package of 70k/month just
                                 after 3 months of Freelancing. I found solutions
                                 to all of my queries in the Facebook Group
@@ -1972,14 +1972,14 @@ export default function HomePage() {
                               </div>
                               <div className="text-size-small">
                                 I reached my 1 lakh income goal within a few
-                                months of joining the Freelance 101 Academy.
+                                months of joining the Medical Research Academy.
                                 During my freelancing journey whenever I felt
                                 stuck or anxious I could share my doubts inside
-                                the Facebook Community. Inside Freelance 101
+                                the Facebook Community. Inside research 101
                                 Academy, you don’t just get modules and
-                                resources to start your freelance journey, you
+                                resources to start your research journey, you
                                 get daily support from the academy and fellow
-                                freelancers.✨
+                                researchrs.✨
                               </div>
                             </div>
                           </div>
@@ -2086,7 +2086,7 @@ export default function HomePage() {
                                 I am a Graphic Designer and a Brand Strategist
                                 and was making 1.5 Lakh/month but I was stuck
                                 revenue-wise. The live sessions inside the
-                                Academy are so good and in one of Freelance 101
+                                Academy are so good and in one of research 101
                                 Academy&#x27;s Live Sessions, I learned how to
                                 Implement Cold Outreach. Within 15 days of
                                 implementation of my learnings, I closed a deal
@@ -2198,7 +2198,7 @@ export default function HomePage() {
                                 doing Freelancing part-time along with being a
                                 student. Last year I was only earning INR
                                 380/month and that has changed to $2k/Month
-                                after joining Freelance 101 Academy. A year can
+                                after joining Medical Research Academy. A year can
                                 change a lot.
                               </div>
                             </div>
@@ -2239,7 +2239,7 @@ export default function HomePage() {
                     <div className="g-heading-rich-text w-richtext">
                       <h2>
                         I&#x27;ll guide you towards success with effective
-                        marketing strategies
+                        publication strategies
                       </h2>
                     </div>
                   </div>
@@ -2264,14 +2264,14 @@ export default function HomePage() {
                         there&#x27;s a better way.
                       </p>
                       <p>
-                        Through effective marketing, I&#x27;ve discovered the
+                        Through effective publication, I&#x27;ve discovered the
                         power of embracing your true self and sharing unique
                         perspectives. Let me guide you on this transformative
                         journey.
                       </p>
                       <p>
-                        If you&#x27;re struggling to attract leads and clients,
-                        it&#x27;s time to tap into authentic marketing.
+                        If you&#x27;re struggling to get your papers accepted,
+                        it&#x27;s time to tap into authentic publication.
                         Together, we&#x27;ll craft strategies that align with
                         your values, amplify your voice, and leave a lasting
                         impact.

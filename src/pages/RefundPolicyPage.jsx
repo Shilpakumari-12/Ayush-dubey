@@ -14,13 +14,13 @@ export default function RefundPolicyPage() {
               <div className="leagal-copy-wrap">
                 <div className="legal-rich-text w-richtext">
                   <h3>
-                    Freelance 101 Academy, being comprised of digital access and
+                    Medical Research Academy, being comprised of digital access and
                     downloadable files, is usually a non-refundable program. The
                     same applies to our Masterclasses as well.
                   </h3>
                   <p>​</p>
                   <p>
-                    However, Freelance 101 Academy comes with personal support
+                    However, Medical Research Academy comes with personal support
                     for all students in our community - so you would have 12
                     months from your date of purchase to actually implement what
                     you learnt.
@@ -35,7 +35,7 @@ export default function RefundPolicyPage() {
                   <p>​</p>
                   <h6>A refund may be issued.</h6>
                   <p>
-                    When you enroll for Freelance 101 Academy, it is mutually
+                    When you enroll for Medical Research Academy, it is mutually
                     understood that you signed up at your own will with full
                     understanding that the implementation of the materials to
                     get results will be your sole responsibility. That being
@@ -55,17 +55,17 @@ export default function RefundPolicyPage() {
                       parties except yourself, and reselling the course.
                     </li>
                     <li>
-                      Verbal Disrespect towards Freelance 101 Academy Team
+                      Verbal Disrespect towards Medical Research Academy Team
                       Members or Community Members
                     </li>
                     <li>
-                      Any activities deemed as inappropriate by the Freelance
+                      Any activities deemed as inappropriate by the research
                       101 Academy Team ( for ex. unsolicited unprofessional
                       messages )<br />{" "}
                     </li>
                   </ol>
                   <p>
-                    We hope to have you as a valuable member of the Freelance
+                    We hope to have you as a valuable member of the research
                     101 Academy Community.
                   </p>
                   <p>‍</p>

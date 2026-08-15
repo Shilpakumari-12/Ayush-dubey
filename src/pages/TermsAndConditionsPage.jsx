@@ -20,7 +20,7 @@ export default function TermsAndConditionsPage() {
                     LEARNING &amp; CONSULTANCY PRIVATE LIMITED (Ambifem)
                     relation and further governs the usage of the Ambifem’s
                     services by you. The present agreement also administers the
-                    practice of Ambifem’s websites and Freelance 101 Academy
+                    practice of Ambifem’s websites and Medical Research Academy
                     Facebook group (hereafter “the website”) and other
                     affiliated services by you.
                   </p>
@@ -120,7 +120,7 @@ export default function TermsAndConditionsPage() {
                       kind, without our express written approval.
                     </li>
                     <li>
-                      Gather for marketing purposes any email addresses or other
+                      Gather for publication purposes any email addresses or other
                       personal information that has been posted by other users
                       of the website.
                     </li>
@@ -348,7 +348,7 @@ export default function TermsAndConditionsPage() {
                     any and all such information provided to the subscribed
                     individual (client) or to which the subscribed individual
                     has or is given access in it&#x27;s products including
-                    freelance 101 academy and all the masterclasses , in
+                    research 101 academy and all the masterclasses , in
                     whatever form, verbal, electronic or video graphic,
                     including, but not limited to, Worksheets, Pinups, Slides,
                     Spreadsheets, Example Sales Calls Recordings, Checklists,
@@ -658,7 +658,7 @@ export default function TermsAndConditionsPage() {
                   <p>
                     Ambifem does not warrant or guarantee any specific level of
                     performance or results. Example of results obtained for
-                    other clients of Ambifem may be used as a marketing tool and
+                    other clients of Ambifem may be used as a publication tool and
                     shown to Client for demonstrative purposes only and should
                     not be construed by Client as indicating any promised
                     results or level of results.
@@ -813,7 +813,7 @@ export default function TermsAndConditionsPage() {
                     hosting service provider or database hosting provider to
                     provide service to Ambifem (a “Force Majeure Event)
                   </p>
-                  <h4>FREELANCE 101 ACADEMY Facebook Group</h4>
+                  <h4>research 101 ACADEMY Facebook Group</h4>
                   <p>
                     The Facebook Group is a group exclusive to the subscribers
                     of F101 course. On making the payment the client can join

@@ -212,8 +212,8 @@ export default function NewsletterPage() {
                     >
                       <div className="g-para-rich-text w-richtext">
                         <p>
-                          You&#x27;ll love my newsletters if you love marketing,
-                          business and social media as a Freelancer, Business
+                          You&#x27;ll love my newsletters if you love publication,
+                          business and academic publishing as a researchr, Business
                           Owner, Student or anyone who is as curious as me to
                           know more about them.
                         </p>
