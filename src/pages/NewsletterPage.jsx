@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import clientArmsCrossed from "../assets/client_arms_crossed.jpg";
+
 
 export default function NewsletterPage() {
   return (
@@ -186,9 +188,8 @@ export default function NewsletterPage() {
                   <div className="intro_image-wrapper">
                     <img
                       sizes="100vw"
-                      srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eccda105bab847b33ef854_consulting%20why-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eccda105bab847b33ef854_consulting%20why-p-800.avif 800w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eccda105bab847b33ef854_consulting%20why.avif 1100w"
                       alt=""
-                      src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eccda105bab847b33ef854_consulting%20why.avif"
+                      src={clientArmsCrossed}
                       loading="eager"
                       className="intro_image"
                     />
