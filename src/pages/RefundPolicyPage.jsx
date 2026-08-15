@@ -73,9 +73,9 @@ export default function RefundPolicyPage() {
                     You should receive your log-in details within 24hours of
                     purchase, further details are to be shared in Your Welcome
                     Kit. In case of unexpected errors, you can connect with
-                    Saheli at{" "}
-                    <a href="mailto:hi@sahelichatterjee.com">
-                      hi@sahelichatterjee.com
+                    60 Day Publications at{" "}
+                    <a href="mailto:hi@60daypublications.com">
+                      hi@60daypublications.com
                     </a>
                     .
                   </h6>

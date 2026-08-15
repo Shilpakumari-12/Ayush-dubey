@@ -432,7 +432,7 @@ export default function ConsultationPage() {
                       <div className="heading-style-h5">
                         &quot;I think one of the best sources out there to, you
                         know, create an additional source of income for yourself
-                        is Saheli&#x27;s freelance course. Now, I have
+                        is 60 Day Publications&#x27; freelance course. Now, I have
                         personally worked with her on improving my business, so
                         I know that when she says something, you better follow
                         it.&quot;
@@ -808,16 +808,16 @@ export default function ConsultationPage() {
                     </div>
                     <div className="margin-vertical margin-medium">
                       <div className="heading-style-h6">
-                        &quot;Saheli&#x27;s timing, expertise, and our existing
+                        &quot;60 Day Publications&#x27; timing, expertise, and our existing
                         connection made her offer irresistible. Her proven track
                         record and social proof gave me the confidence to trust
                         her with my Instagram growth.
                         <br />‍<br />
-                        In just the first month, Saheli&#x27;s strategies
+                        In just the first month, 60 Day Publications&#x27; strategies
                         delivered outstanding results. I&#x27;m now entering the
                         second month with complete satisfaction and excitement.
                         If you&#x27;re looking for someone who truly understands
-                        social media and delivers exceptional results, Saheli is
+                        social media and delivers exceptional results, 60 Day Publications is
                         the real deal.&quot;
                       </div>
                     </div>
@@ -1554,7 +1554,7 @@ export default function ConsultationPage() {
                       </div>
                     </div>
                     <a
-                      href="mailto:hi@sahelichatterjee.com"
+                      href="mailto:hi@60daypublications.com"
                       className="button w-button"
                     >
                       Contact

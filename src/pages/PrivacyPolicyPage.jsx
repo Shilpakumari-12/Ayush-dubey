@@ -18,11 +18,11 @@ export default function PrivacyPolicyPage() {
                     Limited
                   </h3>
                   <p>
-                    At sahelichatterjee.com, accessible from
-                    sahelichatterjee.com, one of our main priorities is the
+                    At 60daypublications.com, accessible from
+                    60daypublications.com, one of our main priorities is the
                     privacy of our visitors. This Privacy Policy document
                     contains types of information that is collected and recorded
-                    by sahelichatterjee.com and how we use it.
+                    by 60daypublications.com and how we use it.
                   </p>
                   <p>
                     If you have additional questions or require more information
@@ -32,7 +32,7 @@ export default function PrivacyPolicyPage() {
                     This Privacy Policy applies only to our online activities
                     and is valid for visitors to our website with regards to the
                     information that they shared and/or collect on
-                    sahelichatterjee.com. This policy is not applicable to any
+                    60daypublications.com. This policy is not applicable to any
                     information collected offline or via channels other than
                     this website.
                   </p>
@@ -88,7 +88,7 @@ export default function PrivacyPolicyPage() {
                   <p>‍</p>
                   <h4>Log Files</h4>
                   <p>
-                    sahelichatterjee.com follows a standard procedure of using
+                    60daypublications.com follows a standard procedure of using
                     log files. These files log visitors when they visit
                     websites. All hosting companies do this and a part of
                     hosting services&#x27; analytics. The information collected
@@ -133,13 +133,13 @@ export default function PrivacyPolicyPage() {
                   <h4>Advertising Partners Privacy Policies</h4>
                   <p>
                     You may consult this list to find the Privacy Policy for
-                    each of the advertising partners of sahelichatterjee.com.
+                    each of the advertising partners of 60daypublications.com.
                   </p>
                   <p>
                     Third-party ad servers or ad networks uses technologies like
                     cookies, JavaScript, or Web Beacons that are used in their
                     respective advertisements and links that appear on
-                    sahelichatterjee.com, which are sent directly to users&#x27;
+                    60daypublications.com, which are sent directly to users&#x27;
                     browser. They automatically receive your IP address when
                     this occurs. These technologies are used to measure the
                     effectiveness of their advertising campaigns and/or to
@@ -147,13 +147,13 @@ export default function PrivacyPolicyPage() {
                     that you visit.
                   </p>
                   <p>
-                    Note that sahelichatterjee.com has no access to or control
+                    Note that 60daypublications.com has no access to or control
                     over these cookies that are used by third-party advertisers.
                   </p>
                   <p>‍</p>
                   <h4>Third-Party Privacy Policies</h4>
                   <p>
-                    sahelichatterjee.com&#x27;s Privacy Policy does not apply to
+                    60daypublications.com&#x27;s Privacy Policy does not apply to
                     other advertisers or websites. Thus, we are advising you to
                     consult the respective Privacy Policies of these third-party
                     ad servers for more detailed information. It may include
@@ -220,7 +220,7 @@ export default function PrivacyPolicyPage() {
                     guide their online activity.
                   </p>
                   <p>
-                    sahelichatterjee.com does not knowingly collect any Personal
+                    60daypublications.com does not knowingly collect any Personal
                     Identifiable Information from children under the age of 13.
                     If you think that your child provided this kind of
                     information on our website, we strongly encourage you to

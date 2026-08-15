@@ -202,7 +202,7 @@ export default function Footer() {
             <div className="padding-top padding-medium">
               <div className="footer1_bottom-wrapper">
                 <div className="footer1_credit-text">
-                  © 2025 Saheli Chatterjee. All rights reserved.
+                  © 2025 60 Day Publications. All rights reserved.
                 </div>
                 <div className="w-layout-grid footer1_legal-list">
                   <Link to="/refund-policy" className="footer1_legal-link">
