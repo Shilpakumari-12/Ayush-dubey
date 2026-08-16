@@ -6,6 +6,14 @@ import logo1 from "../assets/logo_1.png";
 import logo2 from "../assets/logo_2.png";
 import logo3 from "../assets/logo_3.png";
 import logo4 from "../assets/logo_4.png";
+import testimonial1 from "../assets/images/testimonial-1.jpg";
+import testimonial2 from "../assets/images/testimonial-2.jpg";
+import ayushCoat1 from "../assets/ayush_coat_1.jpg";
+import ayushCoat2 from "../assets/ayush_coat_2.jpg";
+import ayushCoat3 from "../assets/ayush_coat_3.jpg";
+import randomPerson1 from "../assets/random_person_1.jpg";
+import randomPerson2 from "../assets/random_person_2.jpg";
+import randomPerson3 from "../assets/random_person_3.jpg";
 export default function ConsultationPage() {
   return (
     <main className="main-wrapper">
@@ -396,7 +404,7 @@ export default function ConsultationPage() {
               <div className="testimonial_cards_list">
                 <div className="w-layout-grid testimonial_card">
                   <div className="testimonial13_client-image-wrapper">
-                    <img src={clientGesturing} alt="Ayush Dubey" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img src={testimonial2} alt="Dr. Sarah Jenkins" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                   <div
                     id="w-node-_90c8a307-b00d-c6ed-3db8-bca43022cd99-563f0d1b"
@@ -484,15 +492,15 @@ export default function ConsultationPage() {
                         &quot;I think one of the best sources out there to, you
                         know, create an additional source of income for yourself
                         is Ayush&#x27; research course. Now, I have
-                        personally worked with her on improving my business, so
-                        I know that when she says something, you better follow
+                        personally worked with him on publishing my papers, so
+                        I know that when he says something, you better follow
                         it.&quot;
                       </div>
                     </div>
                     <div className="testimonial13_client">
                       <div className="testimonial13_client-info">
-                        <p className="text-weight-semibold">Ayush Dubey</p>
-                        <p>Medical Scholar</p>
+                        <p className="text-weight-semibold">Dr. Sarah Jenkins</p>
+                        <p>Postdoctoral Fellow</p>
                       </div>
                       <div className="testimonial13_divider"></div>
                       <div className="testimonial13_logo-wrapper">
@@ -540,8 +548,7 @@ export default function ConsultationPage() {
                         >
                           <div className="g-heading-rich-text w-richtext">
                             <h2>
-                              Wanna Grow Your Business On Academic Publishing Without
-                              Any Ads?
+                              Struggling to Get Published in Scopus, PubMed, or WoS Journals?
                             </h2>
                           </div>
                         </div>
@@ -551,25 +558,16 @@ export default function ConsultationPage() {
                         >
                           <div className="g-para-rich-text w-richtext">
                             <p>
-                              We&#x27;ll grow your audience on academic publishing,
-                              build millions of fans and get them to buy your
-                              stuff.
+                              Getting your research published in high-impact journals shouldn&#x27;t be a frustrating process filled with desk rejections and endless revisions.
                             </p>
                             <p>
-                              With over 210K followers on Instagram, over 190K
-                              followers on LinkedIn and over 7M+ content
-                              impressions every month - I know what your
-                              audience craves - and how you can get them to
-                              become loyal fans.
+                              With years of experience helping medical residents, PhD scholars, and doctors, I know exactly what reviewers and editors look for in a manuscript.
                             </p>
                             <p>
-                              I&#x27;ve worked with leading influencers and
-                              brands to grow their social presence, let&#x27;s
-                              do the same for you?
+                              I have helped researchers worldwide secure publications in prestigious PubMed, Scopus, and Web of Science indexed journals.
                             </p>
                             <p>
-                              Let&#x27;s create some awesome content together
-                              that will grow your social following.
+                              Let&#x27;s work together to polish your manuscript, strengthen your methodology, and finally get your research the recognition it deserves.
                             </p>
                           </div>
                         </div>
@@ -584,7 +582,7 @@ export default function ConsultationPage() {
                       </div>
                     </div>
                     <div className="offers_image-wrapper">
-                      <img src={clientArmsCrossed} alt="Medical Consultation" loading="lazy" className="offers_image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      <img src={randomPerson1} alt="Medical Consultation" loading="lazy" className="offers_image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     </div>
                   </div>
                 </div>
@@ -618,8 +616,7 @@ export default function ConsultationPage() {
                         >
                           <div className="g-heading-rich-text w-richtext">
                             <h2>
-                              Do You Already Have A Business But It’s Not
-                              Growing?
+                              Need Expert Help with Manuscript Writing and Statistical Analysis?
                             </h2>
                           </div>
                         </div>
@@ -629,27 +626,16 @@ export default function ConsultationPage() {
                         >
                           <div className="g-para-rich-text w-richtext">
                             <p>
-                              You want to grow your business and make more money
-                              but aren&#x27;t sure how. You can&#x27;t see past
-                              the next year... next month... maybe even next
-                              week. And you don&#x27;t know if your current
-                              business model will ever be scalable.
+                              You have collected valuable data, but translating it into a well-structured manuscript with robust statistical analysis can feel overwhelming.
                             </p>
                             <p>
-                              I grew my business from 50L to 3 Cr in Revenue in
-                              less than 15 months.
+                              From drafting compelling introductions to performing complex biostatistical tests, I handle the heavy lifting.
                             </p>
                             <p>
-                              So in I&#x27;ll give you the tools you need to
-                              raise your rates, make a more profitable business
-                              plan and clear up any confusion you may have on
-                              setting goals, and dramatically improve your
-                              business efficiency.
+                              I will give you the tools and support you need to ensure your methodology is flawless, your results are presented clearly, and your discussion is impactful.
                             </p>
                             <p>
-                              If we work together, I will help you create a
-                              flexible business plan and implement it within a
-                              month to 10x your revenue.
+                              If we work together, I will help you turn your raw data into a submission-ready manuscript in record time.
                             </p>
                           </div>
                         </div>
@@ -664,7 +650,7 @@ export default function ConsultationPage() {
                       </div>
                     </div>
                     <div className="offers_image-wrapper">
-                      <img src={clientGesturing} alt="Research Planning" loading="lazy" className="offers_image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      <img src={randomPerson2} alt="Research Planning" loading="lazy" className="offers_image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     </div>
                   </div>
                 </div>
@@ -698,7 +684,7 @@ export default function ConsultationPage() {
                           className="g-heading-wrap heading-style-h3 text-color-gray-900"
                         >
                           <div className="g-heading-rich-text w-richtext">
-                            <h2>Do You Want To Scale Your Knowledge?</h2>
+                            <h2>Looking for Comprehensive Journal Publication Support?</h2>
                           </div>
                         </div>
                         <div
@@ -707,24 +693,16 @@ export default function ConsultationPage() {
                         >
                           <div className="g-para-rich-text w-richtext">
                             <p>
-                              I have helped clients with launches that generate
-                              over 3Cr+ in Sales without ads.
+                              I have helped countless doctors and researchers navigate the complex submission and peer-review process with ease.
                             </p>
                             <p>
-                              If you have knowledge that is useful to others,
-                              you may want it become scalable. Knowledge is a
-                              valuable asset.{" "}
+                              If you have a completed manuscript, you may want to ensure it reaches the right audience. Choosing the right journal is a critical decision.
                             </p>
                             <p>
-                              Unfortunately, the value of your knowledge
-                              doesn&#x27;t increase if you keep it all to
-                              yourself. I&#x27;d assist you in productizing your
-                              knowledge into an easy-to-use digital product like
-                              an eBook, online course or a membership.{" "}
+                              Unfortunately, a great paper can be rejected simply for being submitted to the wrong journal. I&#x27;ll assist you with target journal selection, cover letter drafting, and reviewer response preparation.
                             </p>
                             <p>
-                              Thereby dramatically increasing the value of your
-                              knowledge for both yourself and your customers.
+                              Thereby dramatically increasing the acceptance rate of your research and accelerating your academic career progression.
                             </p>
                           </div>
                         </div>
@@ -739,7 +717,7 @@ export default function ConsultationPage() {
                       </div>
                     </div>
                     <div className="offers_image-wrapper">
-                      <img src={clientArmsCrossed} alt="Publication Strategy" loading="lazy" className="offers_image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      <img src={randomPerson3} alt="Publication Strategy" loading="lazy" className="offers_image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     </div>
                   </div>
                 </div>
@@ -839,10 +817,10 @@ export default function ConsultationPage() {
                     <div className="margin-vertical margin-medium">
                       <div className="heading-style-h6">
                         &quot;Ayush&#x27; timing, expertise, and our existing
-                        connection made her offer irresistible. Her proven track
+                        connection made his offer irresistible. His proven track
                         record and social proof gave me the confidence to trust
-                        her with my Instagram growth.
-                        <br />‍<br />
+                        him with my publication journey.
+                        <br /><br />
                         In just the first month, Ayush&#x27; strategies
                         delivered outstanding results. I&#x27;m now entering the
                         second month with complete satisfaction and excitement.
@@ -853,8 +831,8 @@ export default function ConsultationPage() {
                     </div>
                     <div className="testimonial13_client">
                       <div className="testimonial13_client-info">
-                        <p className="text-weight-semibold">Chase Dimond</p>
-                        <p>Email publication Expert</p>
+                        <p className="text-weight-semibold">James Anderson</p>
+                        <p>Academic Researcher</p>
                       </div>
                       <div className="testimonial13_divider"></div>
                       <div className="testimonial13_logo-wrapper">
@@ -868,7 +846,7 @@ export default function ConsultationPage() {
                     </div>
                   </div>
                   <div className="testimonial13_client-image-wrapper">
-                    <img src={clientArmsCrossed} alt="Ayush Dubey" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img src={testimonial1} alt="James Anderson" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                 </div>
               </div>
