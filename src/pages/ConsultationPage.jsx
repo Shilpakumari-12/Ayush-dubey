@@ -970,14 +970,14 @@ export default function ConsultationPage() {
                     >
                       <div className="g-heading-rich-text w-richtext">
                         <h2>
-                          Transform Your Business with{" "}
+                          Transform Your Academic Career with{" "}
                           <strong>My Expertise and Guidance</strong>
                         </h2>
                       </div>
                     </div>
                   </div>
                   <img
-                    src={clientArmsCrossed}
+                    src={ayushCoat1}
                     loading="lazy"
                     alt="Research Publication Consultant"
                     style={{ borderRadius: '12px', objectFit: 'cover', width: '100%', height: '100%' }}
@@ -1023,9 +1023,8 @@ export default function ConsultationPage() {
                             <h5>Proven Track Record of Success</h5>
                           </div>
                           <p className="text-size-medium">
-                            I&#x27;ve generated over 10 Cr+ in Total Client
-                            Revenue, helping businesses like yours achieve
-                            remarkable results.
+                            I&#x27;ve helped hundreds of researchers secure publications in
+                            high-impact Scopus, PubMed, and Web of Science indexed journals.
                           </p>
                         </div>
                       </div>
@@ -1059,12 +1058,11 @@ export default function ConsultationPage() {
                       <div className="layout121_timeline-right">
                         <div className="layout121_text-wrapper">
                           <div className="margin-bottom margin-xsmall">
-                            <h5>Exponential Business Growth</h5>
+                            <h5>Expertise in Statistical Analysis</h5>
                           </div>
                           <p className="text-size-medium">
-                            I personally grew my own business to 2 Cr+ in just
-                            one year, so I understand the strategies needed for
-                            rapid success.
+                            From SPSS to R and Stata, I handle complex biostatistical
+                            analyses to ensure your methodology and results are robust.
                           </p>
                         </div>
                       </div>
@@ -1099,13 +1097,12 @@ export default function ConsultationPage() {
                         <div className="layout121_text-wrapper">
                           <div className="margin-bottom margin-xsmall">
                             <h5 className="text-weight-medium text-color-plum">
-                              Trusted Consultant to Top Brands
+                              Comprehensive Publication Support
                             </h5>
                           </div>
                           <p className="text-size-medium">
-                            As a trusted consultant for personal and business
-                            brands, I bring invaluable insights and guidance to
-                            the table.
+                            From target journal selection and manuscript writing to
+                            reviewer response preparation, I provide end-to-end guidance.
                           </p>
                         </div>
                       </div>
@@ -1139,12 +1136,11 @@ export default function ConsultationPage() {
                       <div className="layout121_timeline-right">
                         <div className="layout121_text-wrapper">
                           <div className="margin-bottom margin-xsmall">
-                            <h5>Empowering medical professionals</h5>
+                            <h5>Empowering Medical Professionals</h5>
                           </div>
                           <p className="text-size-medium">
-                            I&#x27;ve trained 2500+ service-based business
-                            owners, empowering them to excel and thrive in their
-                            industries.
+                            I&#x27;ve collaborated with thousands of doctors, medical
+                            residents, and PhD scholars, empowering them to advance.
                           </p>
                         </div>
                       </div>
@@ -1181,9 +1177,8 @@ export default function ConsultationPage() {
                             <h5>Data-Driven Success Strategies</h5>
                           </div>
                           <p className="text-size-medium">
-                            My data-backed approach ensures your business stands
-                            out, surpasses competitors, and achieves remarkable
-                            ROI.
+                            My data-backed approach ensures your manuscript stands
+                            out, surpasses reviewer expectations, and achieves acceptance.
                           </p>
                         </div>
                       </div>
@@ -1194,15 +1189,15 @@ export default function ConsultationPage() {
               <div className="max-width-large align-center text-align-center">
                 <div className="margin-top margin-small">
                   <p>
-                    Partnering with me, means unlocking the full potential of
-                    your business. With my proven expertise, extensive industry
-                    knowledge, and passion for helping entrepreneurs succeed, I
+                    Partnering with me means unlocking the full potential of
+                    your research. With my proven expertise, extensive academic
+                    publishing knowledge, and passion for helping scholars succeed, I
                     will guide you on a transformative journey to achieve
-                    remarkable results.
+                    remarkable publication results.
                     <br />
                     <br />
                     <strong>
-                      Are you ready to take your business to new heights?
+                      Are you ready to take your academic career to new heights?
                     </strong>
                   </p>
                 </div>
