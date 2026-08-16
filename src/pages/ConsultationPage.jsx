@@ -118,7 +118,7 @@ export default function ConsultationPage() {
                   </div>
                   <div className="button-group">
                     <a
-                      href="https://pages.razorpay.com/pl_JiUH1butViouDl/view"
+                      // href="https://pages.razorpay.com/pl_JiUH1butViouDl/view"
                       className="button w-button"
                     >
                       Work With Me
@@ -575,7 +575,7 @@ export default function ConsultationPage() {
                         </div>
                         <div className="button-group">
                           <a
-                            href="https://pages.razorpay.com/pl_JiUH1butViouDl/view"
+                            // href="https://pages.razorpay.com/pl_JiUH1butViouDl/view"
                             className="button w-button"
                           >
                             Book A Call
@@ -655,7 +655,7 @@ export default function ConsultationPage() {
                         </div>
                         <div className="button-group">
                           <a
-                            href="https://pages.razorpay.com/pl_JiUH1butViouDl/view"
+                            // href="https://pages.razorpay.com/pl_JiUH1butViouDl/view"
                             className="button w-button"
                           >
                             Book A Call
@@ -730,7 +730,7 @@ export default function ConsultationPage() {
                         </div>
                         <div className="button-group">
                           <a
-                            href="https://pages.razorpay.com/pl_JiUH1butViouDl/view"
+                            // href="https://pages.razorpay.com/pl_JiUH1butViouDl/view"
                             className="button w-button"
                           >
                             Book A Call
@@ -1231,7 +1231,7 @@ export default function ConsultationPage() {
                 <div className="margin-top margin-medium">
                   <div className="button-group is-center">
                     <a
-                      href="https://pages.razorpay.com/pl_JiUH1butViouDl/view"
+                      // href="https://pages.razorpay.com/pl_JiUH1butViouDl/view"
                       className="button w-button"
                     >
                       Let&#x27;s Get Started

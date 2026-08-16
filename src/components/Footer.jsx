@@ -25,7 +25,7 @@ export default function Footer() {
                       id="wf-form-Newsletter-Form"
                       name="wf-form-Newsletter-Form"
                       data-name="Newsletter Form"
-                      action="https://app.convertkit.com/forms/5156817/subscriptions"
+                      // action="https://app.convertkit.com/forms/5156817/subscriptions"
                       method="post"
                       className="newsletter_form"
                       data-wf-page-id="68e4be51857104b3f4a44663"
@@ -83,7 +83,7 @@ export default function Footer() {
                       <div className="text-weight-semibold">Follow us</div>
                     </div>
                     <a
-                      href="https://www.instagram.com/sahelichatterjeehere/"
+                      // href="https://www.instagram.com/sahelichatterjeehere/"
                       className="footer1_social-link w-inline-block"
                     >
                       <div className="icon-embed-xsmall w-embed">
@@ -105,8 +105,8 @@ export default function Footer() {
                       <div>Instagram</div>
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/saheli-chatterjee-organic-marketing/"
-                      target="_blank"
+                      // href="https://www.linkedin.com/in/saheli-chatterjee-organic-marketing/"
+                      // target="_blank"
                       className="footer1_social-link w-inline-block"
                     >
                       <div className="icon-embed-xsmall w-embed">
@@ -128,7 +128,7 @@ export default function Footer() {
                       <div>LinkedIn</div>
                     </a>
                     <a
-                      href="https://www.youtube.com/@sahelichatterjeehere"
+                      // href="https://www.youtube.com/@sahelichatterjeehere"
                       className="footer1_social-link w-inline-block"
                     >
                       <div className="icon-embed-xsmall w-embed">
@@ -150,7 +150,7 @@ export default function Footer() {
                       <div>Youtube</div>
                     </a>
                     <a
-                      href="https://x.com/sahelihere"
+                      // href="https://x.com/sahelihere"
                       className="footer1_social-link w-inline-block"
                     >
                       <div className="icon-embed-xsmall w-embed">
