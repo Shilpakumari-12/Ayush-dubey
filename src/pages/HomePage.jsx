@@ -1,11 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import clientArmsCrossed from "../assets/client_arms_crossed.jpg";
-import clientGesturing from "../assets/client_gesturing.jpg";
+import clientArmsCrossed from "../assets/ayush_coat_1.jpg";
+import clientGesturing from "../assets/ayush_coat_2.jpg";
 import logo1 from "../assets/logo_1.png";
 import logo2 from "../assets/logo_2.png";
 import logo3 from "../assets/logo_3.png";
 import logo4 from "../assets/logo_4.png";
+import testimonial1 from "../assets/images/testimonial-1.jpg";
+import testimonial2 from "../assets/images/testimonial-2.jpg";
+import ayushCoat1 from "../assets/ayush_coat_1.jpg";
+import ayushCoat2 from "../assets/ayush_coat_2.jpg";
+import ayushCoat3 from "../assets/ayush_coat_3.jpg";
 export default function HomePage() {
   const sectionRef = useRef(null);
   const [leftY, setLeftY] = useState(0);
@@ -477,50 +482,50 @@ export default function HomePage() {
             <div className="padding-section-medium">
               <div className="w-layout-grid intro_component">
                 <div className="header-copy-wrap">
-                    <div
-                      style={{ maxWidth: "35ch" }}
-                      className="g-para-wrap text-color-brown-700 text-style-allcaps"
-                    >
-                      <div className="g-para-rich-text w-richtext">
-                        <p>Hey there, dedicated researcher!</p>
-                      </div>
-                    </div>
-                    <div
-                      style={{ maxWidth: "none" }}
-                      className="g-heading-wrap heading-style-h2 text-color-gray-900"
-                    >
-                      <div className="g-heading-rich-text w-richtext">
-                        <h2>
-                          I am Ayush, your{" "}
-                          <strong>Publication Partner</strong>
-                        </h2>
-                      </div>
-                    </div>
-                    <div className="margin-top margin-xxsmall">
-                      <div className="intro_image-wrapper">
-                        <img
-                          src={clientGesturing}
-                          alt="Research Publication Consultant"
-                          className="intro_image"
-                          style={{ width: '100%', borderRadius: '12px', objectFit: 'cover' }}
-                        />
-                      </div>
+                  <div
+                    style={{ maxWidth: "35ch" }}
+                    className="g-para-wrap text-color-brown-700 text-style-allcaps"
+                  >
+                    <div className="g-para-rich-text w-richtext">
+                      <p>Hey there, dedicated researcher!</p>
                     </div>
                   </div>
-                  <div className="header-copy-wrap gap-2rem">
-                    <div
-                      style={{ maxWidth: "none" }}
-                      className="g-para-wrap text-size-medium"
-                    >
-                      <div className="g-para-rich-text w-richtext">
-                        <p>
-                          If you&#x27;re tired of facing journal rejections and
-                          struggling with complex statistical analyses, we&#x27;ve
-                          got your back. Together, let&#x27;s harness the power of
-                          high-impact research to skyrocket your academic success.
-                        </p>
-                      </div>
+                  <div
+                    style={{ maxWidth: "none" }}
+                    className="g-heading-wrap heading-style-h2 text-color-gray-900"
+                  >
+                    <div className="g-heading-rich-text w-richtext">
+                      <h2>
+                        I am Ayush, your{" "}
+                        <strong>Publication Partner</strong>
+                      </h2>
                     </div>
+                  </div>
+                  <div className="margin-top margin-xxsmall">
+                    <div className="intro_image-wrapper">
+                      <img
+                        src={clientGesturing}
+                        alt="Research Publication Consultant"
+                        className="intro_image"
+                        style={{ width: '100%', borderRadius: '12px', objectFit: 'cover' }}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="header-copy-wrap gap-2rem">
+                  <div
+                    style={{ maxWidth: "none" }}
+                    className="g-para-wrap text-size-medium"
+                  >
+                    <div className="g-para-rich-text w-richtext">
+                      <p>
+                        If you&#x27;re tired of facing journal rejections and
+                        struggling with complex statistical analyses, we&#x27;ve
+                        got your back. Together, let&#x27;s harness the power of
+                        high-impact research to skyrocket your academic success.
+                      </p>
+                    </div>
+                  </div>
                   <div className="list-items-wrap">
                     <div
                       id="w-node-_0c6a5ce3-44d2-fc22-5e00-33a22a536a45-f4a44663"
@@ -739,9 +744,9 @@ export default function HomePage() {
                     <div className="margin-vertical margin-medium">
                       <div className="heading-style-h6">
                         &quot;Ayush&#x27; timing, expertise, and our existing
-                        connection made her offer irresistible. Her proven track
+                        connection made his offer irresistible. His proven track
                         record and social proof gave me the confidence to trust
-                        her with my Instagram growth.
+                        him with my publication journey.
                         <br />‍<br />
                         In just the first month, Ayush&#x27; strategies
                         delivered outstanding results. I&#x27;m now entering the
@@ -753,8 +758,8 @@ export default function HomePage() {
                     </div>
                     <div className="testimonial13_client">
                       <div className="testimonial13_client-info">
-                        <p className="text-weight-semibold">Ayush Dubey</p>
-                        <p>Medical Research Expert</p>
+                        <p className="text-weight-semibold">Dr. Michael Chen</p>
+                        <p>Research Scientist</p>
                       </div>
                       <div className="testimonial13_divider"></div>
                       <div className="testimonial13_logo-wrapper">
@@ -768,12 +773,12 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="testimonial13_client-image-wrapper">
-                    <img src={clientArmsCrossed} alt="Ayush Dubey" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img src={testimonial1} alt="Dr. Michael Chen" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                 </div>
                 <div className="w-layout-grid testimonial_card">
                   <div className="testimonial13_client-image-wrapper">
-                    <img src={clientGesturing} alt="Ayush Dubey" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img src={testimonial2} alt="Dr. Sarah Jenkins" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                   <div
                     id="w-node-_90c8a307-b00d-c6ed-3db8-bca43022cd99-f4a44663"
@@ -861,15 +866,15 @@ export default function HomePage() {
                         &quot;I think one of the best sources out there to, you
                         know, create an additional source of income for yourself
                         is Ayush&#x27; research course. Now, I have
-                        personally worked with her on improving my business, so
-                        I know that when she says something, you better follow
+                        personally worked with him on publishing my papers, so
+                        I know that when he says something, you better follow
                         it.&quot;
                       </div>
                     </div>
                     <div className="testimonial13_client">
                       <div className="testimonial13_client-info">
-                        <p className="text-weight-semibold">Ayush Dubey</p>
-                        <p>Medical Scholar</p>
+                        <p className="text-weight-semibold">Dr. Sarah Jenkins</p>
+                        <p>Postdoctoral Fellow</p>
                       </div>
                       <div className="testimonial13_divider"></div>
                       <div className="testimonial13_logo-wrapper">
@@ -952,7 +957,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <img
-                    src={clientGesturing}
+                    src={ayushCoat3}
                     loading="lazy"
                     alt="Research Publication Consultant"
                     style={{ width: '100%', borderRadius: '12px', objectFit: 'cover' }}
