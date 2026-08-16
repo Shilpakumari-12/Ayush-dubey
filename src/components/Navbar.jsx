@@ -28,7 +28,7 @@ export default function Navbar() {
           to="/"
           className={`navbar2_logo-link w-nav-brand ${isActive("/") ? "w--current" : ""}`}
         >
-          <strong style={{ fontSize: '1.5rem', color: '#1a1a1a' }}>60Day Publications</strong>
+          <strong style={{ fontSize: '28px', color: '#1a1a1a', fontWeight: '500' }}>Ayush Dubey</strong>
         </Link>
         <style>{`
           .navbar2_menu.w--open {
@@ -56,24 +56,21 @@ export default function Navbar() {
         <nav
           role="navigation"
           id="w-node-_89d96280-8925-9485-da66-e88e821f2b39-821f2b35"
-          className={`navbar2_menu is-page-height-tablet w-nav-menu ${
-            mobileMenuOpen ? "w--open" : ""
-          }`}
+          className={`navbar2_menu is-page-height-tablet w-nav-menu ${mobileMenuOpen ? "w--open" : ""
+            }`}
         >
           <Link
             to="/consultation"
-            className={`navbar2_link w-nav-link ${
-              isActive("/consultation") ? "w--current" : ""
-            }`}
+            className={`navbar2_link w-nav-link ${isActive("/consultation") ? "w--current" : ""
+              }`}
             onClick={() => setMobileMenuOpen(false)}
           >
             Work With Me
           </Link>
           <Link
             to="/newsletter"
-            className={`navbar2_link w-nav-link ${
-              isActive("/newsletter") ? "w--current" : ""
-            }`}
+            className={`navbar2_link w-nav-link ${isActive("/newsletter") ? "w--current" : ""
+              }`}
             onClick={() => setMobileMenuOpen(false)}
           >
             Newsletters
@@ -90,9 +87,8 @@ export default function Navbar() {
             Let's Connect
           </a>
           <div
-            className={`navbar2_menu-button w-nav-button ${
-              mobileMenuOpen ? "w--open" : ""
-            }`}
+            className={`navbar2_menu-button w-nav-button ${mobileMenuOpen ? "w--open" : ""
+              }`}
             onClick={toggleMobileMenu}
             role="button"
             tabIndex={0}
