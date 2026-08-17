@@ -14,8 +14,7 @@ export default function PrivacyPolicyPage() {
               <div className="leagal-copy-wrap">
                 <div className="legal-rich-text w-richtext">
                   <h3>
-                    Privacy Policy for Ambifem Learning and Consultancy Private
-                    Limited
+                    Privacy Policy for Ambifem Learning and Consultancy
                   </h3>
                   <p>
                     At 60daypublications.com, accessible from

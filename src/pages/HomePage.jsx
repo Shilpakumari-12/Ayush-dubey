@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import clientArmsCrossed from "../assets/ayush_coat_1.jpg";
+import clientArmsCrossed from "../assets/client_arms_crossed.jpg";
 import clientGesturing from "../assets/ayush_coat_2.jpg";
 import logo1 from "../assets/logo_1.png";
 import logo2 from "../assets/logo_2.png";
@@ -72,7 +72,7 @@ export default function HomePage() {
                       src={clientArmsCrossed}
                       alt="Research Publication Consultant"
                       className="hero_image"
-                      style={{ width: '100%', height: 'auto', borderRadius: '12px', margin: '2rem 0', objectFit: 'cover' }}
+                      style={{ width: '100%', height: 'auto', borderRadius: '12px', margin: '2rem 0', maxHeight: '400px', objectFit: 'cover' }}
                     />
                   </div>
                   <div style={{ maxWidth: "45ch" }} className="g-para-wrap">
@@ -96,7 +96,7 @@ export default function HomePage() {
                     src={clientArmsCrossed}
                     alt="Research Publication Consultant"
                     className="hero_image"
-                    style={{ width: '100%', height: 'auto', borderRadius: '12px', objectFit: 'cover' }}
+                    style={{ width: '100%', height: 'auto', borderRadius: '12px', maxHeight: '400px', objectFit: 'cover' }}
                   />
                 </div>
               </div>
@@ -507,7 +507,7 @@ export default function HomePage() {
                         src={clientGesturing}
                         alt="Research Publication Consultant"
                         className="intro_image"
-                        style={{ width: '100%', borderRadius: '12px', objectFit: 'cover' }}
+                        style={{ width: '100%', borderRadius: '12px', maxHeight: '400px', objectFit: 'cover' }}
                       />
                     </div>
                   </div>
@@ -773,12 +773,12 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="testimonial13_client-image-wrapper">
-                    <img src={testimonial1} alt="Dr. Michael Chen" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img src={testimonial1} alt="Dr. Michael Chen" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
                   </div>
                 </div>
                 <div className="w-layout-grid testimonial_card">
                   <div className="testimonial13_client-image-wrapper">
-                    <img src={testimonial2} alt="Dr. Sarah Jenkins" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img src={testimonial2} alt="Dr. Sarah Jenkins" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
                   </div>
                   <div
                     id="w-node-_90c8a307-b00d-c6ed-3db8-bca43022cd99-f4a44663"
@@ -915,7 +915,7 @@ export default function HomePage() {
                       src={clientArmsCrossed}
                       alt="Research Publication Consultant"
                       className="hero_image"
-                      style={{ width: '100%', height: 'auto', borderRadius: '12px', margin: '2rem 0', objectFit: 'cover' }}
+                      style={{ width: '100%', height: 'auto', borderRadius: '12px', margin: '2rem 0', maxHeight: '400px', objectFit: 'cover' }}
                     />
                   </div>
                   <div
@@ -960,7 +960,7 @@ export default function HomePage() {
                     src={ayushCoat3}
                     loading="lazy"
                     alt="Research Publication Consultant"
-                    style={{ width: '100%', borderRadius: '12px', objectFit: 'cover' }}
+                    style={{ width: '100%', borderRadius: '12px', maxHeight: '400px', objectFit: 'cover' }}
                   />
                 </div>
               </div>

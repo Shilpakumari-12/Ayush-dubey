@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import clientArmsCrossed from "../assets/client_arms_crossed.jpg";
+import clientArmsCrossed from "../assets/ayush_coat_1.jpg";
 
 
 export default function NewsletterPage() {
@@ -129,16 +129,16 @@ export default function NewsletterPage() {
                       </div>
                     </div>
                   </div>
-                  <div className="newsletter-screenshots-wrapper">
+                  {/* <div className="newsletter-screenshots-wrapper">
                     <div
                       id="w-node-d2a13d9d-3ef2-a5e4-2091-844d8beb12d9-39c8d885"
                       className="newsletter-ss-img-wrapper"
                     >
                       <img
                         sizes="100vw"
-                        srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d046c_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(4)-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d046c_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(4)-p-800.avif 800w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d046c_saheli%27s%20newsletter%20-%20readers%20message%20(4).avif 960w"
+                        // srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d046c_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(4)-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d046c_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(4)-p-800.avif 800w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d046c_saheli%27s%20newsletter%20-%20readers%20message%20(4).avif 960w"
                         alt=""
-                        src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d046c_saheli%27s%20newsletter%20-%20readers%20message%20(4).avif"
+                        //src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d046c_saheli%27s%20newsletter%20-%20readers%20message%20(4).avif"
                         loading="lazy"
                         className="newsletter-ss-img"
                       />
@@ -149,9 +149,9 @@ export default function NewsletterPage() {
                     >
                       <img
                         sizes="100vw"
-                        srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0478_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(1)-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0478_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(1)-p-800.avif 800w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0478_saheli%27s%20newsletter%20-%20readers%20message%20(1).avif 960w"
+                        //srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0478_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(1)-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0478_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(1)-p-800.avif 800w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0478_saheli%27s%20newsletter%20-%20readers%20message%20(1).avif 960w"
                         alt=""
-                        src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0478_saheli%27s%20newsletter%20-%20readers%20message%20(1).avif"
+                        //src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0478_saheli%27s%20newsletter%20-%20readers%20message%20(1).avif"
                         loading="lazy"
                         className="newsletter-ss-img"
                       />
@@ -162,9 +162,9 @@ export default function NewsletterPage() {
                     >
                       <img
                         sizes="100vw"
-                        srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d047e_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(3)-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d047e_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(3)-p-800.avif 800w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d047e_saheli%27s%20newsletter%20-%20readers%20message%20(3).avif 960w"
+                        //srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d047e_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(3)-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d047e_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(3)-p-800.avif 800w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d047e_saheli%27s%20newsletter%20-%20readers%20message%20(3).avif 960w"
                         alt=""
-                        src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d047e_saheli%27s%20newsletter%20-%20readers%20message%20(3).avif"
+                        //src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d047e_saheli%27s%20newsletter%20-%20readers%20message%20(3).avif"
                         loading="lazy"
                         className="newsletter-ss-img"
                       />
@@ -175,14 +175,14 @@ export default function NewsletterPage() {
                     >
                       <img
                         sizes="100vw"
-                        srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0472_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(2)-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0472_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(2)-p-800.avif 800w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0472_saheli%27s%20newsletter%20-%20readers%20message%20(2).avif 960w"
+                        //srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0472_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(2)-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0472_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(2)-p-800.avif 800w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0472_saheli%27s%20newsletter%20-%20readers%20message%20(2).avif 960w"
                         alt=""
-                        src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0472_saheli%27s%20newsletter%20-%20readers%20message%20(2).avif"
+                        //src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0472_saheli%27s%20newsletter%20-%20readers%20message%20(2).avif"
                         loading="lazy"
                         className="newsletter-ss-img"
                       />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="w-layout-grid samples_links_component">
                   <div className="intro_image-wrapper">
@@ -212,10 +212,7 @@ export default function NewsletterPage() {
                     >
                       <div className="g-para-rich-text w-richtext">
                         <p>
-                          You&#x27;ll love my newsletters if you love publication,
-                          business and academic publishing as a researchr, Business
-                          Owner, Student or anyone who is as curious as me to
-                          know more about them.
+                          You&#x27;ll love my newsletters if you are navigating the world of academic publishing as a doctor, medical resident, PhD scholar, or researcher. I share actionable tips on manuscript writing, statistical analysis, and getting published in Scopus, PubMed, and WoS journals.
                         </p>
                         <p>Here are a few of my most popular emails:</p>
                       </div>
@@ -243,12 +240,11 @@ export default function NewsletterPage() {
                         </div>
                         <div>
                           <a
-                            href="https://ckarchive.com/b/r8u8hoh205d57"
+                            href="#"
                             target="_blank"
                             className="text-size-medium text-color-orange-700"
                           >
-                            10 Ways I Am Using ChatGPT As My Personal
-                            Assistant...
+                            10 Steps to Writing a High-Impact Introduction Section...
                           </a>
                         </div>
                       </div>
@@ -274,11 +270,11 @@ export default function NewsletterPage() {
                         </div>
                         <div>
                           <a
-                            href="https://ckarchive.com/b/o8ukhqhkr4nlk"
+                            href="#"
                             target="_blank"
                             className="text-size-medium text-color-orange-700"
                           >
-                            Your BFF ChatGPT - 10 Ways You can use it
+                            How to Choose the Perfect Target Journal for Your Research
                           </a>
                         </div>
                       </div>
@@ -304,11 +300,11 @@ export default function NewsletterPage() {
                         </div>
                         <div>
                           <a
-                            href="https://ckarchive.com/b/d0ueh0h40xmp8"
+                            href="#"
                             target="_blank"
                             className="text-size-medium text-color-orange-700"
                           >
-                            3 Lessons May Taught Me - and How You Can Learn It
+                            Top 5 Reasons Your Manuscript Was Rejected (And How to Fix It)
                           </a>
                         </div>
                       </div>

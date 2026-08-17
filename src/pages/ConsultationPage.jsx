@@ -39,7 +39,7 @@ export default function ConsultationPage() {
                       alt="Research Publication Consultant"
                       loading="eager"
                       className="hero_image"
-                      style={{ borderRadius: '12px', objectFit: 'cover', width: '100%', height: '100%' }}
+                      style={{ borderRadius: '12px', objectFit: 'cover', width: '100%', height: 'auto', maxHeight: '400px' }}
                     />
                   </div>
                   <div style={{ maxWidth: "45ch" }} className="g-para-wrap">
@@ -139,7 +139,7 @@ export default function ConsultationPage() {
                     alt="Research Publication Consultant"
                     loading="eager"
                     className="hero_image"
-                    style={{ borderRadius: '12px', objectFit: 'cover', width: '100%', height: '100%' }}
+                    style={{ borderRadius: '12px', objectFit: 'cover', width: '100%', height: 'auto', maxHeight: '400px' }}
                   />
                 </div>
               </div>
@@ -404,7 +404,7 @@ export default function ConsultationPage() {
               <div className="testimonial_cards_list">
                 <div className="w-layout-grid testimonial_card">
                   <div className="testimonial13_client-image-wrapper">
-                    <img src={testimonial2} alt="Dr. Sarah Jenkins" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img src={testimonial2} alt="Dr. Sarah Jenkins" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
                   </div>
                   <div
                     id="w-node-_90c8a307-b00d-c6ed-3db8-bca43022cd99-563f0d1b"
@@ -582,7 +582,7 @@ export default function ConsultationPage() {
                       </div>
                     </div>
                     <div className="offers_image-wrapper">
-                      <img src={randomPerson1} alt="Medical Consultation" loading="lazy" className="offers_image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      <img src={randomPerson1} alt="Medical Consultation" loading="lazy" className="offers_image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
                     </div>
                   </div>
                 </div>
@@ -650,7 +650,7 @@ export default function ConsultationPage() {
                       </div>
                     </div>
                     <div className="offers_image-wrapper">
-                      <img src={randomPerson2} alt="Research Planning" loading="lazy" className="offers_image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      <img src={randomPerson2} alt="Research Planning" loading="lazy" className="offers_image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
                     </div>
                   </div>
                 </div>
@@ -717,7 +717,7 @@ export default function ConsultationPage() {
                       </div>
                     </div>
                     <div className="offers_image-wrapper">
-                      <img src={randomPerson3} alt="Publication Strategy" loading="lazy" className="offers_image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      <img src={randomPerson3} alt="Publication Strategy" loading="lazy" className="offers_image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
                     </div>
                   </div>
                 </div>
@@ -846,7 +846,7 @@ export default function ConsultationPage() {
                     </div>
                   </div>
                   <div className="testimonial13_client-image-wrapper">
-                    <img src={testimonial1} alt="James Anderson" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img src={testimonial1} alt="James Anderson" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
                   </div>
                 </div>
               </div>
@@ -980,7 +980,7 @@ export default function ConsultationPage() {
                     src={ayushCoat1}
                     loading="lazy"
                     alt="Research Publication Consultant"
-                    style={{ borderRadius: '12px', objectFit: 'cover', width: '100%', height: '100%' }}
+                    style={{ borderRadius: '12px', objectFit: 'cover', width: '100%', height: 'auto', maxHeight: '400px' }}
                   />
                 </div>
                 <div className="layout121_content-right">

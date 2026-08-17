@@ -17,7 +17,7 @@ export default function TermsAndConditionsPage() {
                     Unless specifically and separately agreed in the present
                     agreement or any other similar agreement, this Master Client
                     Agreement serves the Client (hereafter “you”) and AMBIFEM
-                    LEARNING &amp; CONSULTANCY PRIVATE LIMITED (Ambifem)
+                    LEARNING &amp; CONSULTANCY(Ambifem)
                     relation and further governs the usage of the Ambifem’s
                     services by you. The present agreement also administers the
                     practice of Ambifem’s websites and Medical Research Academy
