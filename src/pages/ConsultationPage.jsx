@@ -39,7 +39,7 @@ export default function ConsultationPage() {
                       alt="Research Publication Consultant"
                       loading="eager"
                       className="hero_image"
-                      style={{ borderRadius: '12px', objectFit: 'cover', width: '100%', height: 'auto', maxHeight: '400px' }}
+                      style={{ width: '100%', height: '100%', borderRadius: '12px', maxHeight: '400px', objectFit: 'cover', objectPosition: 'center top' }}
                     />
                   </div>
                   <div style={{ maxWidth: "45ch" }} className="g-para-wrap">
@@ -133,13 +133,13 @@ export default function ConsultationPage() {
                     </a>
                   </div>
                 </div>
-                <div className="hero_image-wrap v2 hide-tablet">
+                <div className="hero_image-wrap v2 hide-tablet" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <img
                     src={clientGesturing}
                     alt="Research Publication Consultant"
                     loading="eager"
                     className="hero_image"
-                    style={{ borderRadius: '12px', objectFit: 'cover', width: '100%', height: 'auto', maxHeight: '400px' }}
+                    style={{ borderRadius: '12px', objectFit: 'cover', width: '100%', height: '100%', maxHeight: '500px', objectPosition: 'center top' }}
                   />
                 </div>
               </div>
@@ -980,7 +980,7 @@ export default function ConsultationPage() {
                     src={ayushCoat1}
                     loading="lazy"
                     alt="Research Publication Consultant"
-                    style={{ borderRadius: '12px', objectFit: 'cover', width: '100%', height: 'auto', maxHeight: '400px' }}
+                    style={{ borderRadius: '12px', objectFit: 'cover', objectPosition: "center top", width: '100%', height: 'auto', maxHeight: '600px' }}
                   />
                 </div>
                 <div className="layout121_content-right">

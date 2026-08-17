@@ -11,6 +11,8 @@ import testimonial2 from "../assets/images/testimonial-2.jpg";
 import ayushCoat1 from "../assets/ayush_coat_1.jpg";
 import ayushCoat2 from "../assets/ayush_coat_2.jpg";
 import ayushCoat3 from "../assets/ayush_coat_3.jpg";
+import chatgptImg1 from "../assets/chatgpt_img_1.png";
+import chatgptImg2 from "../assets/chatgpt_img_2.png";
 export default function HomePage() {
   const sectionRef = useRef(null);
   const [leftY, setLeftY] = useState(0);
@@ -72,7 +74,7 @@ export default function HomePage() {
                       src={clientArmsCrossed}
                       alt="Research Publication Consultant"
                       className="hero_image"
-                      style={{ width: '100%', height: 'auto', borderRadius: '12px', margin: '2rem 0', maxHeight: '400px', objectFit: 'cover' }}
+                      style={{ width: '100%', height: 'auto', borderRadius: '12px', margin: '2rem 0', maxHeight: '500px', objectFit: 'cover', objectPosition: 'center top' }}
                     />
                   </div>
                   <div style={{ maxWidth: "45ch" }} className="g-para-wrap">
@@ -91,12 +93,12 @@ export default function HomePage() {
                     </Link>
                   </div>
                 </div>
-                <div className="hero_image-wrap hide-tablet">
+                <div className="hero_image-wrap hide-tablet" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <img
                     src={clientArmsCrossed}
                     alt="Research Publication Consultant"
                     className="hero_image"
-                    style={{ width: '100%', height: 'auto', borderRadius: '12px', maxHeight: '400px', objectFit: 'cover' }}
+                    style={{ width: '100%', height: '100%', borderRadius: '12px', maxHeight: '500px', objectFit: 'cover', objectPosition: 'center top' }}
                   />
                 </div>
               </div>
@@ -394,11 +396,9 @@ export default function HomePage() {
                   <div className="path-card">
                     <div className="header-copy-wrap is-center">
                       <img
-                        src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68e93cb7e8e64a07782bb3de_path%20card%20img%202.avif"
+                        src={chatgptImg1}
                         loading="lazy"
-                        sizes="(max-width: 798px) 100vw, 798px"
-                        srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68e93cb7e8e64a07782bb3de_path%20card%20img%202-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68e93cb7e8e64a07782bb3de_path%20card%20img%202.avif 798w"
-                        alt=""
+                        alt="Medical Professional"
                         className="path-card-img"
                       />
                       <div
@@ -434,11 +434,9 @@ export default function HomePage() {
                   <div className="path-card">
                     <div className="header-copy-wrap is-center">
                       <img
-                        src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68e93ebe1b1598e618d48729_path%20researchr%20img.avif"
+                        src={chatgptImg2}
                         loading="lazy"
-                        sizes="(max-width: 798px) 100vw, 798px"
-                        srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68e93ebe1b1598e618d48729_path%20researchr%20img-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68e93ebe1b1598e618d48729_path%20researchr%20img.avif 798w"
-                        alt=""
+                        alt="PhD Scholar"
                         className="path-card-img"
                       />
                       <div
@@ -960,7 +958,7 @@ export default function HomePage() {
                     src={ayushCoat3}
                     loading="lazy"
                     alt="Research Publication Consultant"
-                    style={{ width: '100%', borderRadius: '12px', maxHeight: '400px', objectFit: 'cover' }}
+                    style={{ width: '100%', borderRadius: '12px', maxHeight: '500px', objectFit: 'cover', objectPosition: 'center top' }}
                   />
                 </div>
               </div>

@@ -28,7 +28,7 @@ export default function Navbar() {
           to="/"
           className={`navbar2_logo-link w-nav-brand ${isActive("/") ? "w--current" : ""}`}
         >
-          <strong style={{ fontSize: '28px', color: '#1a1a1a', fontWeight: '500' }}>Ayush Dubey</strong>
+          <strong style={{ fontSize: '28px', color: '#1a1a1a', fontWeight: '500', whiteSpace: 'nowrap' }}>Ayush Dubey</strong>
         </Link>
         <style>{`
           .navbar2_menu.w--open {

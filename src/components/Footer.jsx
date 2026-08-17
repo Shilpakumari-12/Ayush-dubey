@@ -77,6 +77,23 @@ export default function Footer() {
                   </div>
                 </div>
                 <div className="w-layout-grid footer1_menu-wrapper">
+                  <div className="footer1_link-list">
+                    <div className="margin-bottom margin-xsmall">
+                      <div className="text-weight-semibold">Quick Links</div>
+                    </div>
+                    <Link to="/" className="footer1_link" style={{textDecoration: 'none', color: 'inherit'}}>Home</Link>
+                    <Link to="/consultation" className="footer1_link" style={{textDecoration: 'none', color: 'inherit', display: 'block', marginTop: '0.5rem'}}>Work With Me</Link>
+                    <Link to="/newsletter" className="footer1_link" style={{textDecoration: 'none', color: 'inherit', display: 'block', marginTop: '0.5rem'}}>Newsletters</Link>
+                  </div>
+                  
+                  <div className="footer1_link-list">
+                    <div className="margin-bottom margin-xsmall">
+                      <div className="text-weight-semibold">Services</div>
+                    </div>
+                    <Link to="/consultation" className="footer1_link" style={{textDecoration: 'none', color: 'inherit'}}>Manuscript Writing</Link>
+                    <Link to="/consultation" className="footer1_link" style={{textDecoration: 'none', color: 'inherit', display: 'block', marginTop: '0.5rem'}}>Statistical Analysis</Link>
+                    <Link to="/consultation" className="footer1_link" style={{textDecoration: 'none', color: 'inherit', display: 'block', marginTop: '0.5rem'}}>Journal Publication</Link>
+                  </div>
 
                   <div className="footer1_link-list">
                     <div className="margin-bottom margin-xsmall">
