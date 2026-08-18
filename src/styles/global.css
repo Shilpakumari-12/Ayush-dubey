@@ -25,6 +25,10 @@
   max-width: 95rem !important;
 }
 
+.padding-section-large, .padding-section-medium, .padding-section-small {
+  padding-top: 2rem !important;
+}
+
 /* Apply "..." after 3 lines of text */
 .text-style-3lines {
   display: -webkit-box;

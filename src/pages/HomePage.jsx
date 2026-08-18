@@ -74,7 +74,7 @@ export default function HomePage() {
                       src={clientArmsCrossed}
                       alt="Research Publication Consultant"
                       className="hero_image"
-                      style={{ width: '100%', height: 'auto', borderRadius: '12px', margin: '2rem 0', maxHeight: '500px', objectFit: 'cover', objectPosition: 'center top' }}
+                      style={{ width: '100%', maxWidth: '350px', height: 'auto', borderRadius: '12px', margin: '2rem auto', display: 'block' }}
                     />
                   </div>
                   <div style={{ maxWidth: "45ch" }} className="g-para-wrap">
@@ -93,12 +93,12 @@ export default function HomePage() {
                     </Link>
                   </div>
                 </div>
-                <div className="hero_image-wrap hide-tablet" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <div className="hero_image-wrap hide-tablet">
                   <img
                     src={clientArmsCrossed}
                     alt="Research Publication Consultant"
                     className="hero_image"
-                    style={{ width: '100%', height: '100%', borderRadius: '12px', maxHeight: '500px', objectFit: 'cover', objectPosition: 'center top' }}
+                    style={{ width: '100%', maxWidth: '450px', height: 'auto', borderRadius: '12px' }}
                   />
                 </div>
               </div>
@@ -400,6 +400,7 @@ export default function HomePage() {
                         loading="lazy"
                         alt="Medical Professional"
                         className="path-card-img"
+                        style={{ width: '100%', maxWidth: '280px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }}
                       />
                       <div
                         style={{ maxWidth: "16ch" }}
@@ -438,6 +439,7 @@ export default function HomePage() {
                         loading="lazy"
                         alt="PhD Scholar"
                         className="path-card-img"
+                        style={{ width: '100%', maxWidth: '280px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }}
                       />
                       <div
                         style={{ maxWidth: "16ch" }}
@@ -958,7 +960,7 @@ export default function HomePage() {
                     src={ayushCoat3}
                     loading="lazy"
                     alt="Research Publication Consultant"
-                    style={{ width: '100%', borderRadius: '12px', maxHeight: '500px', objectFit: 'cover', objectPosition: 'center top' }}
+                    style={{ width: '100%', maxWidth: '450px', height: 'auto', borderRadius: '12px', margin: '0 auto', display: 'block' }}
                   />
                 </div>
               </div>

@@ -39,7 +39,7 @@ export default function ConsultationPage() {
                       alt="Research Publication Consultant"
                       loading="eager"
                       className="hero_image"
-                      style={{ width: '100%', height: '100%', borderRadius: '12px', maxHeight: '400px', objectFit: 'cover', objectPosition: 'center top' }}
+                      style={{ width: '100%', maxWidth: '350px', height: 'auto', borderRadius: '12px', margin: '2rem auto', display: 'block' }}
                     />
                   </div>
                   <div style={{ maxWidth: "45ch" }} className="g-para-wrap">
@@ -133,13 +133,13 @@ export default function ConsultationPage() {
                     </a>
                   </div>
                 </div>
-                <div className="hero_image-wrap v2 hide-tablet" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <div className="hero_image-wrap v2 hide-tablet">
                   <img
                     src={clientGesturing}
                     alt="Research Publication Consultant"
                     loading="eager"
                     className="hero_image"
-                    style={{ borderRadius: '12px', objectFit: 'cover', width: '100%', height: '100%', maxHeight: '500px', objectPosition: 'center top' }}
+                    style={{ borderRadius: '12px', width: '100%', maxWidth: '450px', height: 'auto' }}
                   />
                 </div>
               </div>
@@ -404,7 +404,7 @@ export default function ConsultationPage() {
               <div className="testimonial_cards_list">
                 <div className="w-layout-grid testimonial_card">
                   <div className="testimonial13_client-image-wrapper">
-                    <img src={testimonial2} alt="Dr. Sarah Jenkins" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
+                    <img src={testimonial2} alt="Dr. Sarah Jenkins" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', maxWidth: '280px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }} />
                   </div>
                   <div
                     id="w-node-_90c8a307-b00d-c6ed-3db8-bca43022cd99-563f0d1b"
@@ -582,7 +582,7 @@ export default function ConsultationPage() {
                       </div>
                     </div>
                     <div className="offers_image-wrapper">
-                      <img src={randomPerson1} alt="Medical Consultation" loading="lazy" className="offers_image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
+                      <img src={randomPerson1} alt="Medical Consultation" loading="lazy" className="offers_image" style={{ width: '100%', maxWidth: '280px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }} />
                     </div>
                   </div>
                 </div>
@@ -650,7 +650,7 @@ export default function ConsultationPage() {
                       </div>
                     </div>
                     <div className="offers_image-wrapper">
-                      <img src={randomPerson2} alt="Research Planning" loading="lazy" className="offers_image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
+                      <img src={randomPerson2} alt="Research Planning" loading="lazy" className="offers_image" style={{ width: '100%', maxWidth: '280px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }} />
                     </div>
                   </div>
                 </div>
@@ -717,7 +717,7 @@ export default function ConsultationPage() {
                       </div>
                     </div>
                     <div className="offers_image-wrapper">
-                      <img src={randomPerson3} alt="Publication Strategy" loading="lazy" className="offers_image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
+                      <img src={randomPerson3} alt="Publication Strategy" loading="lazy" className="offers_image" style={{ width: '100%', maxWidth: '280px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }} />
                     </div>
                   </div>
                 </div>
@@ -846,7 +846,7 @@ export default function ConsultationPage() {
                     </div>
                   </div>
                   <div className="testimonial13_client-image-wrapper">
-                    <img src={testimonial1} alt="James Anderson" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
+                    <img src={testimonial1} alt="James Anderson" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', maxWidth: '280px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }} />
                   </div>
                 </div>
               </div>
@@ -980,7 +980,7 @@ export default function ConsultationPage() {
                     src={ayushCoat1}
                     loading="lazy"
                     alt="Research Publication Consultant"
-                    style={{ borderRadius: '12px', objectFit: 'cover', objectPosition: "center top", width: '100%', height: 'auto', maxHeight: '600px' }}
+                    style={{ borderRadius: '12px', width: '100%', maxWidth: '450px', height: 'auto', margin: '0 auto', display: 'block' }}
                   />
                 </div>
                 <div className="layout121_content-right">
