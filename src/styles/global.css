@@ -21,6 +21,10 @@
   margin-left: auto !important;
 }
 
+.container-large {
+  max-width: 95rem !important;
+}
+
 /* Apply "..." after 3 lines of text */
 .text-style-3lines {
   display: -webkit-box;
