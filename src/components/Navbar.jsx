@@ -28,9 +28,25 @@ export default function Navbar() {
           to="/"
           className={`navbar2_logo-link w-nav-brand ${isActive("/") ? "w--current" : ""}`}
         >
-          <strong style={{ fontSize: '28px', color: '#1a1a1a', fontWeight: '500', whiteSpace: 'nowrap' }}>Ayush Dubey</strong>
+          <strong className="logo-text">Ayush Dubey</strong>
         </Link>
         <style>{`
+          .logo-text {
+            font-size: 28px;
+            color: #1a1a1a;
+            font-weight: 500;
+            white-space: nowrap;
+          }
+          @media screen and (max-width: 767px) {
+            .logo-text {
+              font-size: 22px;
+            }
+          }
+          @media screen and (max-width: 479px) {
+            .logo-text {
+              font-size: 18px;
+            }
+          }
           .navbar2_menu.w--open {
             position: absolute;
             top: 100%;
