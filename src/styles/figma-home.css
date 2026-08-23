@@ -249,16 +249,16 @@
 
 /* ---------- Spotlight / featured logos ---------- */
 .fh-spotlight {
-  background: var(--fh-brown);
-  padding: 48px 0;
+  background: #f3f4f6;
+  padding: 80px 0;
   overflow: hidden;
 }
 
 .fh-spotlight__label {
   text-align: center;
-  color: #fff;
+  color: var(--fh-body);
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 0 40px;
 }
 
@@ -281,9 +281,9 @@
 }
 
 .fh-marquee__logo {
-  height: 40px;
+  height: 90px;
   width: auto;
-  max-width: 140px;
+  max-width: 300px;
   object-fit: contain;
   flex-shrink: 0;
 }

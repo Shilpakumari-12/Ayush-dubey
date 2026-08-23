@@ -2,10 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import clientArmsCrossed from "../assets/client_arms_crossed.jpg";
 import clientGesturing from "../assets/client_gesturing.jpg";
-import logo1 from "../assets/logo_1.png";
-import logo2 from "../assets/logo_2.png";
-import logo3 from "../assets/logo_3.png";
-import logo4 from "../assets/logo_4.png";
+
 import testimonial1 from "../assets/images/testimonial-1.jpg";
 import testimonial2 from "../assets/images/testimonial-2.jpg";
 import ayushCoat1 from "../assets/ayush_coat_1.jpg";
@@ -193,7 +190,7 @@ export default function ConsultationPage() {
               >
                 <img
                   loading="lazy"
-                  src={logo1}
+                  src={logoA}
                   alt=""
                   className="logo3_logo"
                 />
@@ -204,7 +201,7 @@ export default function ConsultationPage() {
               >
                 <img
                   loading="lazy"
-                  src={logo2}
+                  src={logoB}
                   alt=""
                   className="logo3_logo"
                 />
@@ -215,7 +212,7 @@ export default function ConsultationPage() {
               >
                 <img
                   loading="lazy"
-                  src={logo3}
+                  src={logoC}
                   alt=""
                   className="logo3_logo"
                 />
@@ -226,7 +223,7 @@ export default function ConsultationPage() {
               >
                 <img
                   loading="lazy"
-                  src={logo4}
+                  src={logoD}
                   alt=""
                   className="logo3_logo"
                 />
@@ -237,7 +234,7 @@ export default function ConsultationPage() {
               >
                 <img
                   loading="lazy"
-                  src={logo1}
+                  src={logoA}
                   alt=""
                   className="logo3_logo"
                 />
@@ -248,7 +245,7 @@ export default function ConsultationPage() {
               >
                 <img
                   loading="lazy"
-                  src={logo1}
+                  src={logoA}
                   alt=""
                   className="logo3_logo"
                 />
@@ -259,7 +256,7 @@ export default function ConsultationPage() {
               >
                 <img
                   loading="lazy"
-                  src={logo1}
+                  src={logoA}
                   alt=""
                   className="logo3_logo"
                 />
@@ -270,7 +267,7 @@ export default function ConsultationPage() {
               >
                 <img
                   loading="lazy"
-                  src={logo2}
+                  src={logoB}
                   alt=""
                   className="logo3_logo"
                 />
@@ -283,7 +280,7 @@ export default function ConsultationPage() {
               >
                 <img
                   loading="lazy"
-                  src={logo3}
+                  src={logoC}
                   alt=""
                   className="logo3_logo"
                 />
@@ -294,7 +291,7 @@ export default function ConsultationPage() {
               >
                 <img
                   loading="lazy"
-                  src={logo4}
+                  src={logoD}
                   alt=""
                   className="logo3_logo"
                 />
@@ -305,7 +302,7 @@ export default function ConsultationPage() {
               >
                 <img
                   loading="lazy"
-                  src={logo1}
+                  src={logoA}
                   alt=""
                   className="logo3_logo"
                 />
@@ -316,7 +313,7 @@ export default function ConsultationPage() {
               >
                 <img
                   loading="lazy"
-                  src={logo1}
+                  src={logoA}
                   alt=""
                   className="logo3_logo"
                 />
@@ -327,7 +324,7 @@ export default function ConsultationPage() {
               >
                 <img
                   loading="lazy"
-                  src={logo1}
+                  src={logoA}
                   alt=""
                   className="logo3_logo"
                 />
@@ -338,7 +335,7 @@ export default function ConsultationPage() {
               >
                 <img
                   loading="lazy"
-                  src={logo2}
+                  src={logoB}
                   alt=""
                   className="logo3_logo"
                 />
@@ -349,7 +346,7 @@ export default function ConsultationPage() {
               >
                 <img
                   loading="lazy"
-                  src={logo3}
+                  src={logoC}
                   alt=""
                   className="logo3_logo"
                 />
@@ -360,7 +357,7 @@ export default function ConsultationPage() {
               >
                 <img
                   loading="lazy"
-                  src={logo4}
+                  src={logoD}
                   alt=""
                   className="logo3_logo"
                 />
