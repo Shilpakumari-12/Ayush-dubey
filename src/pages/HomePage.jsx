@@ -1,973 +1,380 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import clientArmsCrossed from "../assets/client_arms_crossed.jpg";
-import clientGesturing from "../assets/ayush_coat_2.jpg";
-import logo1 from "../assets/logo_1.png";
-import logo2 from "../assets/logo_2.png";
-import logo3 from "../assets/logo_3.png";
-import logo4 from "../assets/logo_4.png";
-import testimonial1 from "../assets/images/testimonial-1.jpg";
-import testimonial2 from "../assets/images/testimonial-2.jpg";
-import ayushCoat1 from "../assets/ayush_coat_1.jpg";
-import ayushCoat2 from "../assets/ayush_coat_2.jpg";
-import ayushCoat3 from "../assets/ayush_coat_3.jpg";
-import chatgptImg1 from "../assets/chatgpt_img_1.png";
-import chatgptImg2 from "../assets/chatgpt_img_2.png";
-export default function HomePage() {
-  const sectionRef = useRef(null);
-  const [leftY, setLeftY] = useState(0);
-  const [rightY, setRightY] = useState(0);
 
-  useEffect(() => {
-    let animationFrameId;
+import heroImage from "../assets/figma-home/img-hero.png";
+import logoA from "../assets/figma-home/imgImage.png";
+import logoB from "../assets/figma-home/imgImage1.png";
+import logoC from "../assets/figma-home/imgImage2.png";
+import logoD from "../assets/figma-home/imgImage3.png";
+import logoE from "../assets/figma-home/imgImage4.png";
+import logoF from "../assets/figma-home/imgImage5.png";
+import pathHealthcare from "../assets/figma-home/imgImage6.png";
+import pathResearcher from "../assets/figma-home/imgImage7.png";
+import introImage from "../assets/figma-home/imgImage150.png";
+import checkIcon from "../assets/figma-home/imgIcon.svg";
+import starIconOrange from "../assets/figma-home/imgIcon1.svg";
+import starIconBrown from "../assets/figma-home/imgIcon2.svg";
+import testimonialImage1 from "../assets/figma-home/imgImage8.png";
+import testimonialImage2 from "../assets/figma-home/imgImage9.png";
+import academyImage from "../assets/figma-home/imgImage10.png";
+import avatar1 from "../assets/figma-home/imgContainer.png";
+import avatar2 from "../assets/figma-home/imgContainer1.png";
+import avatar3 from "../assets/figma-home/imgContainer2.png";
+import avatar4 from "../assets/figma-home/imgContainer3.png";
+import avatar5 from "../assets/figma-home/imgContainer4.png";
+import aboutImage from "../assets/figma-home/imgImage151.png";
 
-    const handleScroll = () => {
-      if (!sectionRef.current) return;
-      const rect = sectionRef.current.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
+const spotlightLogos = [logoA, logoB, logoC, logoD, logoE, logoF];
 
-      // Calculate relative scroll progress through the viewport (0 to 1)
-      const totalDistance = windowHeight + rect.height;
-      const currentPos = windowHeight - rect.top;
-      const progress = Math.max(0, Math.min(1, currentPos / totalDistance));
+const wallTestimonials = [
+  {
+    name: "Your Name Here",
+    avatar: avatar1,
+    quote:
+      "I knew I had the skills, but I lacked confidence in my research. After joining Ayush's Publication Mastery Academy, I quickly transformed my approach and achieved remarkable results. I'm now on track to publish multiple papers and elevate my academic career.",
+  },
+  {
+    name: "Jamie Taylor",
+    avatar: avatar2,
+    quote:
+      "As a Research Scientist, I was struggling to publish consistently. The live sessions in the Academy were incredibly helpful, and I learned how to enhance my manuscripts effectively. Within weeks, I secured a publication in a prestigious journal.",
+  },
+  {
+    name: "Morgan Lee",
+    avatar: avatar3,
+    quote:
+      "I am a full-time researcher and successfully published my first paper within three months of joining the Academy. The community support and shared experiences motivated me to keep pushing forward.",
+  },
+  {
+    name: "Alexis Chen",
+    avatar: avatar4,
+    quote:
+      "I reached my publication goals within months of joining the Publication Mastery Academy. The support from the community and daily guidance made all the difference.",
+  },
+  {
+    name: "Sam Patel",
+    avatar: avatar5,
+    quote:
+      "I am now a published author, and this is just the beginning of my journey. I started working on my first manuscript last month and am already receiving positive feedback from peers.",
+  },
+];
 
-      // Translate back and forth on scroll
-      const offset = (progress - 0.5) * 260; // moves up to ~130px back and forth
-      setLeftY(-offset);
-      setRightY(offset);
-    };
-
-    const onScroll = () => {
-      animationFrameId = requestAnimationFrame(handleScroll);
-    };
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    handleScroll();
-
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      cancelAnimationFrame(animationFrameId);
-    };
-  }, []);
-
+function Stars({ icon, size = 22 }) {
   return (
-    <main className="main-wrapper">
-      <header className="section_hero">
-        <div className="padding-global">
-          <div className="container-large">
-            <div className="padding-section-large">
-              <div className="w-layout-grid hero_component">
-                <div className="header-copy-wrap z-index-2">
-                  <div
-                    style={{ maxWidth: "16ch" }}
-                    className="g-heading-wrap heading-style-h2 text-color-gray-900"
-                  >
-                    <div className="g-heading-rich-text w-richtext">
-                      <h1>
-                        Research Publication Consultant for{" "}
-                        <strong>Medical Professionals & Scholars</strong>
-                      </h1>
-                    </div>
-                  </div>
-                  <div className="show-on-tablet">
-                    <img
-                      src={clientArmsCrossed}
-                      alt="Research Publication Consultant"
-                      className="hero_image"
-                      style={{ width: '100%', maxWidth: '350px', height: 'auto', borderRadius: '12px', margin: '2rem auto', display: 'block' }}
-                    />
-                  </div>
-                  <div style={{ maxWidth: "45ch" }} className="g-para-wrap">
-                    <div className="g-para-rich-text w-richtext">
-                      <p>
-                        Helping Doctors, Medical Residents, PhD Scholars & Researchers Publish in Scopus, PubMed & WoS Journals.
-                      </p>
-                      <p>
-                        We specialize in Manuscript Writing, Statistical Analysis, and comprehensive Journal Publication Support to ensure your research gets the recognition it deserves.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="button-group">
-                    <Link to="/consultation" className="button w-button">
-                      Work With Me
-                    </Link>
-                  </div>
-                </div>
-                <div className="hero_image-wrap hide-tablet">
-                  <img
-                    src={clientArmsCrossed}
-                    alt="Research Publication Consultant"
-                    className="hero_image"
-                    style={{ width: '100%', maxWidth: '450px', height: 'auto', borderRadius: '12px' }}
-                  />
-                </div>
+    <div className="fh-testi__stars">
+      {Array.from({ length: 5 }).map((_, i) => (
+        <img key={i} src={icon} alt="" style={{ width: size, height: "auto" }} />
+      ))}
+    </div>
+  );
+}
+
+export default function HomePage() {
+  return (
+    <main className="fh-page">
+      {/* Hero */}
+      <section className="fh-hero">
+        <div className="fh-container">
+          <div className="fh-hero__grid">
+            <div className="fh-hero__copy">
+              <h1 className="fh-h1">
+                Unlock Your Research Potential with{" "}
+                <span className="fh-highlight">Research Publication Strategies</span>
+              </h1>
+              <div className="fh-hero__paras">
+                <p className="fh-body-lg">
+                  Are you finding it challenging to get your research noticed and published despite your hard work?
+                </p>
+                <p className="fh-body-lg">
+                  As a Research Publication Consultant, I specialize in assisting medical professionals, PhD
+                  candidates, and researchers like you in navigating the publication process for top-tier journals.
+                </p>
+                <p className="fh-body-lg">
+                  Let me guide you to excel in research publication and achieve outstanding recognition in your
+                  field.
+                </p>
               </div>
+              <Link to="/consultation" className="fh-btn">
+                Work with me
+              </Link>
             </div>
-          </div>
-        </div>
-      </header>
-      <section
-        data-w-id="f17aa683-a0f6-bd5e-53fe-f8ff56662ecf"
-        className="featured-in-section"
-      >
-        <style>{`
-  .featured-in-section {
-    background-color: #ffffff !important;
-    border-top: 1px solid #eaeaea;
-    border-bottom: 1px solid #eaeaea;
-    padding-top: 60px !important;
-    padding-bottom: 60px !important;
-    overflow: hidden !important;
-  }
-  .featured-in-section .text-color-white {
-    color: #6b7280 !important;
-    letter-spacing: 2px;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-  .logo3_component {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow: hidden !important;
-  }
-  .logo3_list {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    align-items: center !important;
-    justify-content: space-around !important;
-    gap: 80px !important;
-    min-width: 100% !important;
-    padding-right: 80px !important; 
-  }
-  .logo3_logo {
-    height: 120px !important;
-    width: 250px !important;
-    object-fit: contain !important;
-    mix-blend-mode: multiply !important;
-    opacity: 1 !important; /* Make them fully visible */
-    filter: none !important; /* Remove grayscale so we can see them clearly */
-    transition: all 0.3s ease !important;
-    flex-shrink: 0 !important;
-    display: block !important;
-    transform: scale(2.5) !important; /* Zoom in to crop out huge white padding */
-  }
-  .logo3_wrapper {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    flex-shrink: 0 !important;
-    flex: 0 0 auto !important;
-    width: 250px !important;
-    height: 150px !important;
-    overflow: hidden !important; /* Hide the overlapping white padding */
-  }
-`}</style>
-        <div className="padding-section-small">
-          <div className="margin-bottom margin-large">
-            <div className="text-align-center">
-              <div className="max-width-large align-center">
-                <p className="text-size-medium text-color-white">FEATURED IN</p>
-              </div>
-            </div>
-          </div>
-          <div className="logo3_component">
-            <div className="logo3_list">
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ed8-f4a44663"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logo1}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662eda-f4a44663"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logo2}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662edc-f4a44663"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logo3}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ede-f4a44663"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logo4}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ee0-f4a44663"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logo1}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ee2-f4a44663"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logo2}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ee4-f4a44663"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logo1}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ee6-f4a44663"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logo2}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-            </div>
-            <div className="logo3_list">
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ee9-f4a44663"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logo3}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662eeb-f4a44663"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logo4}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662eed-f4a44663"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logo1}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662eef-f4a44663"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logo2}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ef1-f4a44663"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logo1}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ef3-f4a44663"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logo2}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ef5-f4a44663"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logo3}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ef7-f4a44663"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logo4}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
+            <div className="fh-hero__image-wrap">
+              <img src={heroImage} alt="Ayush Dubey, Research Publication Consultant" className="fh-hero__image" />
             </div>
           </div>
         </div>
       </section>
-      <section className="section_path">
-        <div className="padding-global">
-          <div className="container-large">
-            <div className="padding-section-medium">
-              <div className="max-width-xlarge align-center">
-                <div className="header-copy-wrap is-center">
-                  <div
-                    style={{ maxWidth: "35ch" }}
-                    className="g-para-wrap text-color-brown-700 text-style-allcaps"
-                  >
-                    <div className="g-para-rich-text w-richtext">
-                      <p>HOW CAN I HELP</p>
-                    </div>
-                  </div>
-                  <div
-                    style={{ maxWidth: "none" }}
-                    className="g-heading-wrap heading-style-h2 text-color-gray-900"
-                  >
-                    <div className="g-heading-rich-text w-richtext">
-                      <h2>
-                        Your Path to Success <strong>Starts Here</strong>
-                      </h2>
-                    </div>
-                  </div>
-                  <div
-                    style={{ maxWidth: "35ch" }}
-                    className="g-para-wrap text-size-medium align-center"
-                  >
-                    <div className="g-para-rich-text w-richtext">
-                      <p>Let’s get you the info you’re looking for.</p>
-                      <p>Which of these options sounds most like you?</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="margin-top margin-large">
-                <div className="path-cards-wrap">
-                  <div className="path-card">
-                    <div className="header-copy-wrap is-center">
-                      <img
-                        src={chatgptImg1}
-                        loading="lazy"
-                        alt="Medical Professional"
-                        className="path-card-img"
-                        style={{ width: '100%', maxWidth: '280px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }}
-                      />
-                      <div
-                        style={{ maxWidth: "16ch" }}
-                        className="g-heading-wrap heading-style-h4 text-color-brown-700"
-                      >
-                        <div className="g-heading-rich-text w-richtext">
-                          <h3>Medical Professional</h3>
-                        </div>
-                      </div>
-                      <div style={{ maxWidth: "none" }} className="g-para-wrap">
-                        <div className="g-para-rich-text w-richtext">
-                          <p>
-                            Through our expertise and academic insights,
-                            we&#x27;ll streamline your manuscript writing,
-                            optimize your statistical data, and achieve
-                            high-impact journal publications.
-                          </p>
-                          <p>
-                            Let&#x27;s create a tailored publication strategy that resonates
-                            with peer reviewers and propels your academic career
-                            forward.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="button-group">
-                      <Link to="/consultation" className="button w-button">
-                        Know More
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="path-card">
-                    <div className="header-copy-wrap is-center">
-                      <img
-                        src={chatgptImg2}
-                        loading="lazy"
-                        alt="PhD Scholar"
-                        className="path-card-img"
-                        style={{ width: '100%', maxWidth: '280px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }}
-                      />
-                      <div
-                        style={{ maxWidth: "16ch" }}
-                        className="g-heading-wrap heading-style-h4 text-color-brown-700"
-                      >
-                        <div className="g-heading-rich-text w-richtext">
-                          <h3>PhD Scholar</h3>
-                        </div>
-                      </div>
-                      <div style={{ maxWidth: "none" }} className="g-para-wrap">
-                        <div className="g-para-rich-text w-richtext">
-                          <p>
-                            With our guidance and proven strategies, you&#x27;ll
-                            navigate the peer-review process, respond to reviewers
-                            confidently, and establish yourself as a
-                            sought-after researcher.{" "}
-                          </p>
-                          <p>
-                            Let&#x27;s embark on this transformative research journey
-                            together.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="button-group">
-                      <Link to="/#f101-waitlist" className="button w-button">
-                        Know More
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+      {/* Spotlight / featured logos */}
+      <section className="fh-spotlight">
+        <p className="fh-spotlight__label">SPOTLIGHT ON</p>
+        <div className="fh-marquee">
+          <div className="fh-marquee__track">
+            {[...spotlightLogos, ...spotlightLogos].map((logo, i) => (
+              <img key={i} src={logo} alt="" className="fh-marquee__logo" />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Path cards */}
+      <section className="fh-section fh-path">
+        <div className="fh-container">
+          <div className="fh-path__head">
+            <p className="fh-eyebrow">How Can I Assist You?</p>
+            <div className="fh-path__title">
+              <h2 className="fh-h2">Your Journey to Publication Success</h2>
+              <span className="fh-h2 fh-highlight">Begins Here</span>
+            </div>
+            <p className="fh-body">
+              Let's find the information you need.
+              <br />
+              Which of these best describes you?
+            </p>
+          </div>
+
+          <div className="fh-path__cards">
+            <div className="fh-path__card">
+              <img src={pathHealthcare} alt="Healthcare Professional" />
+              <h3>Healthcare Professional</h3>
+              <p className="fh-body">
+                With my expertise and insights, we will enhance your research visibility, streamline your manuscript
+                preparation, and achieve significant publication success.
+              </p>
+              <p className="fh-body">
+                Let's develop a customized publication strategy that resonates with your research goals and
+                elevates your work.
+              </p>
+              <Link to="/consultation" className="fh-btn">
+                Learn More
+              </Link>
+            </div>
+            <div className="fh-path__card">
+              <img src={pathResearcher} alt="Researcher" />
+              <h3>Researcher</h3>
+              <p className="fh-body">
+                With my support and proven methodologies, you'll successfully publish your work, gain recognition,
+                and establish yourself as a leading researcher.
+              </p>
+              <p className="fh-body">Let's embark on this transformative publication journey together.</p>
+              <Link to="/consultation" className="fh-btn">
+                Learn More
+              </Link>
             </div>
           </div>
         </div>
       </section>
-      <section className="section_intro">
-        <div className="padding-global">
-          <div className="container-large">
-            <div className="padding-section-medium">
-              <div className="w-layout-grid intro_component">
-                <div className="header-copy-wrap">
-                  <div
-                    style={{ maxWidth: "35ch" }}
-                    className="g-para-wrap text-color-brown-700 text-style-allcaps"
-                  >
-                    <div className="g-para-rich-text w-richtext">
-                      <p>Hey there, dedicated researcher!</p>
-                    </div>
-                  </div>
-                  <div
-                    style={{ maxWidth: "none" }}
-                    className="g-heading-wrap heading-style-h2 text-color-gray-900"
-                  >
-                    <div className="g-heading-rich-text w-richtext">
-                      <h2>
-                        I am Ayush, your{" "}
-                        <strong>Publication Partner</strong>
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="margin-top margin-xxsmall">
-                    <div className="intro_image-wrapper">
-                      <img
-                        src={clientGesturing}
-                        alt="Research Publication Consultant"
-                        className="intro_image"
-                        style={{ width: '100%', borderRadius: '12px', maxHeight: '400px', objectFit: 'cover' }}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="header-copy-wrap gap-2rem">
-                  <div
-                    style={{ maxWidth: "none" }}
-                    className="g-para-wrap text-size-medium"
-                  >
-                    <div className="g-para-rich-text w-richtext">
-                      <p>
-                        If you&#x27;re tired of facing journal rejections and
-                        struggling with complex statistical analyses, we&#x27;ve
-                        got your back. Together, let&#x27;s harness the power of
-                        high-impact research to skyrocket your academic success.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="list-items-wrap">
-                    <div
-                      id="w-node-_0c6a5ce3-44d2-fc22-5e00-33a22a536a45-f4a44663"
-                      className="list-item"
-                    >
-                      <div className="list-item-icon-wrap">
-                        <div className="icon-embed-xxsmall w-embed">
-                          <svg
-                            width="100%"
-                            height="100%"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M20.3479 7.56384L9.7479 18.1638C9.65402 18.2585 9.52622 18.3117 9.3929 18.3117C9.25958 18.3117 9.13178 18.2585 9.0379 18.1638L3.6479 12.7738C3.55324 12.68 3.5 12.5522 3.5 12.4188C3.5 12.2855 3.55324 12.1577 3.6479 12.0638L4.3479 11.3638C4.44178 11.2692 4.56958 11.2159 4.7029 11.2159C4.83622 11.2159 4.96402 11.2692 5.0579 11.3638L9.3879 15.6938L18.9379 6.14384C19.1357 5.95205 19.4501 5.95205 19.6479 6.14384L20.3479 6.85384C20.4426 6.94772 20.4958 7.07552 20.4958 7.20884C20.4958 7.34216 20.4426 7.46995 20.3479 7.56384Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div>
-                        Proven strategies to grow your following and increase
-                        engagement
-                      </div>
-                    </div>
-                    <div
-                      id="w-node-_0c6a5ce3-44d2-fc22-5e00-33a22a536a4a-f4a44663"
-                      className="list-item"
-                    >
-                      <div className="list-item-icon-wrap">
-                        <div className="icon-embed-xxsmall w-embed">
-                          <svg
-                            width="100%"
-                            height="100%"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M20.3479 7.56384L9.7479 18.1638C9.65402 18.2585 9.52622 18.3117 9.3929 18.3117C9.25958 18.3117 9.13178 18.2585 9.0379 18.1638L3.6479 12.7738C3.55324 12.68 3.5 12.5522 3.5 12.4188C3.5 12.2855 3.55324 12.1577 3.6479 12.0638L4.3479 11.3638C4.44178 11.2692 4.56958 11.2159 4.7029 11.2159C4.83622 11.2159 4.96402 11.2692 5.0579 11.3638L9.3879 15.6938L18.9379 6.14384C19.1357 5.95205 19.4501 5.95205 19.6479 6.14384L20.3479 6.85384C20.4426 6.94772 20.4958 7.07552 20.4958 7.20884C20.4958 7.34216 20.4426 7.46995 20.3479 7.56384Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div>
-                        Expert guidance to generate quality leads and boost your
-                        revenue
-                      </div>
-                    </div>
-                    <div
-                      id="w-node-_0c6a5ce3-44d2-fc22-5e00-33a22a536a4f-f4a44663"
-                      className="list-item"
-                    >
-                      <div className="list-item-icon-wrap">
-                        <div className="icon-embed-xxsmall w-embed">
-                          <svg
-                            width="100%"
-                            height="100%"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M20.3479 7.56384L9.7479 18.1638C9.65402 18.2585 9.52622 18.3117 9.3929 18.3117C9.25958 18.3117 9.13178 18.2585 9.0379 18.1638L3.6479 12.7738C3.55324 12.68 3.5 12.5522 3.5 12.4188C3.5 12.2855 3.55324 12.1577 3.6479 12.0638L4.3479 11.3638C4.44178 11.2692 4.56958 11.2159 4.7029 11.2159C4.83622 11.2159 4.96402 11.2692 5.0579 11.3638L9.3879 15.6938L18.9379 6.14384C19.1357 5.95205 19.4501 5.95205 19.6479 6.14384L20.3479 6.85384C20.4426 6.94772 20.4958 7.07552 20.4958 7.20884C20.4958 7.34216 20.4426 7.46995 20.3479 7.56384Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div>
-                        Personalized approach tailored to your unique business
-                        goals
-                      </div>
-                    </div>
-                    <div
-                      id="w-node-_0c6a5ce3-44d2-fc22-5e00-33a22a536a54-f4a44663"
-                      className="list-item"
-                    >
-                      <div className="list-item-icon-wrap">
-                        <div className="icon-embed-xxsmall w-embed">
-                          <svg
-                            width="100%"
-                            height="100%"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M20.3479 7.56384L9.7479 18.1638C9.65402 18.2585 9.52622 18.3117 9.3929 18.3117C9.25958 18.3117 9.13178 18.2585 9.0379 18.1638L3.6479 12.7738C3.55324 12.68 3.5 12.5522 3.5 12.4188C3.5 12.2855 3.55324 12.1577 3.6479 12.0638L4.3479 11.3638C4.44178 11.2692 4.56958 11.2159 4.7029 11.2159C4.83622 11.2159 4.96402 11.2692 5.0579 11.3638L9.3879 15.6938L18.9379 6.14384C19.1357 5.95205 19.4501 5.95205 19.6479 6.14384L20.3479 6.85384C20.4426 6.94772 20.4958 7.07552 20.4958 7.20884C20.4958 7.34216 20.4426 7.46995 20.3479 7.56384Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div>
-                        Support to help you crush it in the ever-changing
-                        digital landscape
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    style={{ maxWidth: "none" }}
-                    className="g-para-wrap text-size-medium"
-                  >
-                    <div className="g-para-rich-text w-richtext">
-                      <p>
-                        <strong>
-                          Ready to take your business to new heights?
-                        </strong>
-                      </p>
-                      <p>
-                        Let&#x27;s connect and make academic publishing work for you.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="button-group">
-                    <Link to="/consultation" className="button w-button">
-                      Know More
-                    </Link>
-                  </div>
-                </div>
+
+      {/* Intro / bio */}
+      <section className="fh-section">
+        <div className="fh-container">
+          <div className="fh-intro__head">
+            <p className="fh-eyebrow">Hello, aspiring researcher!</p>
+            <div className="fh-intro__title">
+              <h2 className="fh-h2">I'm Ayush, your</h2>
+              <span className="fh-h2 fh-highlight">Publication Consultant</span>
+            </div>
+          </div>
+
+          <div className="fh-intro__grid">
+            <img src={introImage} alt="Ayush Dubey" className="fh-intro__image" />
+            <div>
+              <p className="fh-body-lg">
+                If you're struggling to get your research published despite your efforts, I'm here to help.
+                Together, we can leverage the publication process to elevate your academic career.
+              </p>
+
+              <ul className="fh-checklist">
+                <li>
+                  <span className="fh-checklist__badge">
+                    <img src={checkIcon} alt="" />
+                  </span>
+                  <span className="fh-body">
+                    Proven strategies to enhance your manuscript and increase publication chances.
+                  </span>
+                </li>
+                <li>
+                  <span className="fh-checklist__badge">
+                    <img src={checkIcon} alt="" />
+                  </span>
+                  <span className="fh-body">
+                    Expert guidance to navigate the complexities of journal submissions and boost your academic
+                    profile.
+                  </span>
+                </li>
+                <li>
+                  <span className="fh-checklist__badge">
+                    <img src={checkIcon} alt="" />
+                  </span>
+                  <span className="fh-body">
+                    A personalized approach tailored to your unique research objectives.
+                  </span>
+                </li>
+                <li>
+                  <span className="fh-checklist__badge">
+                    <img src={checkIcon} alt="" />
+                  </span>
+                  <span className="fh-body">Support to help you thrive in the competitive academic landscape.</span>
+                </li>
+              </ul>
+
+              <div style={{ marginTop: "32px" }}>
+                <p style={{ fontWeight: 600, color: "var(--fh-body)", margin: 0 }}>
+                  Ready to elevate your research career?
+                </p>
+                <p className="fh-body" style={{ marginTop: "4px" }}>
+                  Let's connect and make your research publication goals a reality.
+                </p>
               </div>
+
+              <div style={{ marginTop: "24px" }}>
+                <Link to="/consultation" className="fh-btn">
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Embedded testimonial 1 */}
+          <div className="fh-testi">
+            <div>
+              <Stars icon={starIconOrange} />
+              <p className="fh-testi__quote">
+                "Ayush's expertise and our existing rapport made his guidance invaluable. His proven strategies gave
+                me the confidence to trust him with my publication journey.
+                <br />
+                <br />
+                In just the first month, Ayush's insights led to significant improvements in my manuscript. I'm now
+                entering the next phase with complete satisfaction and excitement. If you're looking for someone
+                who truly understands the publication process and delivers results, Ayush is the one to turn to."
+              </p>
+              <p className="fh-testi__name">Jordan Smith</p>
+              <p className="fh-testi__role">Academic Publishing Specialist</p>
+            </div>
+            <div className="fh-testi__image">
+              <img src={testimonialImage1} alt="Jordan Smith" />
+            </div>
+          </div>
+
+          {/* Embedded testimonial 2 */}
+          <div className="fh-testi fh-testi--reverse">
+            <div className="fh-testi__image">
+              <img src={testimonialImage2} alt="Taylor Lee" />
+            </div>
+            <div>
+              <Stars icon={starIconOrange} />
+              <p className="fh-testi__quote">
+                "I believe one of the best ways to enhance your academic profile is through Ayush's publication
+                consultancy. Having worked with him to improve my research visibility, I can confidently say that
+                his advice is invaluable."
+              </p>
+              <p className="fh-testi__name">Taylor Lee</p>
+              <p className="fh-testi__role">Director, Research Innovations</p>
             </div>
           </div>
         </div>
       </section>
-      <section className="section_testimonial13">
-        <div className="padding-global">
-          <div className="container-large">
-            <div className="padding-section-small">
-              <div className="testimonial_cards_list">
-                <div className="w-layout-grid testimonial_card">
-                  <div
-                    id="w-node-ecb6e865-cbf4-eb86-bd2a-7768ff3c70a6-f4a44663"
-                    className="testimonial13_content"
-                  >
-                    <div className="testimonial13_rating-wrapper">
-                      <div className="testimonial13_rating-icon">
-                        <div className="icon-embed-xsmall w-embed">
-                          <svg
-                            width="100%"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="testimonial13_rating-icon">
-                        <div className="icon-embed-xsmall w-embed">
-                          <svg
-                            width="100%"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="testimonial13_rating-icon">
-                        <div className="icon-embed-xsmall w-embed">
-                          <svg
-                            width="100%"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="testimonial13_rating-icon">
-                        <div className="icon-embed-xsmall w-embed">
-                          <svg
-                            width="100%"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="testimonial13_rating-icon">
-                        <div className="icon-embed-xsmall w-embed">
-                          <svg
-                            width="100%"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="margin-vertical margin-medium">
-                      <div className="heading-style-h6">
-                        &quot;Ayush&#x27; timing, expertise, and our existing
-                        connection made his offer irresistible. His proven track
-                        record and social proof gave me the confidence to trust
-                        him with my publication journey.
-                        <br />‍<br />
-                        In just the first month, Ayush&#x27; strategies
-                        delivered outstanding results. I&#x27;m now entering the
-                        second month with complete satisfaction and excitement.
-                        If you&#x27;re looking for someone who truly understands
-                        academic publishing and delivers exceptional results, Ayush is
-                        the real deal.&quot;
-                      </div>
-                    </div>
-                    <div className="testimonial13_client">
-                      <div className="testimonial13_client-info">
-                        <p className="text-weight-semibold">Dr. Michael Chen</p>
-                        <p>Research Scientist</p>
-                      </div>
-                      <div className="testimonial13_divider"></div>
-                      <div className="testimonial13_logo-wrapper">
-                        <img
-                          loading="lazy"
-                          src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68e8abbfa75c2368a219fd8b_logo-webflow.svg"
-                          alt=""
-                          className="testimonial13_logo"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial13_client-image-wrapper">
-                    <img src={testimonial1} alt="Dr. Michael Chen" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', maxWidth: '280px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }} />
-                  </div>
-                </div>
-                <div className="w-layout-grid testimonial_card">
-                  <div className="testimonial13_client-image-wrapper">
-                    <img src={testimonial2} alt="Dr. Sarah Jenkins" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', maxWidth: '280px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }} />
-                  </div>
-                  <div
-                    id="w-node-_90c8a307-b00d-c6ed-3db8-bca43022cd99-f4a44663"
-                    className="testimonial13_content"
-                  >
-                    <div className="testimonial13_rating-wrapper">
-                      <div className="testimonial13_rating-icon">
-                        <div className="icon-embed-xsmall w-embed">
-                          <svg
-                            width="100%"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="testimonial13_rating-icon">
-                        <div className="icon-embed-xsmall w-embed">
-                          <svg
-                            width="100%"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="testimonial13_rating-icon">
-                        <div className="icon-embed-xsmall w-embed">
-                          <svg
-                            width="100%"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="testimonial13_rating-icon">
-                        <div className="icon-embed-xsmall w-embed">
-                          <svg
-                            width="100%"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="testimonial13_rating-icon">
-                        <div className="icon-embed-xsmall w-embed">
-                          <svg
-                            width="100%"
-                            viewBox="0 0 18 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="margin-vertical margin-medium">
-                      <div className="heading-style-h5">
-                        &quot;I think one of the best sources out there to, you
-                        know, create an additional source of income for yourself
-                        is Ayush&#x27; research course. Now, I have
-                        personally worked with him on publishing my papers, so
-                        I know that when he says something, you better follow
-                        it.&quot;
-                      </div>
-                    </div>
-                    <div className="testimonial13_client">
-                      <div className="testimonial13_client-info">
-                        <p className="text-weight-semibold">Dr. Sarah Jenkins</p>
-                        <p>Postdoctoral Fellow</p>
-                      </div>
-                      <div className="testimonial13_divider"></div>
-                      <div className="testimonial13_logo-wrapper">
-                        <img
-                          loading="lazy"
-                          src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68e8abbfa75c2368a219fd8b_logo-webflow.svg"
-                          alt=""
-                          className="testimonial13_logo"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+      {/* Publication Mastery Academy promo */}
+      <section className="fh-section">
+        <div className="fh-container">
+          <div className="fh-promo">
+            <div className="fh-promo__head">
+              <p className="fh-eyebrow">For Researchers</p>
+              <h2 className="fh-h2">Publication Mastery Academy</h2>
+              <p className="fh-body-lg">
+                Imagine a career where you publish your research, gain recognition, and work on projects that
+                inspire you. With our proven strategies, you'll attract attention from top journals and command
+                respect in your field.
+              </p>
+            </div>
+
+            <div className="fh-promo__image-wrap">
+              <img src={academyImage} alt="Publication Mastery Academy" />
+            </div>
+
+            <div className="fh-promo__cta">
+              <p>
+                Don't let your research go unnoticed – seize the opportunity, enroll in Publication Mastery Academy,
+                and embark on an exciting journey towards academic success!
+              </p>
+              <Link to="/newsletter" className="fh-btn">
+                Join the Waitlist Now!
+              </Link>
             </div>
           </div>
         </div>
       </section>
-      <header className="section_about">
-        <div className="padding-global">
-          <div className="container-large">
-            <div className="padding-section-medium">
-              <div className="w-layout-grid hero_component">
-                <div className="header-copy-wrap z-index-2">
-                  <div
-                    style={{ maxWidth: "16ch" }}
-                    className="g-heading-wrap heading-style-h2 text-color-gray-900"
-                  >
-                    <div className="g-heading-rich-text w-richtext">
-                      <h2>
-                        I&#x27;ll guide you towards success with effective
-                        publication strategies
-                      </h2>
-                    </div>
+
+      {/* Testimonial wall */}
+      <section className="fh-section">
+        <div className="fh-container">
+          <div className="fh-wall">
+            <div className="fh-wall__head">
+              <h2 className="fh-h2" style={{ lineHeight: 1.15 }}>
+                Here's <span className="fh-highlight">What Others Say</span> About My Consultancy...
+              </h2>
+              <Link to="/newsletter" className="fh-btn">
+                Join Waitlist
+              </Link>
+            </div>
+
+            <div className="fh-wall__grid">
+              {wallTestimonials.map((t) => (
+                <div className="fh-wall__card" key={t.name}>
+                  <div className="fh-wall__card-stars">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <img key={i} src={starIconBrown} alt="" />
+                    ))}
                   </div>
-                  <div className="show-on-tablet">
-                    <img
-                      src={clientArmsCrossed}
-                      alt="Research Publication Consultant"
-                      className="hero_image"
-                      style={{ width: '100%', height: 'auto', borderRadius: '12px', margin: '2rem 0', maxHeight: '400px', objectFit: 'cover' }}
-                    />
-                  </div>
-                  <div
-                    style={{ maxWidth: "none" }}
-                    className="g-para-wrap text-size-small"
-                  >
-                    <div className="g-para-rich-text w-richtext">
-                      <p>
-                        As an ambitious individual, I understand the challenges
-                        of conforming to societal expectations for success. But
-                        there&#x27;s a better way.
-                      </p>
-                      <p>
-                        Through effective publication, I&#x27;ve discovered the
-                        power of embracing your true self and sharing unique
-                        perspectives. Let me guide you on this transformative
-                        journey.
-                      </p>
-                      <p>
-                        If you&#x27;re struggling to get your papers accepted,
-                        it&#x27;s time to tap into authentic publication.
-                        Together, we&#x27;ll craft strategies that align with
-                        your values, amplify your voice, and leave a lasting
-                        impact.
-                      </p>
-                      <p>
-                        Let&#x27;s build a business that brings you joy,
-                        fulfillment, and helps clients achieve their goals
-                        authentically. Get in touch today, and let&#x27;s embark
-                        on this exciting adventure together.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="button-group">
-                    <Link to="/consultation" className="button w-button">
-                      Work with me
-                    </Link>
+                  <p>{t.quote}</p>
+                  <div className="fh-wall__card-author">
+                    <img src={t.avatar} alt={t.name} />
+                    <span>{t.name}</span>
                   </div>
                 </div>
-                <div>
-                  <img
-                    src={ayushCoat3}
-                    loading="lazy"
-                    alt="Research Publication Consultant"
-                    style={{ width: '100%', maxWidth: '450px', height: 'auto', borderRadius: '12px', margin: '0 auto', display: 'block' }}
-                  />
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
-      </header>
+      </section>
+
+      {/* About / closing strategy */}
+      <section className="fh-section">
+        <div className="fh-container">
+          <div className="fh-about__grid">
+            <div className="fh-about__copy">
+              <h2 className="fh-h2">
+                I'll guide you towards publication success with effective strategies.
+              </h2>
+              <div className="fh-about__paras">
+                <p className="fh-body">
+                  As an ambitious researcher, I understand the challenges of meeting publication standards. But
+                  there's a better way.
+                </p>
+                <p className="fh-body">
+                  Through effective publication strategies, I've discovered the power of showcasing your unique
+                  research. Let me guide you on this transformative journey.
+                </p>
+                <p className="fh-body">
+                  If you're struggling to get your research published, it's time to embrace authentic strategies.
+                  Together, we'll craft approaches that align with your research goals and make a lasting impact.
+                </p>
+                <p className="fh-body">
+                  Let's build a research career that brings you fulfillment and helps others achieve their goals.
+                  Get in touch today, and let's embark on this exciting journey together.
+                </p>
+              </div>
+              <Link to="/consultation" className="fh-btn">
+                Collaborate with me
+              </Link>
+            </div>
+            <div className="fh-about__image-wrap">
+              <img src={aboutImage} alt="Ayush Dubey" className="fh-about__image" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
