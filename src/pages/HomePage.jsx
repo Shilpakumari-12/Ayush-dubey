@@ -2,12 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import heroImage from "../assets/figma-home/img-hero.png";
-import logoA from "../assets/figma-home/imgImage.png";
-import logoB from "../assets/figma-home/imgImage1.png";
-import logoC from "../assets/figma-home/imgImage2.png";
-import logoD from "../assets/figma-home/imgImage3.png";
-import logoE from "../assets/figma-home/imgImage4.png";
-import logoF from "../assets/figma-home/imgImage5.png";
+import logoA from "../assets/logos/1.png";
+import logoB from "../assets/logos/2.png";
+import logoC from "../assets/logos/3.png";
+import logoD from "../assets/logos/4.png";
+import logoE from "../assets/logos/5.png";
+import logoF from "../assets/logos/6.png";
+import logoG from "../assets/logos/7.png";
+import logoH from "../assets/logos/8.png";
+import logoI from "../assets/logos/9.png";
+import logoJ from "../assets/logos/10.png";
+import logoK from "../assets/logos/11.png";
+import logoL from "../assets/logos/12.png";
 import pathHealthcare from "../assets/figma-home/imgImage6.png";
 import pathResearcher from "../assets/figma-home/imgImage7.png";
 import introImage from "../assets/figma-home/imgImage150.png";
@@ -24,7 +30,7 @@ import avatar4 from "../assets/figma-home/imgContainer3.png";
 import avatar5 from "../assets/figma-home/imgContainer4.png";
 import aboutImage from "../assets/figma-home/imgImage151.png";
 
-const spotlightLogos = [logoA, logoB, logoC, logoD, logoE, logoF];
+const spotlightLogos = [logoA, logoB, logoC, logoD, logoE, logoF, logoG, logoH, logoI, logoJ, logoK, logoL];
 
 const wallTestimonials = [
   {
