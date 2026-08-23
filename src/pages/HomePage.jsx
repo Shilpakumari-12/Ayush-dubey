@@ -282,7 +282,7 @@ export default function HomePage() {
       </section>
 
       {/* Publication Mastery Academy promo */}
-      <section className="fh-section">
+      {/* <section className="fh-section">
         <div className="fh-container">
           <div className="fh-promo">
             <div className="fh-promo__head">
@@ -310,7 +310,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonial wall */}
       <section className="fh-section">
