@@ -316,8 +316,8 @@ select {
   .logo3_logo {
     height: 30px !important;
   }
+
+  .newsletter-screenshots-wrapper {
+    grid-template-columns: 1fr !important;
+  }
 }
-
-
-
-
