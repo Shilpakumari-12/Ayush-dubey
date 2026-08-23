@@ -4,6 +4,7 @@ node_modules/
 
 # Production build outputs
 dist/
+a.ps1
 build/
 
 # Logs & Environment
