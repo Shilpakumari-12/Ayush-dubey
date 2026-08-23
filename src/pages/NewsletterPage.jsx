@@ -17,7 +17,7 @@ export default function NewsletterPage() {
                     className="g-para-wrap tagline"
                   >
                     <div className="g-para-rich-text w-richtext">
-                      <p>Newsletter</p>
+                      <p className="fh-eyebrow">PODCAST NEWSLETTER</p>
                     </div>
                   </div>
                   <div
@@ -26,10 +26,8 @@ export default function NewsletterPage() {
                   >
                     <div className="g-heading-rich-text w-richtext">
                       <h1>
-                        You’ll Love{" "}
-                        <strong>
-                          <em>My Emails</em>
-                        </strong>
+                        You'll Appreciate{" "}
+                        <span className="fh-highlight">My Research Insights</span>
                       </h1>
                     </div>
                   </div>
@@ -39,8 +37,8 @@ export default function NewsletterPage() {
                   >
                     <div className="g-para-rich-text w-richtext">
                       <p>
-                        Use the form below to sign up and let me know where to
-                        send you my next email.
+                        Fill out the form below to subscribe and let me know
+                        where to send my next research updates.
                       </p>
                     </div>
                   </div>
@@ -78,9 +76,9 @@ export default function NewsletterPage() {
                       <Link
                         id="w-node-ef8b8f09-9fe6-17cf-b5dd-3435d94ea48e-d94ea48a"
                         to="/newsletter#"
-                        className="button is-alternate w-button"
+                        className="button fh-btn w-button"
                       >
-                        Subscribe
+                        Join Here
                       </Link>
                     </form>
                     <div className="text-size-tiny">
@@ -125,64 +123,38 @@ export default function NewsletterPage() {
                       className="g-para-wrap text-size-medium align-center"
                     >
                       <div className="g-para-rich-text w-richtext">
-                        <p>Here’s what my readers have said about my emails.</p>
+                        <p>Here's what my clients have to say about my research support:</p>
                       </div>
                     </div>
                   </div>
-                  {/* <div className="newsletter-screenshots-wrapper">
-                    <div
-                      id="w-node-d2a13d9d-3ef2-a5e4-2091-844d8beb12d9-39c8d885"
-                      className="newsletter-ss-img-wrapper"
-                    >
-                      <img
-                        sizes="100vw"
-                        // srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d046c_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(4)-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d046c_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(4)-p-800.avif 800w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d046c_saheli%27s%20newsletter%20-%20readers%20message%20(4).avif 960w"
-                        alt=""
-                        //src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d046c_saheli%27s%20newsletter%20-%20readers%20message%20(4).avif"
-                        loading="lazy"
-                        className="newsletter-ss-img"
-                      />
-                    </div>
-                    <div
-                      id="w-node-d2a13d9d-3ef2-a5e4-2091-844d8beb12db-39c8d885"
-                      className="newsletter-ss-img-wrapper"
-                    >
-                      <img
-                        sizes="100vw"
-                        //srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0478_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(1)-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0478_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(1)-p-800.avif 800w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0478_saheli%27s%20newsletter%20-%20readers%20message%20(1).avif 960w"
-                        alt=""
-                        //src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0478_saheli%27s%20newsletter%20-%20readers%20message%20(1).avif"
-                        loading="lazy"
-                        className="newsletter-ss-img"
-                      />
-                    </div>
-                    <div
-                      id="w-node-d2a13d9d-3ef2-a5e4-2091-844d8beb12dd-39c8d885"
-                      className="newsletter-ss-img-wrapper"
-                    >
-                      <img
-                        sizes="100vw"
-                        //srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d047e_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(3)-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d047e_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(3)-p-800.avif 800w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d047e_saheli%27s%20newsletter%20-%20readers%20message%20(3).avif 960w"
-                        alt=""
-                        //src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d047e_saheli%27s%20newsletter%20-%20readers%20message%20(3).avif"
-                        loading="lazy"
-                        className="newsletter-ss-img"
-                      />
-                    </div>
-                    <div
-                      id="w-node-d2a13d9d-3ef2-a5e4-2091-844d8beb12df-39c8d885"
-                      className="newsletter-ss-img-wrapper"
-                    >
-                      <img
-                        sizes="100vw"
-                        //srcset="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0472_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(2)-p-500.avif 500w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0472_saheli%27s%2520newsletter%2520-%2520readers%2520message%2520(2)-p-800.avif 800w, https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0472_saheli%27s%20newsletter%20-%20readers%20message%20(2).avif 960w"
-                        alt=""
-                        //src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68eded2a6f627db2431d0472_saheli%27s%20newsletter%20-%20readers%20message%20(2).avif"
-                        loading="lazy"
-                        className="newsletter-ss-img"
-                      />
-                    </div>
-                  </div> */}
+                  <div className="newsletter-screenshots-wrapper" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px", marginTop: "40px" }}>
+                    {[
+                      {
+                        title: "Thank you! I received it! :D",
+                        body: "Hi Ayush,\n\nI actually downloaded your book and wanted to let you know my thoughts.\n\n<mark style='background: var(--fh-yellow-pale); padding: 2px 4px;'>It is simply amazing! I read the first few chapters and could easily get started with my abstract.</mark>\n\nLooking forward to more content from you.\n\nBest,\nAlex",
+                      },
+                      {
+                        title: "Wow, you are amazing! :D",
+                        body: "Hi Ayush,\n\nThis is exactly what I've been looking for. I am very much interested in your writing courses and how they can help me publish.\n\n<mark style='background: var(--fh-yellow-pale); padding: 2px 4px;'>Your tips are so practical and easy to follow. I already submitted my first paper!</mark>\n\nThank you so much,\nSarah",
+                      },
+                      {
+                        title: "This detailed form is exactly what I need! :D",
+                        body: "Hi Ayush,\n\nThe detailed explanation and step-by-step guidance in your emails are really helpful for someone like me who is just starting out.\n\n<mark style='background: var(--fh-yellow-pale); padding: 2px 4px;'>The checklist for manuscript submission was a life-saver!</mark>\n\nKeep up the great work.\nJohn",
+                      },
+                      {
+                        title: "Your detailed form is wonderful... :D",
+                        body: "Hi Ayush,\n\nThank you for this guide. I was struggling with selecting the right journal, and your recent newsletter cleared all my doubts.\n\n<mark style='background: var(--fh-yellow-pale); padding: 2px 4px;'>I appreciate the time you take to explain these complex topics so simply.</mark>\n\nBest regards,\nEmily",
+                      }
+                    ].map((t, i) => (
+                      <div key={i} style={{ border: "1px solid var(--fh-orange)", borderRadius: "12px", padding: "24px", background: "#fff", textAlign: "left" }}>
+                        <div style={{ fontWeight: 600, marginBottom: "16px", display: "flex", justifyContent: "space-between" }}>
+                          <span>{t.title}</span>
+                          <span style={{ color: "#888" }}>Ayush Dubey</span>
+                        </div>
+                        <div style={{ whiteSpace: "pre-wrap", fontSize: "0.95rem", lineHeight: 1.6, color: "var(--fh-body)" }} dangerouslySetInnerHTML={{ __html: t.body }} />
+                      </div>
+                    ))}
+                  </div>
                 </div>
                 <div className="w-layout-grid samples_links_component">
                   <div className="intro_image-wrapper">
@@ -201,8 +173,7 @@ export default function NewsletterPage() {
                     >
                       <div className="g-heading-rich-text w-richtext">
                         <h2>
-                          Want to read some sample emails before you share your
-                          email address?
+                          Want to see some sample publications before you share your email address?
                         </h2>
                       </div>
                     </div>
@@ -212,9 +183,9 @@ export default function NewsletterPage() {
                     >
                       <div className="g-para-rich-text w-richtext">
                         <p>
-                          You&#x27;ll love my newsletters if you are navigating the world of academic publishing as a doctor, medical resident, PhD scholar, or researcher. I share actionable tips on manuscript writing, statistical analysis, and getting published in Scopus, PubMed, and WoS journals.
+                          You'll really benefit from my newsletters if you're a doctor, medical resident, PhD scholar or researcher eager to enhance your publication profile.
                         </p>
-                        <p>Here are a few of my most popular emails:</p>
+                        <p>Here are some of the most requested topics:</p>
                       </div>
                     </div>
                     <div className="list-items-wrap">
@@ -244,7 +215,7 @@ export default function NewsletterPage() {
                             target="_blank"
                             className="text-size-medium text-color-orange-700"
                           >
-                            10 Steps to Writing a High-Impact Introduction Section...
+                            10 Steps to Use ChatGPT for Research Assistance...
                           </a>
                         </div>
                       </div>
@@ -274,7 +245,7 @@ export default function NewsletterPage() {
                             target="_blank"
                             className="text-size-medium text-color-orange-700"
                           >
-                            How to Choose the Perfect Target Journal for Your Research
+                            Run Research With ChatGPT - 10 clinical AI prompts...
                           </a>
                         </div>
                       </div>
@@ -304,7 +275,7 @@ export default function NewsletterPage() {
                             target="_blank"
                             className="text-size-medium text-color-orange-700"
                           >
-                            Top 5 Reasons Your Manuscript Was Rejected (And How to Fix It)
+                            Trust issues with ChatGPT? Here is How You Can Check Them
                           </a>
                         </div>
                       </div>
@@ -328,10 +299,8 @@ export default function NewsletterPage() {
                   >
                     <div className="g-heading-rich-text w-richtext">
                       <h2>
-                        Sign up right here to{" "}
-                        <strong>
-                          <em>get my future emails</em>
-                        </strong>
+                        Sign up here to{" "}
+                        <span className="fh-highlight">receive my future research updates</span>
                       </h2>
                     </div>
                   </div>
@@ -339,17 +308,12 @@ export default function NewsletterPage() {
                     style={{ maxWidth: "42ch" }}
                     className="g-para-wrap text-size-medium align-center"
                   >
-                    <div className="g-para-rich-text w-richtext">
+                    <div className="g-para-rich-text w-richtext text-center">
                       <p>
-                        I’ll send you an email every week (ish) and share my
-                        best free content for building a thriving and inclusive
-                        business.
+                        I'll send you emails weekly (or twice a week) with the best advice for research publication.
                       </p>
                       <p>
-                        You can unsubscribe anytime — whether it’s because you
-                        need a break, decide that don’t like my writing, or want
-                        to focus on writing your own stuff without too much
-                        external influence or distractions.
+                        You can unsubscribe at any time — whether you need a break, decide my writing isn't for you, or want to focus on your own research without distractions.
                       </p>
                     </div>
                   </div>
@@ -388,9 +352,9 @@ export default function NewsletterPage() {
                         <Link
                           id="w-node-ef8b8f09-9fe6-17cf-b5dd-3435d94ea48e-d94ea48a"
                           to="/newsletter#"
-                          className="button is-alternate w-button"
+                          className="button fh-btn w-button"
                         >
-                          Subscribe
+                          Join Here
                         </Link>
                       </form>
                       <div className="text-size-tiny">
