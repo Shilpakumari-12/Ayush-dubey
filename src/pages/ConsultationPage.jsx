@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import clientArmsCrossed from "../assets/client_arms_crossed.jpg";
-import clientGesturing from "../assets/client_gesturing.jpg";
+import clientGesturing from "../assets/gesturingAyush.png";
 
 import testimonial1 from "../assets/images/testimonial-1.jpg";
 import testimonial2 from "../assets/images/testimonial-2.jpg";
-import ayushCoat1 from "../assets/ayush_coat_1.jpg";
+import ayushCoat1 from "../assets/stillPhoto.png";
 import ayushCoat2 from "../assets/ayush_coat_2.jpg";
 import ayushCoat3 from "../assets/ayush_coat_3.jpg";
 import randomPerson1 from "../assets/random_person_1.jpg";
@@ -388,7 +388,7 @@ export default function ConsultationPage() {
               {/* Who is this for section */}
               <div className="w-layout-grid offers_content-layout" style={{ marginBottom: "80px", alignItems: "center" }}>
                 <div className="offers_image-wrapper" style={{ order: -1 }}>
-                  <img src={randomPerson1} alt="Researcher" loading="lazy" className="offers_image" style={{ width: '100%', maxWidth: '350px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }} />
+                  <img src={testimonial2} alt="Researcher" loading="lazy" className="offers_image" style={{ width: '100%', maxWidth: '350px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }} />
                 </div>
                 <div className="offers_content-left">
                   <div className="header-copy-wrap is-left">
