@@ -4,6 +4,7 @@ import clientArmsCrossed from "../assets/client_arms_crossed.jpg";
 import clientGesturing from "../assets/gesturingAyush.png";
 
 import testimonial1 from "../assets/images/testimonial-1.jpg";
+import sudeepAvatar from "../assets/sudeep.jpg";
 import testimonial2 from "../assets/images/testimonial-2.jpg";
 import ayushCoat1 from "../assets/stillPhoto.png";
 import ayushCoat2 from "../assets/ayush_coat_2.jpg";
@@ -586,23 +587,15 @@ export default function ConsultationPage() {
                     </div>
                     <div className="margin-vertical margin-medium">
                       <div className="heading-style-h6">
-                        &quot;Ayush&#x27; timing, expertise, and our existing
-                        connection made his offer irresistible. His proven track
-                        record and social proof gave me the confidence to trust
-                        him with my publication journey.
+                        &quot;I would highly recommend Ayush for his excellent support and guidance throughout the research paper publication process. His assistance in manuscript, journal requirements, submission procedures, and coordination during the publication process was extremely valuable.
                         <br /><br />
-                        In just the first month, Ayush&#x27; strategies
-                        delivered outstanding results. I&#x27;m now entering the
-                        second month with complete satisfaction and excitement.
-                        If you&#x27;re looking for someone who truly understands
-                        academic publishing and delivers exceptional results, Ayush is
-                        the real deal.&quot;
+                        He was professional, responsive, and committed throughout, and his support helped make the entire process smooth and well managed. I sincerely appreciate his contribution and would gladly recommend him to researchers and scholars seeking reliable support with academic publication.&quot;
                       </div>
                     </div>
                     <div className="testimonial13_client">
                       <div className="testimonial13_client-info">
-                        <p className="text-weight-semibold">James Anderson</p>
-                        <p>Academic Researcher</p>
+                        <p className="text-weight-semibold">Sudeep Sharma</p>
+                        <p>Head Legal &amp; Compliance | Healthcare Law</p>
                       </div>
                       <div className="testimonial13_divider"></div>
                       <div className="testimonial13_logo-wrapper">
@@ -616,7 +609,7 @@ export default function ConsultationPage() {
                     </div>
                   </div>
                   <div className="testimonial13_client-image-wrapper">
-                    <img src={testimonial1} alt="James Anderson" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', maxWidth: '280px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }} />
+                    <img src={sudeepAvatar} alt="Sudeep Sharma" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', maxWidth: '280px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }} />
                   </div>
                 </div>
               </div>
