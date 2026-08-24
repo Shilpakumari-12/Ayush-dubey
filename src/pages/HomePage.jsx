@@ -27,7 +27,7 @@ import avatar1 from "../assets/figma-home/imgContainer.png";
 import avatar2 from "../assets/figma-home/imgContainer1.png";
 import avatar3 from "../assets/figma-home/imgContainer2.png";
 import avatar4 from "../assets/figma-home/imgContainer3.png";
-import avatar5 from "../assets/figma-home/imgContainer4.png";
+import avatar5 from "../assets/random_person_1.jpg";
 import shreyasAvatar from "../assets/shreyas.jpg";
 import sudeepAvatar from "../assets/sudeep.jpg";
 import venkaAvatar from "../assets/venka.jpg";
