@@ -28,34 +28,38 @@ import avatar2 from "../assets/figma-home/imgContainer1.png";
 import avatar3 from "../assets/figma-home/imgContainer2.png";
 import avatar4 from "../assets/figma-home/imgContainer3.png";
 import avatar5 from "../assets/figma-home/imgContainer4.png";
+import shreyasAvatar from "../assets/shreyas.jpg";
+import sudeepAvatar from "../assets/sudeep.jpg";
+import venkaAvatar from "../assets/venka.jpg";
+import veeraAvatar from "../assets/veera.jpg";
 import aboutImage from "../assets/figma-home/imgImage151.png";
 
 const spotlightLogos = [logoA, logoB, logoC, logoD, logoE, logoF, logoG, logoH, logoI, logoJ, logoK, logoL];
 
 const wallTestimonials = [
   {
-    name: "Your Name Here",
-    avatar: avatar1,
+    name: "Sudeep Sharma",
+    avatar: sudeepAvatar,
     quote:
-      "I knew I had the skills, but I lacked confidence in my research. After joining Ayush's Publication Mastery Academy, I quickly transformed my approach and achieved remarkable results. I'm now on track to publish multiple papers and elevate my academic career.",
+      "I would highly recommend Ayush for his excellent support and guidance throughout the research paper publication process. His assistance in manuscript, journal requirements, submission procedures, and coordination during the publication process was extremely valuable. He was professional, responsive, and committed throughout, and his support helped make the entire process smooth and well managed. I sincerely appreciate his contribution and would gladly recommend him to researchers and scholars seeking reliable support with academic publication.",
   },
   {
-    name: "Jamie Taylor",
-    avatar: avatar2,
+    name: "Venka Basavaraja",
+    avatar: venkaAvatar,
     quote:
-      "As a Research Scientist, I was struggling to publish consistently. The live sessions in the Academy were incredibly helpful, and I learned how to enhance my manuscripts effectively. Within weeks, I secured a publication in a prestigious journal.",
+      "One of the best research assistance. For publishing papers in reputed journal's like Scopus, Springers etc. I strongly recommend Mr. Ayush Dubey. One of the best research manuscript reviewer. Any research assistance contact him you will definitely get required output.",
   },
   {
-    name: "Morgan Lee",
-    avatar: avatar3,
+    name: "veera vijayan",
+    avatar: veeraAvatar,
     quote:
-      "I am a full-time researcher and successfully published my first paper within three months of joining the Academy. The community support and shared experiences motivated me to keep pushing forward.",
+      "I had the pleasure of working with Ayush for the publication of my research article in and I can confidently say that their expertise made the entire process seamless and speedy",
   },
   {
-    name: "Alexis Chen",
-    avatar: avatar4,
+    name: "Dr Shreyas Aneja",
+    avatar: shreyasAvatar,
     quote:
-      "I reached my publication goals within months of joining the Publication Mastery Academy. The support from the community and daily guidance made all the difference.",
+      "I would like to recommend the services provided by Mr Ayush Dubey in writing and editing the research manuscript. The team works in sync to find out the mistakes and discuss with the client to make the required changes. They were able to deliver on time as well.",
   },
   {
     name: "Sam Patel",
