@@ -5,13 +5,13 @@ import clientGesturing from "../assets/gesturingAyush.png";
 
 import testimonial1 from "../assets/images/testimonial-1.jpg";
 import sudeepAvatar from "../assets/sudeep.jpg";
-import testimonial2 from "../assets/images/testimonial-2.jpg";
+import whoIsThisForDoctor from "../assets/images/consultation_doctor.jpg";
 import ayushCoat1 from "../assets/stillPhoto.png";
 import ayushCoat2 from "../assets/ayush_coat_2.jpg";
 import ayushCoat3 from "../assets/ayush_coat_3.jpg";
-import randomPerson1 from "../assets/random_person_1.jpg";
-import randomPerson2 from "../assets/random_person_2.jpg";
-import randomPerson3 from "../assets/random_person_3.jpg";
+import step1Image from "../assets/images/step1_target_journal.jpg";
+import step2Image from "../assets/images/step2_writing_paper.jpg";
+import step3Image from "../assets/images/step3_published_paper.jpg";
 import logoA from "../assets/logos/1.png";
 import logoB from "../assets/logos/2.png";
 import logoC from "../assets/logos/3.png";
@@ -389,7 +389,7 @@ export default function ConsultationPage() {
               {/* Who is this for section */}
               <div className="w-layout-grid offers_content-layout" style={{ marginBottom: "80px", alignItems: "center" }}>
                 <div className="offers_image-wrapper" style={{ order: -1 }}>
-                  <img src={testimonial2} alt="Researcher" loading="lazy" className="offers_image" style={{ width: '100%', maxWidth: '350px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }} />
+                  <img src={whoIsThisForDoctor} alt="Doctor researching medical literature" loading="lazy" className="offers_image" style={{ width: '100%', maxWidth: '360px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '14px', boxShadow: '0 8px 24px rgba(0,0,0,0.08)' }} />
                 </div>
                 <div className="offers_content-left">
                   <div className="header-copy-wrap is-left">
@@ -438,7 +438,7 @@ export default function ConsultationPage() {
                         </div>
                       </div>
                       <div className="offers_image-wrapper">
-                        <img src={randomPerson1} alt="Step 1" loading="lazy" className="offers_image" style={{ width: '100%', maxWidth: '280px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }} />
+                        <img src={step1Image} alt="Step 1: Target Journal Selection" loading="lazy" className="offers_image" style={{ width: '100%', maxWidth: '320px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '14px', boxShadow: '0 8px 24px rgba(0,0,0,0.08)' }} />
                       </div>
                     </div>
                   </div>
@@ -463,7 +463,7 @@ export default function ConsultationPage() {
                         </div>
                       </div>
                       <div className="offers_image-wrapper">
-                        <img src={randomPerson2} alt="Step 2" loading="lazy" className="offers_image" style={{ width: '100%', maxWidth: '280px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }} />
+                        <img src={step2Image} alt="Step 2: Manuscript Writing and Review" loading="lazy" className="offers_image" style={{ width: '100%', maxWidth: '320px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '14px', boxShadow: '0 8px 24px rgba(0,0,0,0.08)' }} />
                       </div>
                     </div>
                   </div>
@@ -488,7 +488,7 @@ export default function ConsultationPage() {
                         </div>
                       </div>
                       <div className="offers_image-wrapper">
-                        <img src={randomPerson3} alt="Step 3" loading="lazy" className="offers_image" style={{ width: '100%', maxWidth: '280px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }} />
+                        <img src={step3Image} alt="Step 3: Paper Publication and Citations" loading="lazy" className="offers_image" style={{ width: '100%', maxWidth: '320px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '14px', boxShadow: '0 8px 24px rgba(0,0,0,0.08)' }} />
                       </div>
                     </div>
                   </div>
@@ -609,7 +609,7 @@ export default function ConsultationPage() {
                     </div>
                   </div>
                   <div className="testimonial13_client-image-wrapper">
-                    <img src={sudeepAvatar} alt="Sudeep Sharma" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', maxWidth: '280px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }} />
+                    <img src={sudeepAvatar} alt="Sudeep Sharma" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', maxWidth: '420px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '16px' }} />
                   </div>
                 </div>
               </div>
