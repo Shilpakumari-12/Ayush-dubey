@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import heroImage from "../assets/figma-home/img-hero.png";
+import heroImage from "../assets/figma-home/imgImage149.png";
 import logoA from "../assets/logos/1.png";
 import logoB from "../assets/logos/2.png";
 import logoC from "../assets/logos/3.png";
@@ -20,8 +20,8 @@ import introImage from "../assets/figma-home/imgImage150.png";
 import checkIcon from "../assets/figma-home/imgIcon.svg";
 import starIconOrange from "../assets/figma-home/imgIcon1.svg";
 import starIconBrown from "../assets/figma-home/imgIcon2.svg";
-import testimonialImage1 from "../assets/figma-home/imgImage8.png";
-import testimonialImage2 from "../assets/figma-home/imgImage9.png";
+import testimonialImage1 from "../assets/images/doctor_testimonial.jpg";
+import testimonialImage2 from "../assets/images/researcher_testimonial.jpg";
 import academyImage from "../assets/figma-home/imgImage10.png";
 import avatar1 from "../assets/figma-home/imgContainer.png";
 import avatar2 from "../assets/figma-home/imgContainer1.png";
@@ -88,7 +88,7 @@ export default function HomePage() {
           <div className="fh-hero__grid">
             <div className="fh-hero__copy">
               <h1 className="fh-h1">
-                Unlock Your Research Potential with{" "}
+                Unlock Your Research Potential with<br />
                 <span className="fh-highlight">Research Publication Strategies</span>
               </h1>
               <div className="fh-hero__paras">
@@ -182,7 +182,7 @@ export default function HomePage() {
             <p className="fh-eyebrow">Hello, aspiring researcher!</p>
             <div className="fh-intro__title">
               <h2 className="fh-h2">I'm Ayush, your</h2>
-              <span className="fh-h2 fh-highlight">Publication Consultant</span>
+              <span className="fh-h2 fh-highlight">Research Publication Consultant</span>
             </div>
           </div>
 
@@ -250,36 +250,31 @@ export default function HomePage() {
             <div>
               <Stars icon={starIconOrange} />
               <p className="fh-testi__quote">
-                "Ayush's expertise and our existing rapport made his guidance invaluable. His proven strategies gave
-                me the confidence to trust him with my publication journey.
+                "I would highly recommend Ayush for his excellent support and guidance throughout the research paper publication process. His assistance in manuscript, journal requirements, submission procedures, and coordination during the publication process was extremely valuable.
                 <br />
                 <br />
-                In just the first month, Ayush's insights led to significant improvements in my manuscript. I'm now
-                entering the next phase with complete satisfaction and excitement. If you're looking for someone
-                who truly understands the publication process and delivers results, Ayush is the one to turn to."
+                He was professional, responsive, and committed throughout, and his support helped make the entire process smooth and well managed. I sincerely appreciate his contribution and would gladly recommend him to researchers and scholars seeking reliable support with academic publication."
               </p>
-              <p className="fh-testi__name">Jordan Smith</p>
-              <p className="fh-testi__role">Academic Publishing Specialist</p>
+              <p className="fh-testi__name">Sudeep Sharma</p>
+              <p className="fh-testi__role">Head Legal &amp; Compliance | Healthcare Law</p>
             </div>
             <div className="fh-testi__image">
-              <img src={testimonialImage1} alt="Jordan Smith" />
+              <img src={testimonialImage1} alt="Sudeep Sharma" style={{ width: '100%', maxWidth: '420px', height: 'auto', display: 'block', margin: '0 auto', borderRadius: '14px', objectFit: 'cover' }} />
             </div>
           </div>
 
           {/* Embedded testimonial 2 */}
           <div className="fh-testi fh-testi--reverse">
             <div className="fh-testi__image">
-              <img src={testimonialImage2} alt="Taylor Lee" />
+              <img src={testimonialImage2} alt="Dr Shreyas Aneja" style={{ width: '100%', maxWidth: '420px', height: 'auto', display: 'block', margin: '0 auto', borderRadius: '14px', objectFit: 'cover' }} />
             </div>
             <div>
               <Stars icon={starIconOrange} />
               <p className="fh-testi__quote">
-                "I believe one of the best ways to enhance your academic profile is through Ayush's publication
-                consultancy. Having worked with him to improve my research visibility, I can confidently say that
-                his advice is invaluable."
+                "I would like to recommend the services provided by Mr Ayush Dubey in writing and editing the research manuscript. The team works in sync to find out the mistakes and discuss with the client to make the required changes. They were able to deliver on time as well."
               </p>
-              <p className="fh-testi__name">Taylor Lee</p>
-              <p className="fh-testi__role">Director, Research Innovations</p>
+              <p className="fh-testi__name">Dr Shreyas Aneja</p>
+              <p className="fh-testi__role">Medical Researcher &amp; Scholar</p>
             </div>
           </div>
         </div>
