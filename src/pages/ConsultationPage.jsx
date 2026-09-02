@@ -96,7 +96,9 @@ export default function ConsultationPage() {
                   </div>
                   <div className="button-group">
                     <a
-                      href="#"
+                      href="https://wa.me/917307726842"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="button fh-btn w-button"
                     >
                       Let's Connect
@@ -433,7 +435,7 @@ export default function ConsultationPage() {
                             </div>
                           </div>
                           <div className="button-group">
-                            <a href="#" className="button fh-btn w-button">Let's Connect</a>
+                            <a href="https://wa.me/917307726842" target="_blank" rel="noopener noreferrer" className="button fh-btn w-button">Let's Connect</a>
                           </div>
                         </div>
                       </div>
@@ -458,7 +460,7 @@ export default function ConsultationPage() {
                             </div>
                           </div>
                           <div className="button-group">
-                            <a href="#" className="button fh-btn w-button">Let's Connect</a>
+                            <a href="https://wa.me/917307726842" target="_blank" rel="noopener noreferrer" className="button fh-btn w-button">Let's Connect</a>
                           </div>
                         </div>
                       </div>
@@ -483,7 +485,7 @@ export default function ConsultationPage() {
                             </div>
                           </div>
                           <div className="button-group">
-                            <a href="#" className="button fh-btn w-button">Let's Connect</a>
+                            <a href="https://wa.me/917307726842" target="_blank" rel="noopener noreferrer" className="button fh-btn w-button">Let's Connect</a>
                           </div>
                         </div>
                       </div>
