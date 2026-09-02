@@ -34,7 +34,12 @@ export default function Navbar() {
         </nav>
 
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-          <a href="mailto:contact@60daypublications.com" className="fh-btn">
+          <a
+            href="https://wa.me/917307726842"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="fh-btn"
+          >
             Let's Connect
           </a>
           <button
