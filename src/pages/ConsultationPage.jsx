@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import clientArmsCrossed from "../assets/client_arms_crossed.jpg";
 import clientGesturing from "../assets/gesturingAyush.png";
@@ -26,6 +26,63 @@ import logoK from "../assets/logos/11.png";
 import logoL from "../assets/logos/12.png";
 export default function ConsultationPage() {
   const spotlightLogos = [logoA, logoB, logoC, logoD, logoE, logoF, logoG, logoH, logoI, logoJ, logoK, logoL];
+  const [openFaq, setOpenFaq] = useState(0);
+
+  const toggleFaq = (index) => {
+    setOpenFaq((prev) => (prev === index ? null : index));
+  };
+
+  const faqList = [
+    {
+      question: "How can I get started with research publication support?",
+      answer: (
+        <p>
+          Simply choose the research service that best matches your requirements and share your research details with us. Our consultant will review your requirements and guide you through the next steps, whether you need manuscript preparation, statistical analysis, journal selection, or publication support.
+        </p>
+      ),
+    },
+    {
+      question: "What if I don't know which research service I need?",
+      answer: (
+        <p>
+          No problem. You can connect with our research consultant and discuss your research topic, study design, manuscript status, and publication goals. We will help you identify the most suitable service based on your requirements.
+        </p>
+      ),
+    },
+    {
+      question: "How long does the consultation usually last?",
+      answer: (
+        <p>
+          A consultation generally lasts around <strong>30–60 minutes</strong>, depending on the complexity of your research. The discussion may cover your research objectives, methodology, statistical requirements, manuscript status, and target journal. For projects requiring detailed guidance, additional sessions may be recommended.
+        </p>
+      ),
+    },
+    {
+      question: "Do you provide support for Scopus, PubMed, and Web of Science journals?",
+      answer: (
+        <p>
+          Yes. We provide research publication support for journals indexed in <strong>Scopus, PubMed, and Web of Science</strong>, including guidance on journal selection, manuscript preparation, formatting, submission, and responding to reviewer comments. Journal acceptance, however, depends on the journal's editorial and peer-review process.
+        </p>
+      ),
+    },
+    {
+      question: "Is my research and manuscript information kept confidential?",
+      answer: (
+        <p>
+          Yes. We treat your research data, manuscript, unpublished findings, and other project-related information as confidential. Your information will be handled responsibly and will not be shared with third parties without appropriate authorization.
+        </p>
+      ),
+    },
+    {
+      question: "What if I need additional support after the consultation?",
+      answer: (
+        <p>
+          We offer continued support based on your research needs. This may include <strong>manuscript editing, statistical analysis, journal selection, formatting, submission assistance, reviewer-response support, and publication guidance</strong>. You can continue with the relevant service depending on your project requirements.
+        </p>
+      ),
+    },
+  ];
+
   return (
     <main className="main-wrapper">
       <header className="section_hero">
@@ -688,308 +745,66 @@ export default function ConsultationPage() {
                 <div className="margin-top margin-large">
                   <div className="faq-component">
                     <div className="js-accordion">
-                      <div className="js-accordion-item active">
-                        <div className="js-accordion-header">
-                          <h3 className="faq-question">
-                            How do I schedule my consultation?
-                          </h3>
-                          <div className="js-accordion-icon active">
-                            <div className="accordion2_icon w-embed">
-                              <svg
-                                width="18"
-                                height="2"
-                                viewBox="0 0 18 2"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M0.853657 0C0.625549 0.0049979 0.408467 0.0990813 0.248907 0.262175C0.0893482 0.425268 0 0.64441 0 0.872574C0 1.10074 0.0893482 1.31978 0.248907 1.48287C0.408467 1.64597 0.625549 1.74015 0.853657 1.74515H16.5563C16.7845 1.74015 17.0015 1.64597 17.1611 1.48287C17.3207 1.31978 17.41 1.10074 17.41 0.872574C17.41 0.64441 17.3207 0.425268 17.1611 0.262175C17.0015 0.0990813 16.7845 0.0049979 16.5563 0H0.853657Z"
-                                  fill="currentColor"
-                                />
-                              </svg>
+                      {faqList.map((item, index) => {
+                        const isOpen = openFaq === index;
+                        return (
+                          <div
+                            key={index}
+                            className={`js-accordion-item ${isOpen ? "active" : ""}`}
+                          >
+                            <div
+                              className="js-accordion-header"
+                              onClick={() => toggleFaq(index)}
+                              style={{ cursor: "pointer", userSelect: "none" }}
+                            >
+                              <h3 className="faq-question">{item.question}</h3>
+                              <div className={`js-accordion-icon ${isOpen ? "active" : ""}`}>
+                                <div className="accordion2_icon w-embed">
+                                  <svg
+                                    width="18"
+                                    height="2"
+                                    viewBox="0 0 18 2"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M0.853657 0C0.625549 0.0049979 0.408467 0.0990813 0.248907 0.262175C0.0893482 0.425268 0 0.64441 0 0.872574C0 1.10074 0.0893482 1.31978 0.248907 1.48287C0.408467 1.64597 0.625549 1.74015 0.853657 1.74515H16.5563C16.7845 1.74015 17.0015 1.64597 17.1611 1.48287C17.3207 1.31978 17.41 1.10074 17.41 0.872574C17.41 0.64441 17.3207 0.425268 17.1611 0.262175C17.0015 0.0990813 16.7845 0.0049979 16.5563 0H0.853657Z"
+                                      fill="currentColor"
+                                    />
+                                  </svg>
+                                </div>
+                                <div
+                                  className="accordion2_icon _2 w-embed"
+                                  style={{
+                                    display: isOpen ? "none" : "flex",
+                                    transition: "all 0.2s ease",
+                                  }}
+                                >
+                                  <svg
+                                    width="3"
+                                    height="18"
+                                    viewBox="0 0 3 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M0.83252 16.724C0.837517 16.9521 0.931601 17.1692 1.09469 17.3287C1.25779 17.4883 1.47693 17.5776 1.70509 17.5776C1.93326 17.5776 2.1523 17.4883 2.31539 17.3287C2.47849 17.1692 2.57267 16.9521 2.57767 16.724L2.57767 1.02129C2.57267 0.793185 2.47849 0.576103 2.31539 0.416544C2.1523 0.256985 1.93326 0.167637 1.70509 0.167637C1.47693 0.167637 1.25779 0.256985 1.09469 0.416544C0.931601 0.576103 0.837517 0.793185 0.83252 1.02129L0.83252 16.724Z"
+                                      fill="currentColor"
+                                    />
+                                  </svg>
+                                </div>
+                              </div>
                             </div>
-                            <div className="accordion2_icon _2 w-embed">
-                              <svg
-                                width="3"
-                                height="18"
-                                viewBox="0 0 3 18"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M0.83252 16.724C0.837517 16.9521 0.931601 17.1692 1.09469 17.3287C1.25779 17.4883 1.47693 17.5776 1.70509 17.5776C1.93326 17.5776 2.1523 17.4883 2.31539 17.3287C2.47849 17.1692 2.57267 16.9521 2.57767 16.724L2.57767 1.02129C2.57267 0.793185 2.47849 0.576103 2.31539 0.416544C2.1523 0.256985 1.93326 0.167637 1.70509 0.167637C1.47693 0.167637 1.25779 0.256985 1.09469 0.416544C0.931601 0.576103 0.837517 0.793185 0.83252 1.02129L0.83252 16.724Z"
-                                  fill="currentColor"
-                                />
-                              </svg>
-                            </div>
+                            {isOpen && (
+                              <div className="js-accordion-body">
+                                <div className="margin-bottom margin-small">
+                                  {item.answer}
+                                </div>
+                              </div>
+                            )}
                           </div>
-                        </div>
-                        <div className="js-accordion-body">
-                          <div className="margin-bottom margin-small">
-                            <p>
-                              To schedule a consultation, simply select the
-                              offer you want to go ahead with, and after the
-                              payment is done, you can fill out the consultation
-                              request form, providing details about your needs
-                              and preferred meeting times. Our team will get
-                              back to you promptly to confirm the appointment
-                              and discuss further steps.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="js-accordion-item">
-                        <div className="js-accordion-header">
-                          <h3 className="faq-question">
-                            What if I don’t know which offer will suit me the
-                            best?
-                          </h3>
-                          <div className="js-accordion-icon active">
-                            <div className="accordion2_icon w-embed">
-                              <svg
-                                width="18"
-                                height="2"
-                                viewBox="0 0 18 2"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M0.853657 0C0.625549 0.0049979 0.408467 0.0990813 0.248907 0.262175C0.0893482 0.425268 0 0.64441 0 0.872574C0 1.10074 0.0893482 1.31978 0.248907 1.48287C0.408467 1.64597 0.625549 1.74015 0.853657 1.74515H16.5563C16.7845 1.74015 17.0015 1.64597 17.1611 1.48287C17.3207 1.31978 17.41 1.10074 17.41 0.872574C17.41 0.64441 17.3207 0.425268 17.1611 0.262175C17.0015 0.0990813 16.7845 0.0049979 16.5563 0H0.853657Z"
-                                  fill="currentColor"
-                                />
-                              </svg>
-                            </div>
-                            <div className="accordion2_icon _2 w-embed">
-                              <svg
-                                width="3"
-                                height="18"
-                                viewBox="0 0 3 18"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M0.83252 16.724C0.837517 16.9521 0.931601 17.1692 1.09469 17.3287C1.25779 17.4883 1.47693 17.5776 1.70509 17.5776C1.93326 17.5776 2.1523 17.4883 2.31539 17.3287C2.47849 17.1692 2.57267 16.9521 2.57767 16.724L2.57767 1.02129C2.57267 0.793185 2.47849 0.576103 2.31539 0.416544C2.1523 0.256985 1.93326 0.167637 1.70509 0.167637C1.47693 0.167637 1.25779 0.256985 1.09469 0.416544C0.931601 0.576103 0.837517 0.793185 0.83252 1.02129L0.83252 16.724Z"
-                                  fill="currentColor"
-                                />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="js-accordion-body">
-                          <div className="margin-bottom margin-small">
-                            <p>
-                              You can connect our Support specialist and he’ll
-                              help you understand which offer will be the best
-                              one for you!
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="js-accordion-item">
-                        <div className="js-accordion-header">
-                          <h3 className="faq-question">
-                            How long does a consultation usually last?
-                          </h3>
-                          <div className="js-accordion-icon active">
-                            <div className="accordion2_icon w-embed">
-                              <svg
-                                width="18"
-                                height="2"
-                                viewBox="0 0 18 2"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M0.853657 0C0.625549 0.0049979 0.408467 0.0990813 0.248907 0.262175C0.0893482 0.425268 0 0.64441 0 0.872574C0 1.10074 0.0893482 1.31978 0.248907 1.48287C0.408467 1.64597 0.625549 1.74015 0.853657 1.74515H16.5563C16.7845 1.74015 17.0015 1.64597 17.1611 1.48287C17.3207 1.31978 17.41 1.10074 17.41 0.872574C17.41 0.64441 17.3207 0.425268 17.1611 0.262175C17.0015 0.0990813 16.7845 0.0049979 16.5563 0H0.853657Z"
-                                  fill="currentColor"
-                                />
-                              </svg>
-                            </div>
-                            <div className="accordion2_icon _2 w-embed">
-                              <svg
-                                width="3"
-                                height="18"
-                                viewBox="0 0 3 18"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M0.83252 16.724C0.837517 16.9521 0.931601 17.1692 1.09469 17.3287C1.25779 17.4883 1.47693 17.5776 1.70509 17.5776C1.93326 17.5776 2.1523 17.4883 2.31539 17.3287C2.47849 17.1692 2.57267 16.9521 2.57767 16.724L2.57767 1.02129C2.57267 0.793185 2.47849 0.576103 2.31539 0.416544C2.1523 0.256985 1.93326 0.167637 1.70509 0.167637C1.47693 0.167637 1.25779 0.256985 1.09469 0.416544C0.931601 0.576103 0.837517 0.793185 0.83252 1.02129L0.83252 16.724Z"
-                                  fill="currentColor"
-                                />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="js-accordion-body">
-                          <div className="margin-bottom margin-small">
-                            <p>
-                              The duration of a consultation can vary depending
-                              on the nature and complexity of the topic. Mainly
-                              our consultation sessions will last for an HOUR,
-                              while others may require multiple sessions or
-                              ongoing support over a longer period. We will
-                              provide an estimate of the expected duration
-                              during the initial discussion.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="js-accordion-item">
-                        <div className="js-accordion-header">
-                          <h3 className="faq-question">
-                            Are consultations confidential?
-                          </h3>
-                          <div className="js-accordion-icon active">
-                            <div className="accordion2_icon w-embed">
-                              <svg
-                                width="18"
-                                height="2"
-                                viewBox="0 0 18 2"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M0.853657 0C0.625549 0.0049979 0.408467 0.0990813 0.248907 0.262175C0.0893482 0.425268 0 0.64441 0 0.872574C0 1.10074 0.0893482 1.31978 0.248907 1.48287C0.408467 1.64597 0.625549 1.74015 0.853657 1.74515H16.5563C16.7845 1.74015 17.0015 1.64597 17.1611 1.48287C17.3207 1.31978 17.41 1.10074 17.41 0.872574C17.41 0.64441 17.3207 0.425268 17.1611 0.262175C17.0015 0.0990813 16.7845 0.0049979 16.5563 0H0.853657Z"
-                                  fill="currentColor"
-                                />
-                              </svg>
-                            </div>
-                            <div className="accordion2_icon _2 w-embed">
-                              <svg
-                                width="3"
-                                height="18"
-                                viewBox="0 0 3 18"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M0.83252 16.724C0.837517 16.9521 0.931601 17.1692 1.09469 17.3287C1.25779 17.4883 1.47693 17.5776 1.70509 17.5776C1.93326 17.5776 2.1523 17.4883 2.31539 17.3287C2.47849 17.1692 2.57267 16.9521 2.57767 16.724L2.57767 1.02129C2.57267 0.793185 2.47849 0.576103 2.31539 0.416544C2.1523 0.256985 1.93326 0.167637 1.70509 0.167637C1.47693 0.167637 1.25779 0.256985 1.09469 0.416544C0.931601 0.576103 0.837517 0.793185 0.83252 1.02129L0.83252 16.724Z"
-                                  fill="currentColor"
-                                />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="js-accordion-body">
-                          <div className="margin-bottom margin-small">
-                            <p>
-                              Yes, client confidentiality is of utmost
-                              importance to us. We adhere to strict professional
-                              ethics and privacy standards. Any information
-                              shared during the consultation will be treated
-                              with the utmost confidentiality and will not be
-                              disclosed to any third parties without your
-                              consent.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="js-accordion-item">
-                        <div className="js-accordion-header">
-                          <h3 className="faq-question">
-                            What if I need additional support after the
-                            consultation?
-                          </h3>
-                          <div className="js-accordion-icon active">
-                            <div className="accordion2_icon w-embed">
-                              <svg
-                                width="18"
-                                height="2"
-                                viewBox="0 0 18 2"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M0.853657 0C0.625549 0.0049979 0.408467 0.0990813 0.248907 0.262175C0.0893482 0.425268 0 0.64441 0 0.872574C0 1.10074 0.0893482 1.31978 0.248907 1.48287C0.408467 1.64597 0.625549 1.74015 0.853657 1.74515H16.5563C16.7845 1.74015 17.0015 1.64597 17.1611 1.48287C17.3207 1.31978 17.41 1.10074 17.41 0.872574C17.41 0.64441 17.3207 0.425268 17.1611 0.262175C17.0015 0.0990813 16.7845 0.0049979 16.5563 0H0.853657Z"
-                                  fill="currentColor"
-                                />
-                              </svg>
-                            </div>
-                            <div className="accordion2_icon _2 w-embed">
-                              <svg
-                                width="3"
-                                height="18"
-                                viewBox="0 0 3 18"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M0.83252 16.724C0.837517 16.9521 0.931601 17.1692 1.09469 17.3287C1.25779 17.4883 1.47693 17.5776 1.70509 17.5776C1.93326 17.5776 2.1523 17.4883 2.31539 17.3287C2.47849 17.1692 2.57267 16.9521 2.57767 16.724L2.57767 1.02129C2.57267 0.793185 2.47849 0.576103 2.31539 0.416544C2.1523 0.256985 1.93326 0.167637 1.70509 0.167637C1.47693 0.167637 1.25779 0.256985 1.09469 0.416544C0.931601 0.576103 0.837517 0.793185 0.83252 1.02129L0.83252 16.724Z"
-                                  fill="currentColor"
-                                />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="js-accordion-body">
-                          <div className="margin-bottom margin-small">
-                            <p>
-                              We are committed to providing ongoing support to
-                              help you achieve your goals. If you require
-                              further assistance or have follow-up questions
-                              after the consultation, we offer additional
-                              services such as extended consultations, mentoring
-                              programs, or tailored solutions to address your
-                              evolving needs. Just let us know, and we will be
-                              happy to assist you further.
-                              <br />
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="js-accordion-item">
-                        <div className="js-accordion-header">
-                          <h3 className="faq-question">
-                            What if I need to reschedule or cancel my
-                            consultation?
-                          </h3>
-                          <div className="js-accordion-icon active">
-                            <div className="accordion2_icon w-embed">
-                              <svg
-                                width="18"
-                                height="2"
-                                viewBox="0 0 18 2"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M0.853657 0C0.625549 0.0049979 0.408467 0.0990813 0.248907 0.262175C0.0893482 0.425268 0 0.64441 0 0.872574C0 1.10074 0.0893482 1.31978 0.248907 1.48287C0.408467 1.64597 0.625549 1.74015 0.853657 1.74515H16.5563C16.7845 1.74015 17.0015 1.64597 17.1611 1.48287C17.3207 1.31978 17.41 1.10074 17.41 0.872574C17.41 0.64441 17.3207 0.425268 17.1611 0.262175C17.0015 0.0990813 16.7845 0.0049979 16.5563 0H0.853657Z"
-                                  fill="currentColor"
-                                />
-                              </svg>
-                            </div>
-                            <div className="accordion2_icon _2 w-embed">
-                              <svg
-                                width="3"
-                                height="18"
-                                viewBox="0 0 3 18"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M0.83252 16.724C0.837517 16.9521 0.931601 17.1692 1.09469 17.3287C1.25779 17.4883 1.47693 17.5776 1.70509 17.5776C1.93326 17.5776 2.1523 17.4883 2.31539 17.3287C2.47849 17.1692 2.57267 16.9521 2.57767 16.724L2.57767 1.02129C2.57267 0.793185 2.47849 0.576103 2.31539 0.416544C2.1523 0.256985 1.93326 0.167637 1.70509 0.167637C1.47693 0.167637 1.25779 0.256985 1.09469 0.416544C0.931601 0.576103 0.837517 0.793185 0.83252 1.02129L0.83252 16.724Z"
-                                  fill="currentColor"
-                                />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="js-accordion-body">
-                          <div className="margin-bottom margin-small">
-                            <p>
-                              We understand that unexpected circumstances may
-                              arise. If you need to reschedule or cancel your
-                              consultation, please notify us as soon as
-                              possible. Our team will work with you to find an
-                              alternative time that suits your schedule.
-                              However, please note that cancellation policies
-                              may apply, and fees may be incurred for
-                              cancellations made at short notice.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>
