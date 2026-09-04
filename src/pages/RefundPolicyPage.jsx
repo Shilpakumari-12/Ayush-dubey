@@ -74,8 +74,8 @@ export default function RefundPolicyPage() {
                     purchase, further details are to be shared in Your Welcome
                     Kit. In case of unexpected errors, you can connect with
                     60 Day Publications at{" "}
-                    <a href="mailto:hi@60daypublications.com">
-                      hi@60daypublications.com
+                    <a href="mailto:ayushdubey333@gmail.com">
+                      ayushdubey333@gmail.com
                     </a>
                     .
                   </h6>
