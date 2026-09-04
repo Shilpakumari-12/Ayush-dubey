@@ -820,7 +820,19 @@ export default function ConsultationPage() {
                     </div>
                     <a
                       href="mailto:ayushdubey333@gmail.com"
+                      onClick={(e) => {
+                        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                        if (!isMobile) {
+                          e.preventDefault();
+                          window.open(
+                            "https://mail.google.com/mail/?view=cm&fs=1&to=ayushdubey333@gmail.com",
+                            "_blank",
+                            "noopener,noreferrer"
+                          );
+                        }
+                      }}
                       className="button w-button"
+                      title="Send email to ayushdubey333@gmail.com"
                     >
                       Contact
                     </a>
