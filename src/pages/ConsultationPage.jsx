@@ -4,7 +4,7 @@ import clientArmsCrossed from "../assets/client_arms_crossed.jpg";
 import clientGesturing from "../assets/gesturingAyush.png";
 
 import testimonial1 from "../assets/images/testimonial-1.jpg";
-import sudeepAvatar from "../assets/sudeep.jpg";
+import veeraAvatar from "../assets/images/veera_testimonial.jpg";
 import whoIsThisForDoctor from "../assets/images/consultation_doctor.jpg";
 import ayushCoat1 from "../assets/stillPhoto.png";
 import ayushCoat2 from "../assets/ayush_coat_2.jpg";
@@ -653,7 +653,7 @@ export default function ConsultationPage() {
                     </div>
                     <div className="testimonial13_client">
                       <div className="testimonial13_client-info">
-                        <p className="text-weight-semibold">Sudeep Sharma</p>
+                        <p className="text-weight-semibold">Veera</p>
                         <p>Head Legal &amp; Compliance | Healthcare Law</p>
                       </div>
                       <div className="testimonial13_divider"></div>
@@ -668,7 +668,7 @@ export default function ConsultationPage() {
                     </div>
                   </div>
                   <div className="testimonial13_client-image-wrapper">
-                    <img src={sudeepAvatar} alt="Sudeep Sharma" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', maxWidth: '420px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '16px' }} />
+                    <img src={veeraAvatar} alt="Veera" loading="lazy" className="testimonial13_client-image" style={{ width: '100%', maxWidth: '420px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '16px' }} />
                   </div>
                 </div>
               </div>
