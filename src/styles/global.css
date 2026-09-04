@@ -292,7 +292,6 @@ select {
 .logo3_component:hover .logo3_list {
   animation-play-state: paused !important;
 }
-
 @keyframes logoMarquee {
   0% {
     transform: translateX(0%);
@@ -319,5 +318,53 @@ select {
 
   .newsletter-screenshots-wrapper {
     grid-template-columns: 1fr !important;
+  }
+}
+
+/* Checklist & Tick Marks Alignment Fix */
+.list-items-wrap {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 1.125rem !important;
+  width: 100% !important;
+  max-width: 520px !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.list-item {
+  display: flex !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+  width: 100% !important;
+}
+
+.list-item-icon-wrap {
+  flex: none !important;
+  flex-shrink: 0 !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  margin-right: 0.875rem !important;
+  margin-top: 0.2rem !important;
+  align-self: flex-start !important;
+}
+
+.list-item > div:last-child {
+  text-align: left !important;
+  flex: 1 1 auto !important;
+  line-height: 1.45 !important;
+}
+
+@media screen and (max-width: 991px) {
+  .header-copy-wrap .list-items-wrap,
+  .list-items-wrap {
+    align-items: flex-start !important;
+    justify-items: start !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: fit-content !important;
+    max-width: min(100%, 460px) !important;
+    text-align: left !important;
   }
 }
