@@ -100,7 +100,7 @@ export default function Footer() {
                       <div className="text-weight-semibold">Connect with us</div>
                     </div>
                     <a
-                      href="https://www.linkedin.com/"
+                      href="https://www.linkedin.com/in/ayush-dubey-08a032145?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="footer1_social-link w-inline-block"
@@ -124,7 +124,7 @@ export default function Footer() {
                       <div>LinkedIn</div>
                     </a>
                     <a
-                      href="mailto:contact@60daypublications.com"
+                      href="mailto:ayushdubey333@gmail.com"
                       className="footer1_social-link w-inline-block"
                     >
                       <div className="icon-embed-xsmall w-embed">
