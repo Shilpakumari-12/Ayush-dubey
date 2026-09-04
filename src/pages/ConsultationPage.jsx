@@ -819,7 +819,7 @@ export default function ConsultationPage() {
                       </div>
                     </div>
                     <a
-                      href="mailto:hi@60daypublications.com"
+                      href="mailto:ayushdubey333@gmail.com"
                       className="button w-button"
                     >
                       Contact
