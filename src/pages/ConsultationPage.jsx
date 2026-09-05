@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import clientArmsCrossed from "../assets/client_arms_crossed.jpg";
 import clientGesturing from "../assets/gesturingAyush.png";
-
-import testimonial1 from "../assets/images/testimonial-1.jpg";
 import veeraAvatar from "../assets/images/veera_testimonial.jpg";
 import whoIsThisForDoctor from "../assets/images/consultation_doctor.jpg";
 import ayushCoat1 from "../assets/stillPhoto.png";
-import ayushCoat2 from "../assets/ayush_coat_2.jpg";
-import ayushCoat3 from "../assets/ayush_coat_3.jpg";
 import step1Image from "../assets/images/step1_target_journal.jpg";
 import step2Image from "../assets/images/step2_writing_paper.jpg";
 import step3Image from "../assets/images/step3_published_paper.jpg";
@@ -92,7 +87,6 @@ export default function ConsultationPage() {
               <div className="w-layout-grid hero_component">
                 <div className="header-copy-wrap z-index-2">
                   <div
-                    style={{ maxWidth: "18ch" }}
                     className="g-heading-wrap heading-style-h1 text-color-gray-900"
                   >
                     <div className="g-heading-rich-text w-richtext">
@@ -176,255 +170,6 @@ export default function ConsultationPage() {
           </div>
         </div>
       </header>
-      {/* <section
-        data-w-id="f17aa683-a0f6-bd5e-53fe-f8ff56662ecf"
-        className="featured-in-section"
-      > */}
-      <style>{`
-  .featured-in-section {
-    background-color: var(--fh-brown-bg, #935a16) !important;
-    border-top: none;
-    border-bottom: none;
-    padding-top: 40px !important;
-    padding-bottom: 40px !important;
-    overflow: hidden !important;
-  }
-  .featured-in-section .text-color-white {
-    color: #ffffff !important;
-    letter-spacing: 2px;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-  .logo3_component {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow: hidden !important;
-  }
-  .logo3_list {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    align-items: center !important;
-    justify-content: space-around !important;
-    gap: 80px !important;
-    min-width: 100% !important;
-    padding-right: 80px !important; 
-  }
-  .logo3_logo {
-    height: 120px !important;
-    width: 250px !important;
-    object-fit: contain !important;
-    mix-blend-mode: normal !important;
-    opacity: 1 !important;
-    filter: brightness(0) invert(1) !important; /* Make logos white */
-    transition: all 0.3s ease !important;
-    flex-shrink: 0 !important;
-    display: block !important;
-    transform: scale(1.5) !important;
-  }
-  .logo3_wrapper {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    flex-shrink: 0 !important;
-    flex: 0 0 auto !important;
-    width: 250px !important;
-    height: 150px !important;
-    overflow: hidden !important; /* Hide the overlapping white padding */
-  }
-`}</style>
-      {/* <div className="padding-section-small">
-          <div className="margin-bottom margin-large">
-            <div className="text-align-center">
-              <div className="max-width-large align-center">
-                <p className="text-size-medium text-color-white">AS SEEN ON</p>
-              </div>
-            </div>
-          </div>
-          <div className="logo3_component">
-            <div className="logo3_list">
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ed8-563f0d1b"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logoA}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662eda-563f0d1b"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logoB}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662edc-563f0d1b"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logoC}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ede-563f0d1b"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logoD}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ee0-563f0d1b"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logoA}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ee2-563f0d1b"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logoA}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ee4-563f0d1b"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logoA}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ee6-563f0d1b"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logoB}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-            </div>
-            <div className="logo3_list">
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ee9-563f0d1b"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logoC}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662eeb-563f0d1b"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logoD}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662eed-563f0d1b"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logoA}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662eef-563f0d1b"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logoA}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ef1-563f0d1b"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logoA}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ef3-563f0d1b"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logoB}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ef5-563f0d1b"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logoC}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-              <div
-                id="w-node-f17aa683-a0f6-bd5e-53fe-f8ff56662ef7-563f0d1b"
-                className="logo3_wrapper"
-              >
-                <img
-                  loading="lazy"
-                  src={logoD}
-                  alt=""
-                  className="logo3_logo"
-                />
-              </div>
-            </div>
-          </div>
-        </div> */}
       <section className="fh-spotlight">
         <p className="fh-spotlight__label">SPOTLIGHT ON</p>
         <div className="fh-marquee">
@@ -435,21 +180,12 @@ export default function ConsultationPage() {
           </div>
         </div>
       </section>
-      {/* </section> */}
-      {/* Testimonial removed to match new mockup 
-      <section className="section_testimonial13">
-        ...
-      </section>
-      */}
       <section className="section_offers">
         <div className="padding-global">
           <div className="container-large">
             <div className="padding-section-large">
               {/* Who is this for section */}
-              <div className="w-layout-grid offers_content-layout" style={{ marginBottom: "80px", alignItems: "center" }}>
-                <div className="offers_image-wrapper" style={{ order: -1 }}>
-                  <img src={whoIsThisForDoctor} alt="Doctor researching medical literature" loading="lazy" className="offers_image" style={{ width: '100%', maxWidth: '360px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '14px', boxShadow: '0 8px 24px rgba(0,0,0,0.08)' }} />
-                </div>
+              <div className="w-layout-grid offers_content-layout who-is-this-for" style={{ marginBottom: "clamp(40px, 6vw, 80px)", alignItems: "center" }}>
                 <div className="offers_content-left">
                   <div className="header-copy-wrap is-left">
                     <p className="fh-eyebrow">WHO IS THIS FOR?</p>
@@ -467,6 +203,9 @@ export default function ConsultationPage() {
                       </div>
                     </div>
                   </div>
+                </div>
+                <div className="offers_image-wrapper">
+                  <img src={whoIsThisForDoctor} alt="Doctor researching medical literature" loading="lazy" className="offers_image" style={{ width: '100%', maxWidth: '360px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '14px', boxShadow: '0 8px 24px rgba(0,0,0,0.08)' }} />
                 </div>
               </div>
 
@@ -653,17 +392,8 @@ export default function ConsultationPage() {
                     </div>
                     <div className="testimonial13_client">
                       <div className="testimonial13_client-info">
-                        <p className="text-weight-semibold">Veera</p>
-                        <p>Head Legal &amp; Compliance | Healthcare Law</p>
-                      </div>
-                      <div className="testimonial13_divider"></div>
-                      <div className="testimonial13_logo-wrapper">
-                        <img
-                          loading="lazy"
-                          src="https://cdn.prod.website-files.com/68e4be4f857104b3f4a445f8/68e8abbfa75c2368a219fd8b_logo-webflow.svg"
-                          alt=""
-                          className="testimonial13_logo"
-                        />
+                        <p className="text-weight-semibold" style={{ fontSize: '1.1rem', color: '#1a1a1a', margin: 0 }}>Veera</p>
+                        <p style={{ color: '#555', margin: '4px 0 0' }}>Head Legal &amp; Compliance | Healthcare Law</p>
                       </div>
                     </div>
                   </div>
@@ -676,10 +406,10 @@ export default function ConsultationPage() {
           </div>
         </div>
       </section>
-      <section className="section_tailored" style={{ backgroundColor: "#f9f9f9", padding: "80px 0" }}>
+      <section className="section_tailored" style={{ backgroundColor: "#f9f9f9", padding: "clamp(48px, 6vw, 80px) 0" }}>
         <div className="padding-global">
           <div className="container-large">
-            <div className="w-layout-grid offers_content-layout" style={{ alignItems: "center", marginBottom: "60px" }}>
+            <div className="w-layout-grid offers_content-layout" style={{ alignItems: "center", marginBottom: "clamp(36px, 5vw, 60px)" }}>
               <div className="offers_content-left">
                 <div className="header-copy-wrap is-left">
                   <p className="fh-eyebrow">IS THIS FOR YOU?</p>
@@ -695,33 +425,43 @@ export default function ConsultationPage() {
                 </div>
               </div>
               <div className="offers_image-wrapper">
-                <img src={ayushCoat1} alt="Consultation Fit" loading="lazy" className="offers_image" style={{ width: '100%', maxWidth: '350px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px' }} />
+                <img src={ayushCoat1} alt="Consultation Fit" loading="lazy" className="offers_image" style={{ width: '100%', maxWidth: '350px', height: 'auto', margin: '0 auto', display: 'block', borderRadius: '12px', boxShadow: '0 8px 24px rgba(0,0,0,0.08)' }} />
               </div>
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
-              <div style={{ backgroundColor: "#fff", padding: "32px", borderRadius: "12px", border: "1px solid #eaeaea", borderTop: "4px solid #a46800" }}>
-                <div style={{ width: "48px", height: "48px", backgroundColor: "#a46800", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "8px", marginBottom: "20px" }}>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            <div className="tailored-grid">
+              <div className="tailored-card">
+                <div className="tailored-icon-box">
+                  {/* Medical Stethoscope icon */}
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.5 3v5a4.5 4.5 0 0 0 9 0V3M9 12.5v3.5a4 4 0 0 0 4 4h1a4 4 0 0 0 4-4v-1.5M18 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
                 </div>
-                <h3 className="heading-style-h5" style={{ marginBottom: "12px" }}>Doctors</h3>
-                <p>Looking to publish their cases, reviews, or original research in top medical journals.</p>
+                <h3 className="heading-style-h5" style={{ marginBottom: "12px", color: '#1a1a1a', fontWeight: 600 }}>Doctors</h3>
+                <p style={{ color: '#444', lineHeight: 1.6, margin: 0 }}>Looking to publish their cases, reviews, or original research in top medical journals.</p>
               </div>
 
-              <div style={{ backgroundColor: "#fff", padding: "32px", borderRadius: "12px", border: "1px solid #eaeaea", borderTop: "4px solid #a46800" }}>
-                <div style={{ width: "48px", height: "48px", backgroundColor: "#a46800", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "8px", marginBottom: "20px" }}>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              <div className="tailored-card">
+                <div className="tailored-icon-box">
+                  {/* Academic Graduation Cap icon */}
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
                 </div>
-                <h3 className="heading-style-h5" style={{ marginBottom: "12px" }}>PhD scholars</h3>
-                <p>Who need guidance on study design, data analysis, and manuscript structure.</p>
+                <h3 className="heading-style-h5" style={{ marginBottom: "12px", color: '#1a1a1a', fontWeight: 600 }}>PhD scholars</h3>
+                <p style={{ color: '#444', lineHeight: 1.6, margin: 0 }}>Who need guidance on study design, data analysis, and manuscript structure.</p>
               </div>
 
-              <div style={{ backgroundColor: "#fff", padding: "32px", borderRadius: "12px", border: "1px solid #eaeaea", borderTop: "4px solid #a46800" }}>
-                <div style={{ width: "48px", height: "48px", backgroundColor: "#a46800", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "8px", marginBottom: "20px" }}>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              <div className="tailored-card">
+                <div className="tailored-icon-box">
+                  {/* Research Discovery Microscope icon */}
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 18h8M3 21h18M14 21a7 7 0 0 0 0-14h-1M9 14h2M10 3l5 2-3 7-5-2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
                 </div>
-                <h3 className="heading-style-h5" style={{ marginBottom: "12px" }}>Researchers</h3>
-                <p>Aiming to boost their academic profile with Scopus and WoS indexed publications.</p>
+                <h3 className="heading-style-h5" style={{ marginBottom: "12px", color: '#1a1a1a', fontWeight: 600 }}>Researchers</h3>
+                <p style={{ color: '#444', lineHeight: 1.6, margin: 0 }}>Aiming to boost their academic profile with Scopus and WoS indexed publications.</p>
               </div>
             </div>
           </div>
